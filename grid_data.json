@@ -1,0 +1,5592 @@
+[
+    {
+        "latitude": 17.5,
+        "longitude": -87.5,
+        "breeding_count": 0,
+        "wintering_count": 274,
+        "migration_count": 478,
+        "region_code": "BLZ",
+        "density": 0.0773,
+        "season": "wintering"
+    },
+    {
+        "latitude": 17.5,
+        "longitude": -86.5,
+        "breeding_count": 0,
+        "wintering_count": 3,
+        "migration_count": 5,
+        "region_code": "BLZ",
+        "density": 0.0773,
+        "season": "wintering"
+    },
+    {
+        "latitude": 17.5,
+        "longitude": -88.5,
+        "breeding_count": 0,
+        "wintering_count": 781,
+        "migration_count": 922,
+        "region_code": "MEX-CM",
+        "density": 0.0432,
+        "season": "wintering"
+    },
+    {
+        "latitude": 16.5,
+        "longitude": -88.5,
+        "breeding_count": 0,
+        "wintering_count": 84,
+        "migration_count": 115,
+        "region_code": "GTM",
+        "density": 0.0615,
+        "season": "wintering"
+    },
+    {
+        "latitude": 16.5,
+        "longitude": -87.5,
+        "breeding_count": 0,
+        "wintering_count": 306,
+        "migration_count": 269,
+        "region_code": "BLZ",
+        "density": 0.0773,
+        "season": "wintering"
+    },
+    {
+        "latitude": 18.5,
+        "longitude": -87.5,
+        "breeding_count": 0,
+        "wintering_count": 28,
+        "migration_count": 18,
+        "region_code": "MEX-QR",
+        "density": 0.016,
+        "season": "wintering"
+    },
+    {
+        "latitude": 15.5,
+        "longitude": -87.5,
+        "breeding_count": 0,
+        "wintering_count": 68,
+        "migration_count": 61,
+        "region_code": "HN-SB",
+        "density": 0,
+        "season": "wintering"
+    },
+    {
+        "latitude": 50.5,
+        "longitude": -98.5,
+        "breeding_count": 1,
+        "wintering_count": 0,
+        "migration_count": 0,
+        "region_code": "CAN",
+        "density": 0.0021,
+        "season": "breeding"
+    },
+    {
+        "latitude": 47.5,
+        "longitude": -64.5,
+        "breeding_count": 0,
+        "wintering_count": 0,
+        "migration_count": 1,
+        "region_code": "CAN",
+        "density": 0.0021,
+        "season": "migration"
+    },
+    {
+        "latitude": 45.5,
+        "longitude": -65.5,
+        "breeding_count": 2,
+        "wintering_count": 0,
+        "migration_count": 0,
+        "region_code": "CAN",
+        "density": 0.0021,
+        "season": "breeding"
+    },
+    {
+        "latitude": 47.5,
+        "longitude": -66.5,
+        "breeding_count": 0,
+        "wintering_count": 0,
+        "migration_count": 3,
+        "region_code": "CAN",
+        "density": 0.0021,
+        "season": "migration"
+    },
+    {
+        "latitude": 44.5,
+        "longitude": -63.5,
+        "breeding_count": 0,
+        "wintering_count": 0,
+        "migration_count": 1,
+        "region_code": "CAN",
+        "density": 0.0021,
+        "season": "migration"
+    },
+    {
+        "latitude": 43.5,
+        "longitude": -65.5,
+        "breeding_count": 0,
+        "wintering_count": 0,
+        "migration_count": 2,
+        "region_code": "CAN",
+        "density": 0.0021,
+        "season": "migration"
+    },
+    {
+        "latitude": 49.5,
+        "longitude": -83.5,
+        "breeding_count": 0,
+        "wintering_count": 0,
+        "migration_count": 5,
+        "region_code": "CAN",
+        "density": 0.0021,
+        "season": "migration"
+    },
+    {
+        "latitude": 46.5,
+        "longitude": -83.5,
+        "breeding_count": 10,
+        "wintering_count": 0,
+        "migration_count": 2,
+        "region_code": "MI",
+        "density": 0.0751,
+        "season": "breeding"
+    },
+    {
+        "latitude": 46.5,
+        "longitude": -82.5,
+        "breeding_count": 14,
+        "wintering_count": 0,
+        "migration_count": 1,
+        "region_code": "MI",
+        "density": 0.0751,
+        "season": "breeding"
+    },
+    {
+        "latitude": 47.5,
+        "longitude": -83.5,
+        "breeding_count": 0,
+        "wintering_count": 0,
+        "migration_count": 2,
+        "region_code": "CAN",
+        "density": 0.0021,
+        "season": "migration"
+    },
+    {
+        "latitude": 46.5,
+        "longitude": -81.5,
+        "breeding_count": 1,
+        "wintering_count": 0,
+        "migration_count": 0,
+        "region_code": "CAN",
+        "density": 0.0021,
+        "season": "breeding"
+    },
+    {
+        "latitude": 44.5,
+        "longitude": -80.5,
+        "breeding_count": 59,
+        "wintering_count": 0,
+        "migration_count": 76,
+        "region_code": "CAN",
+        "density": 0.0021,
+        "season": "breeding"
+    },
+    {
+        "latitude": 45.5,
+        "longitude": -80.5,
+        "breeding_count": 17,
+        "wintering_count": 0,
+        "migration_count": 14,
+        "region_code": "CAN",
+        "density": 0.0021,
+        "season": "breeding"
+    },
+    {
+        "latitude": 43.5,
+        "longitude": -79.5,
+        "breeding_count": 75,
+        "wintering_count": 0,
+        "migration_count": 65,
+        "region_code": "CAN",
+        "density": 0.0021,
+        "season": "breeding"
+    },
+    {
+        "latitude": 44.5,
+        "longitude": -79.5,
+        "breeding_count": 10,
+        "wintering_count": 0,
+        "migration_count": 25,
+        "region_code": "CAN",
+        "density": 0.0021,
+        "season": "breeding"
+    },
+    {
+        "latitude": 43.5,
+        "longitude": -78.5,
+        "breeding_count": 173,
+        "wintering_count": 0,
+        "migration_count": 372,
+        "region_code": "NY",
+        "density": 0.2057,
+        "season": "breeding"
+    },
+    {
+        "latitude": 43.5,
+        "longitude": -77.5,
+        "breeding_count": 245,
+        "wintering_count": 0,
+        "migration_count": 282,
+        "region_code": "NY",
+        "density": 0.2057,
+        "season": "breeding"
+    },
+    {
+        "latitude": 44.5,
+        "longitude": -78.5,
+        "breeding_count": 116,
+        "wintering_count": 0,
+        "migration_count": 82,
+        "region_code": "CAN",
+        "density": 0.0021,
+        "season": "breeding"
+    },
+    {
+        "latitude": 44.5,
+        "longitude": -77.5,
+        "breeding_count": 98,
+        "wintering_count": 0,
+        "migration_count": 104,
+        "region_code": "CAN",
+        "density": 0.0021,
+        "season": "breeding"
+    },
+    {
+        "latitude": 42.5,
+        "longitude": -79.5,
+        "breeding_count": 114,
+        "wintering_count": 0,
+        "migration_count": 430,
+        "region_code": "PA",
+        "density": 0.4167,
+        "season": "breeding"
+    },
+    {
+        "latitude": 42.5,
+        "longitude": -80.5,
+        "breeding_count": 114,
+        "wintering_count": 0,
+        "migration_count": 631,
+        "region_code": "CAN",
+        "density": 0.0021,
+        "season": "breeding"
+    },
+    {
+        "latitude": 41.5,
+        "longitude": -81.5,
+        "breeding_count": 115,
+        "wintering_count": 0,
+        "migration_count": 1732,
+        "region_code": "OH",
+        "density": 0.4112,
+        "season": "breeding"
+    },
+    {
+        "latitude": 42.5,
+        "longitude": -82.5,
+        "breeding_count": 323,
+        "wintering_count": 0,
+        "migration_count": 621,
+        "region_code": "MI",
+        "density": 0.0751,
+        "season": "breeding"
+    },
+    {
+        "latitude": 42.5,
+        "longitude": -81.5,
+        "breeding_count": 44,
+        "wintering_count": 0,
+        "migration_count": 126,
+        "region_code": "MI",
+        "density": 0.0751,
+        "season": "breeding"
+    },
+    {
+        "latitude": 44.5,
+        "longitude": -75.5,
+        "breeding_count": 288,
+        "wintering_count": 0,
+        "migration_count": 338,
+        "region_code": "NY",
+        "density": 0.2057,
+        "season": "breeding"
+    },
+    {
+        "latitude": 44.5,
+        "longitude": -76.5,
+        "breeding_count": 94,
+        "wintering_count": 0,
+        "migration_count": 57,
+        "region_code": "CAN",
+        "density": 0.0021,
+        "season": "breeding"
+    },
+    {
+        "latitude": 45.5,
+        "longitude": -77.5,
+        "breeding_count": 102,
+        "wintering_count": 0,
+        "migration_count": 37,
+        "region_code": "CAN",
+        "density": 0.0021,
+        "season": "breeding"
+    },
+    {
+        "latitude": 42.5,
+        "longitude": -78.5,
+        "breeding_count": 79,
+        "wintering_count": 0,
+        "migration_count": 136,
+        "region_code": "PA",
+        "density": 0.4167,
+        "season": "breeding"
+    },
+    {
+        "latitude": 45.5,
+        "longitude": -76.5,
+        "breeding_count": 17,
+        "wintering_count": 0,
+        "migration_count": 29,
+        "region_code": "CAN",
+        "density": 0.0021,
+        "season": "breeding"
+    },
+    {
+        "latitude": 43.5,
+        "longitude": -80.5,
+        "breeding_count": 53,
+        "wintering_count": 0,
+        "migration_count": 104,
+        "region_code": "CAN",
+        "density": 0.0021,
+        "season": "breeding"
+    },
+    {
+        "latitude": 44.5,
+        "longitude": -74.5,
+        "breeding_count": 147,
+        "wintering_count": 0,
+        "migration_count": 144,
+        "region_code": "NY",
+        "density": 0.2057,
+        "season": "breeding"
+    },
+    {
+        "latitude": 45.5,
+        "longitude": -74.5,
+        "breeding_count": 271,
+        "wintering_count": 0,
+        "migration_count": 285,
+        "region_code": "CAN",
+        "density": 0.0021,
+        "season": "breeding"
+    },
+    {
+        "latitude": 43.5,
+        "longitude": -81.5,
+        "breeding_count": 39,
+        "wintering_count": 0,
+        "migration_count": 47,
+        "region_code": "MI",
+        "density": 0.0751,
+        "season": "breeding"
+    },
+    {
+        "latitude": 45.5,
+        "longitude": -75.5,
+        "breeding_count": 45,
+        "wintering_count": 0,
+        "migration_count": 48,
+        "region_code": "CAN",
+        "density": 0.0021,
+        "season": "breeding"
+    },
+    {
+        "latitude": 45.5,
+        "longitude": -81.5,
+        "breeding_count": 0,
+        "wintering_count": 0,
+        "migration_count": 4,
+        "region_code": "CAN",
+        "density": 0.0021,
+        "season": "migration"
+    },
+    {
+        "latitude": 46.5,
+        "longitude": -80.5,
+        "breeding_count": 4,
+        "wintering_count": 0,
+        "migration_count": 3,
+        "region_code": "CAN",
+        "density": 0.0021,
+        "season": "breeding"
+    },
+    {
+        "latitude": 45.5,
+        "longitude": -82.5,
+        "breeding_count": 1,
+        "wintering_count": 0,
+        "migration_count": 2,
+        "region_code": "MI",
+        "density": 0.0751,
+        "season": "breeding"
+    },
+    {
+        "latitude": 45.5,
+        "longitude": -78.5,
+        "breeding_count": 8,
+        "wintering_count": 0,
+        "migration_count": 32,
+        "region_code": "CAN",
+        "density": 0.0021,
+        "season": "breeding"
+    },
+    {
+        "latitude": 42.5,
+        "longitude": -77.5,
+        "breeding_count": 100,
+        "wintering_count": 0,
+        "migration_count": 205,
+        "region_code": "NY",
+        "density": 0.2057,
+        "season": "breeding"
+    },
+    {
+        "latitude": 46.5,
+        "longitude": -78.5,
+        "breeding_count": 6,
+        "wintering_count": 0,
+        "migration_count": 2,
+        "region_code": "CAN",
+        "density": 0.0021,
+        "season": "breeding"
+    },
+    {
+        "latitude": 46.5,
+        "longitude": -77.5,
+        "breeding_count": 4,
+        "wintering_count": 0,
+        "migration_count": 3,
+        "region_code": "CAN",
+        "density": 0.0021,
+        "season": "breeding"
+    },
+    {
+        "latitude": 43.5,
+        "longitude": -76.5,
+        "breeding_count": 212,
+        "wintering_count": 0,
+        "migration_count": 608,
+        "region_code": "NY",
+        "density": 0.2057,
+        "season": "breeding"
+    },
+    {
+        "latitude": 43.5,
+        "longitude": -75.5,
+        "breeding_count": 359,
+        "wintering_count": 0,
+        "migration_count": 571,
+        "region_code": "NY",
+        "density": 0.2057,
+        "season": "breeding"
+    },
+    {
+        "latitude": 45.5,
+        "longitude": -73.5,
+        "breeding_count": 155,
+        "wintering_count": 0,
+        "migration_count": 132,
+        "region_code": "CAN",
+        "density": 0.0021,
+        "season": "breeding"
+    },
+    {
+        "latitude": 45.5,
+        "longitude": -79.5,
+        "breeding_count": 2,
+        "wintering_count": 0,
+        "migration_count": 0,
+        "region_code": "CAN",
+        "density": 0.0021,
+        "season": "breeding"
+    },
+    {
+        "latitude": 48.5,
+        "longitude": -93.5,
+        "breeding_count": 6,
+        "wintering_count": 0,
+        "migration_count": 12,
+        "region_code": "MN",
+        "density": 0.024,
+        "season": "breeding"
+    },
+    {
+        "latitude": 48.5,
+        "longitude": -90.5,
+        "breeding_count": 1,
+        "wintering_count": 0,
+        "migration_count": 0,
+        "region_code": "CAN",
+        "density": 0.0021,
+        "season": "breeding"
+    },
+    {
+        "latitude": 44.5,
+        "longitude": -73.5,
+        "breeding_count": 70,
+        "wintering_count": 0,
+        "migration_count": 16,
+        "region_code": "NY",
+        "density": 0.2057,
+        "season": "breeding"
+    },
+    {
+        "latitude": 47.5,
+        "longitude": -78.5,
+        "breeding_count": 1,
+        "wintering_count": 0,
+        "migration_count": 0,
+        "region_code": "CAN",
+        "density": 0.0021,
+        "season": "breeding"
+    },
+    {
+        "latitude": 47.5,
+        "longitude": -79.5,
+        "breeding_count": 1,
+        "wintering_count": 0,
+        "migration_count": 0,
+        "region_code": "CAN",
+        "density": 0.0021,
+        "season": "breeding"
+    },
+    {
+        "latitude": 45.5,
+        "longitude": -71.5,
+        "breeding_count": 137,
+        "wintering_count": 0,
+        "migration_count": 192,
+        "region_code": "VT",
+        "density": 0.1403,
+        "season": "breeding"
+    },
+    {
+        "latitude": 46.5,
+        "longitude": -73.5,
+        "breeding_count": 10,
+        "wintering_count": 0,
+        "migration_count": 2,
+        "region_code": "CAN",
+        "density": 0.0021,
+        "season": "breeding"
+    },
+    {
+        "latitude": 46.5,
+        "longitude": -74.5,
+        "breeding_count": 14,
+        "wintering_count": 0,
+        "migration_count": 2,
+        "region_code": "CAN",
+        "density": 0.0021,
+        "season": "breeding"
+    },
+    {
+        "latitude": 45.5,
+        "longitude": -72.5,
+        "breeding_count": 172,
+        "wintering_count": 0,
+        "migration_count": 212,
+        "region_code": "VT",
+        "density": 0.1403,
+        "season": "breeding"
+    },
+    {
+        "latitude": 46.5,
+        "longitude": -70.5,
+        "breeding_count": 7,
+        "wintering_count": 0,
+        "migration_count": 18,
+        "region_code": "CAN",
+        "density": 0.0021,
+        "season": "breeding"
+    },
+    {
+        "latitude": 45.5,
+        "longitude": -70.5,
+        "breeding_count": 22,
+        "wintering_count": 0,
+        "migration_count": 10,
+        "region_code": "NH",
+        "density": 0.1138,
+        "season": "breeding"
+    },
+    {
+        "latitude": 46.5,
+        "longitude": -71.5,
+        "breeding_count": 17,
+        "wintering_count": 0,
+        "migration_count": 10,
+        "region_code": "CAN",
+        "density": 0.0021,
+        "season": "breeding"
+    },
+    {
+        "latitude": 46.5,
+        "longitude": -69.5,
+        "breeding_count": 8,
+        "wintering_count": 0,
+        "migration_count": 10,
+        "region_code": "CAN",
+        "density": 0.0021,
+        "season": "breeding"
+    },
+    {
+        "latitude": 46.5,
+        "longitude": -72.5,
+        "breeding_count": 8,
+        "wintering_count": 0,
+        "migration_count": 11,
+        "region_code": "CAN",
+        "density": 0.0021,
+        "season": "breeding"
+    },
+    {
+        "latitude": 45.5,
+        "longitude": -69.5,
+        "breeding_count": 13,
+        "wintering_count": 0,
+        "migration_count": 2,
+        "region_code": "ME",
+        "density": 0.0218,
+        "season": "breeding"
+    },
+    {
+        "latitude": 47.5,
+        "longitude": -69.5,
+        "breeding_count": 23,
+        "wintering_count": 0,
+        "migration_count": 36,
+        "region_code": "CAN",
+        "density": 0.0021,
+        "season": "breeding"
+    },
+    {
+        "latitude": 49.5,
+        "longitude": -64.5,
+        "breeding_count": 1,
+        "wintering_count": 0,
+        "migration_count": 0,
+        "region_code": "CAN",
+        "density": 0.0021,
+        "season": "breeding"
+    },
+    {
+        "latitude": 46.5,
+        "longitude": -76.5,
+        "breeding_count": 1,
+        "wintering_count": 0,
+        "migration_count": 0,
+        "region_code": "CAN",
+        "density": 0.0021,
+        "season": "breeding"
+    },
+    {
+        "latitude": 47.5,
+        "longitude": -67.5,
+        "breeding_count": 1,
+        "wintering_count": 0,
+        "migration_count": 9,
+        "region_code": "CAN",
+        "density": 0.0021,
+        "season": "breeding"
+    },
+    {
+        "latitude": 12.5,
+        "longitude": -80.5,
+        "breeding_count": 0,
+        "wintering_count": 0,
+        "migration_count": 2,
+        "region_code": "CO-SAP",
+        "density": 0,
+        "season": "migration"
+    },
+    {
+        "latitude": 10.5,
+        "longitude": -83.5,
+        "breeding_count": 0,
+        "wintering_count": 685,
+        "migration_count": 736,
+        "region_code": "NI-SJ",
+        "density": 0,
+        "season": "wintering"
+    },
+    {
+        "latitude": 9.5,
+        "longitude": -83.5,
+        "breeding_count": 0,
+        "wintering_count": 39,
+        "migration_count": 68,
+        "region_code": "CR-SJ",
+        "density": 0,
+        "season": "wintering"
+    },
+    {
+        "latitude": 10.5,
+        "longitude": -84.5,
+        "breeding_count": 0,
+        "wintering_count": 43,
+        "migration_count": 78,
+        "region_code": "CR-G",
+        "density": 0,
+        "season": "wintering"
+    },
+    {
+        "latitude": 9.5,
+        "longitude": -82.5,
+        "breeding_count": 0,
+        "wintering_count": 40,
+        "migration_count": 56,
+        "region_code": "CR-SJ",
+        "density": 0,
+        "season": "wintering"
+    },
+    {
+        "latitude": 10.5,
+        "longitude": -82.5,
+        "breeding_count": 0,
+        "wintering_count": 76,
+        "migration_count": 90,
+        "region_code": "CR-SJ",
+        "density": 0,
+        "season": "wintering"
+    },
+    {
+        "latitude": 9.5,
+        "longitude": -81.5,
+        "breeding_count": 0,
+        "wintering_count": 6,
+        "migration_count": 6,
+        "region_code": "CR-L",
+        "density": 0,
+        "season": "wintering"
+    },
+    {
+        "latitude": 8.5,
+        "longitude": -82.5,
+        "breeding_count": 0,
+        "wintering_count": 13,
+        "migration_count": 6,
+        "region_code": "CR-P",
+        "density": 0,
+        "season": "wintering"
+    },
+    {
+        "latitude": 8.5,
+        "longitude": -81.5,
+        "breeding_count": 0,
+        "wintering_count": 5,
+        "migration_count": 3,
+        "region_code": "PA-4",
+        "density": 0,
+        "season": "wintering"
+    },
+    {
+        "latitude": 9.5,
+        "longitude": -84.5,
+        "breeding_count": 0,
+        "wintering_count": 0,
+        "migration_count": 1,
+        "region_code": "CR-P",
+        "density": 0,
+        "season": "migration"
+    },
+    {
+        "latitude": 23.5,
+        "longitude": -80.5,
+        "breeding_count": 0,
+        "wintering_count": 0,
+        "migration_count": 1,
+        "region_code": "CU-04",
+        "density": 0,
+        "season": "migration"
+    },
+    {
+        "latitude": 22.5,
+        "longitude": -80.5,
+        "breeding_count": 0,
+        "wintering_count": 0,
+        "migration_count": 1,
+        "region_code": "CU-04",
+        "density": 0,
+        "season": "migration"
+    },
+    {
+        "latitude": 15.5,
+        "longitude": -89.5,
+        "breeding_count": 0,
+        "wintering_count": 136,
+        "migration_count": 171,
+        "region_code": "GTM",
+        "density": 0.0615,
+        "season": "wintering"
+    },
+    {
+        "latitude": 15.5,
+        "longitude": -88.5,
+        "breeding_count": 0,
+        "wintering_count": 11,
+        "migration_count": 9,
+        "region_code": "GTM",
+        "density": 0.0615,
+        "season": "wintering"
+    },
+    {
+        "latitude": 14.5,
+        "longitude": -89.5,
+        "breeding_count": 0,
+        "wintering_count": 2,
+        "migration_count": 9,
+        "region_code": "GTM",
+        "density": 0.0615,
+        "season": "wintering"
+    },
+    {
+        "latitude": 15.5,
+        "longitude": -90.5,
+        "breeding_count": 0,
+        "wintering_count": 1,
+        "migration_count": 2,
+        "region_code": "GTM",
+        "density": 0.0615,
+        "season": "wintering"
+    },
+    {
+        "latitude": 16.5,
+        "longitude": -90.5,
+        "breeding_count": 0,
+        "wintering_count": 46,
+        "migration_count": 54,
+        "region_code": "MEX-CS",
+        "density": 0.071,
+        "season": "wintering"
+    },
+    {
+        "latitude": 16.5,
+        "longitude": -89.5,
+        "breeding_count": 0,
+        "wintering_count": 77,
+        "migration_count": 61,
+        "region_code": "MEX-CS",
+        "density": 0.071,
+        "season": "wintering"
+    },
+    {
+        "latitude": 17.5,
+        "longitude": -89.5,
+        "breeding_count": 0,
+        "wintering_count": 51,
+        "migration_count": 55,
+        "region_code": "GTM",
+        "density": 0.0615,
+        "season": "wintering"
+    },
+    {
+        "latitude": 14.5,
+        "longitude": -90.5,
+        "breeding_count": 0,
+        "wintering_count": 10,
+        "migration_count": 4,
+        "region_code": "GTM",
+        "density": 0.0615,
+        "season": "wintering"
+    },
+    {
+        "latitude": 15.5,
+        "longitude": -86.5,
+        "breeding_count": 0,
+        "wintering_count": 11,
+        "migration_count": 75,
+        "region_code": "HN-YO",
+        "density": 0,
+        "season": "wintering"
+    },
+    {
+        "latitude": 15.5,
+        "longitude": -85.5,
+        "breeding_count": 0,
+        "wintering_count": 85,
+        "migration_count": 148,
+        "region_code": "HN-OL",
+        "density": 0,
+        "season": "wintering"
+    },
+    {
+        "latitude": 13.5,
+        "longitude": -86.5,
+        "breeding_count": 0,
+        "wintering_count": 4,
+        "migration_count": 2,
+        "region_code": "HN-FM",
+        "density": 0,
+        "season": "wintering"
+    },
+    {
+        "latitude": 15.5,
+        "longitude": -84.5,
+        "breeding_count": 0,
+        "wintering_count": 23,
+        "migration_count": 1,
+        "region_code": "HN-OL",
+        "density": 0,
+        "season": "wintering"
+    },
+    {
+        "latitude": 14.5,
+        "longitude": -86.5,
+        "breeding_count": 0,
+        "wintering_count": 24,
+        "migration_count": 98,
+        "region_code": "HN-LP",
+        "density": 0,
+        "season": "wintering"
+    },
+    {
+        "latitude": 14.5,
+        "longitude": -88.5,
+        "breeding_count": 0,
+        "wintering_count": 6,
+        "migration_count": 22,
+        "region_code": "SV-SA",
+        "density": 0,
+        "season": "wintering"
+    },
+    {
+        "latitude": 14.5,
+        "longitude": -87.5,
+        "breeding_count": 0,
+        "wintering_count": 19,
+        "migration_count": 46,
+        "region_code": "HN-SB",
+        "density": 0,
+        "season": "wintering"
+    },
+    {
+        "latitude": 14.5,
+        "longitude": -85.5,
+        "breeding_count": 0,
+        "wintering_count": 23,
+        "migration_count": 3,
+        "region_code": "HN-OL",
+        "density": 0,
+        "season": "wintering"
+    },
+    {
+        "latitude": 13.5,
+        "longitude": -85.5,
+        "breeding_count": 0,
+        "wintering_count": 95,
+        "migration_count": 77,
+        "region_code": "NI-NS",
+        "density": 0,
+        "season": "wintering"
+    },
+    {
+        "latitude": 14.5,
+        "longitude": -83.5,
+        "breeding_count": 0,
+        "wintering_count": 115,
+        "migration_count": 0,
+        "region_code": "HN-GD",
+        "density": 0,
+        "season": "wintering"
+    },
+    {
+        "latitude": 15.5,
+        "longitude": -83.5,
+        "breeding_count": 0,
+        "wintering_count": 0,
+        "migration_count": 38,
+        "region_code": "HN-GD",
+        "density": 0,
+        "season": "migration"
+    },
+    {
+        "latitude": 16.5,
+        "longitude": -84.5,
+        "breeding_count": 0,
+        "wintering_count": 29,
+        "migration_count": 35,
+        "region_code": "HN-IB",
+        "density": 0,
+        "season": "wintering"
+    },
+    {
+        "latitude": 16.5,
+        "longitude": -85.5,
+        "breeding_count": 0,
+        "wintering_count": 0,
+        "migration_count": 1,
+        "region_code": "HN-IB",
+        "density": 0,
+        "season": "migration"
+    },
+    {
+        "latitude": 14.5,
+        "longitude": -84.5,
+        "breeding_count": 0,
+        "wintering_count": 60,
+        "migration_count": 9,
+        "region_code": "HN-OL",
+        "density": 0,
+        "season": "wintering"
+    },
+    {
+        "latitude": 18.5,
+        "longitude": -88.5,
+        "breeding_count": 0,
+        "wintering_count": 111,
+        "migration_count": 47,
+        "region_code": "MEX-QR",
+        "density": 0.016,
+        "season": "wintering"
+    },
+    {
+        "latitude": 18.5,
+        "longitude": -90.5,
+        "breeding_count": 0,
+        "wintering_count": 1,
+        "migration_count": 0,
+        "region_code": "MEX-CM",
+        "density": 0.0432,
+        "season": "wintering"
+    },
+    {
+        "latitude": 18.5,
+        "longitude": -91.5,
+        "breeding_count": 0,
+        "wintering_count": 4,
+        "migration_count": 4,
+        "region_code": "MEX-TB",
+        "density": 0.0194,
+        "season": "wintering"
+    },
+    {
+        "latitude": 15.5,
+        "longitude": -91.5,
+        "breeding_count": 0,
+        "wintering_count": 18,
+        "migration_count": 18,
+        "region_code": "MEX-CS",
+        "density": 0.071,
+        "season": "wintering"
+    },
+    {
+        "latitude": 16.5,
+        "longitude": -92.5,
+        "breeding_count": 0,
+        "wintering_count": 14,
+        "migration_count": 14,
+        "region_code": "MEX-CS",
+        "density": 0.071,
+        "season": "wintering"
+    },
+    {
+        "latitude": 17.5,
+        "longitude": -91.5,
+        "breeding_count": 0,
+        "wintering_count": 28,
+        "migration_count": 80,
+        "region_code": "MEX-TB",
+        "density": 0.0194,
+        "season": "wintering"
+    },
+    {
+        "latitude": 17.5,
+        "longitude": -90.5,
+        "breeding_count": 0,
+        "wintering_count": 11,
+        "migration_count": 15,
+        "region_code": "MEX-TB",
+        "density": 0.0194,
+        "season": "wintering"
+    },
+    {
+        "latitude": 17.5,
+        "longitude": -92.5,
+        "breeding_count": 0,
+        "wintering_count": 6,
+        "migration_count": 8,
+        "region_code": "MEX-TB",
+        "density": 0.0194,
+        "season": "wintering"
+    },
+    {
+        "latitude": 16.5,
+        "longitude": -91.5,
+        "breeding_count": 0,
+        "wintering_count": 4,
+        "migration_count": 6,
+        "region_code": "MEX-CS",
+        "density": 0.071,
+        "season": "wintering"
+    },
+    {
+        "latitude": 17.5,
+        "longitude": -95.5,
+        "breeding_count": 0,
+        "wintering_count": 12,
+        "migration_count": 2,
+        "region_code": "MEX",
+        "density": 0.0058,
+        "season": "wintering"
+    },
+    {
+        "latitude": 16.5,
+        "longitude": -93.5,
+        "breeding_count": 0,
+        "wintering_count": 2,
+        "migration_count": 1,
+        "region_code": "MEX",
+        "density": 0.0058,
+        "season": "wintering"
+    },
+    {
+        "latitude": 19.5,
+        "longitude": -96.5,
+        "breeding_count": 0,
+        "wintering_count": 0,
+        "migration_count": 1,
+        "region_code": "MEX",
+        "density": 0.0058,
+        "season": "migration"
+    },
+    {
+        "latitude": 20.5,
+        "longitude": -86.5,
+        "breeding_count": 0,
+        "wintering_count": 106,
+        "migration_count": 61,
+        "region_code": "MEX-QR",
+        "density": 0.016,
+        "season": "wintering"
+    },
+    {
+        "latitude": 20.5,
+        "longitude": -85.5,
+        "breeding_count": 0,
+        "wintering_count": 15,
+        "migration_count": 18,
+        "region_code": "MEX-QR",
+        "density": 0.016,
+        "season": "wintering"
+    },
+    {
+        "latitude": 21.5,
+        "longitude": -85.5,
+        "breeding_count": 0,
+        "wintering_count": 0,
+        "migration_count": 4,
+        "region_code": "MEX-QR",
+        "density": 0.016,
+        "season": "migration"
+    },
+    {
+        "latitude": 19.5,
+        "longitude": -86.5,
+        "breeding_count": 0,
+        "wintering_count": 19,
+        "migration_count": 12,
+        "region_code": "MEX-QR",
+        "density": 0.016,
+        "season": "wintering"
+    },
+    {
+        "latitude": 19.5,
+        "longitude": -87.5,
+        "breeding_count": 0,
+        "wintering_count": 3,
+        "migration_count": 5,
+        "region_code": "MEX-QR",
+        "density": 0.016,
+        "season": "wintering"
+    },
+    {
+        "latitude": 19.5,
+        "longitude": -88.5,
+        "breeding_count": 0,
+        "wintering_count": 1,
+        "migration_count": 2,
+        "region_code": "MEX-QR",
+        "density": 0.016,
+        "season": "wintering"
+    },
+    {
+        "latitude": 21.5,
+        "longitude": -86.5,
+        "breeding_count": 0,
+        "wintering_count": 3,
+        "migration_count": 13,
+        "region_code": "MX-YUC",
+        "density": 0,
+        "season": "wintering"
+    },
+    {
+        "latitude": 21.5,
+        "longitude": -98.5,
+        "breeding_count": 0,
+        "wintering_count": 0,
+        "migration_count": 1,
+        "region_code": "MX-SLP",
+        "density": 0,
+        "season": "migration"
+    },
+    {
+        "latitude": 18.5,
+        "longitude": -93.5,
+        "breeding_count": 0,
+        "wintering_count": 16,
+        "migration_count": 23,
+        "region_code": "MX-VER",
+        "density": 0,
+        "season": "wintering"
+    },
+    {
+        "latitude": 19.5,
+        "longitude": -95.5,
+        "breeding_count": 0,
+        "wintering_count": 11,
+        "migration_count": 26,
+        "region_code": "MX-VER",
+        "density": 0,
+        "season": "wintering"
+    },
+    {
+        "latitude": 18.5,
+        "longitude": -94.5,
+        "breeding_count": 0,
+        "wintering_count": 21,
+        "migration_count": 28,
+        "region_code": "MX-VER",
+        "density": 0,
+        "season": "wintering"
+    },
+    {
+        "latitude": 18.5,
+        "longitude": -95.5,
+        "breeding_count": 0,
+        "wintering_count": 6,
+        "migration_count": 0,
+        "region_code": "MX-VER",
+        "density": 0,
+        "season": "wintering"
+    },
+    {
+        "latitude": 20.5,
+        "longitude": -96.5,
+        "breeding_count": 0,
+        "wintering_count": 0,
+        "migration_count": 1,
+        "region_code": "MX-VER",
+        "density": 0,
+        "season": "migration"
+    },
+    {
+        "latitude": 20.5,
+        "longitude": -88.5,
+        "breeding_count": 0,
+        "wintering_count": 0,
+        "migration_count": 5,
+        "region_code": "MX-YUC",
+        "density": 0,
+        "season": "migration"
+    },
+    {
+        "latitude": 21.5,
+        "longitude": -88.5,
+        "breeding_count": 0,
+        "wintering_count": 3,
+        "migration_count": 1,
+        "region_code": "MX-YUC",
+        "density": 0,
+        "season": "wintering"
+    },
+    {
+        "latitude": 21.5,
+        "longitude": -87.5,
+        "breeding_count": 0,
+        "wintering_count": 4,
+        "migration_count": 2,
+        "region_code": "MX-YUC",
+        "density": 0,
+        "season": "wintering"
+    },
+    {
+        "latitude": 20.5,
+        "longitude": -87.5,
+        "breeding_count": 0,
+        "wintering_count": 1,
+        "migration_count": 1,
+        "region_code": "MX-YUC",
+        "density": 0,
+        "season": "wintering"
+    },
+    {
+        "latitude": 13.5,
+        "longitude": -83.5,
+        "breeding_count": 0,
+        "wintering_count": 0,
+        "migration_count": 3,
+        "region_code": "NI-AN",
+        "density": 0,
+        "season": "migration"
+    },
+    {
+        "latitude": 13.5,
+        "longitude": -84.5,
+        "breeding_count": 0,
+        "wintering_count": 27,
+        "migration_count": 53,
+        "region_code": "NI-MT",
+        "density": 0,
+        "season": "wintering"
+    },
+    {
+        "latitude": 11.5,
+        "longitude": -83.5,
+        "breeding_count": 0,
+        "wintering_count": 3,
+        "migration_count": 1,
+        "region_code": "NI-SJ",
+        "density": 0,
+        "season": "wintering"
+    },
+    {
+        "latitude": 12.5,
+        "longitude": -84.5,
+        "breeding_count": 0,
+        "wintering_count": 25,
+        "migration_count": 12,
+        "region_code": "NI-MT",
+        "density": 0,
+        "season": "wintering"
+    },
+    {
+        "latitude": 12.5,
+        "longitude": -86.5,
+        "breeding_count": 0,
+        "wintering_count": 10,
+        "migration_count": 3,
+        "region_code": "NI-CI",
+        "density": 0,
+        "season": "wintering"
+    },
+    {
+        "latitude": 11.5,
+        "longitude": -84.5,
+        "breeding_count": 0,
+        "wintering_count": 15,
+        "migration_count": 4,
+        "region_code": "NI-SJ",
+        "density": 0,
+        "season": "wintering"
+    },
+    {
+        "latitude": 11.5,
+        "longitude": -85.5,
+        "breeding_count": 0,
+        "wintering_count": 6,
+        "migration_count": 7,
+        "region_code": "NI-MS",
+        "density": 0,
+        "season": "wintering"
+    },
+    {
+        "latitude": 12.5,
+        "longitude": -85.5,
+        "breeding_count": 0,
+        "wintering_count": 5,
+        "migration_count": 0,
+        "region_code": "NI-MN",
+        "density": 0,
+        "season": "wintering"
+    },
+    {
+        "latitude": 8.5,
+        "longitude": -79.5,
+        "breeding_count": 0,
+        "wintering_count": 2,
+        "migration_count": 24,
+        "region_code": "PA-8",
+        "density": 0,
+        "season": "wintering"
+    },
+    {
+        "latitude": 9.5,
+        "longitude": -78.5,
+        "breeding_count": 2,
+        "wintering_count": 1,
+        "migration_count": 10,
+        "region_code": "PA-3",
+        "density": 0,
+        "season": "wintering"
+    },
+    {
+        "latitude": 46.5,
+        "longitude": -55.5,
+        "breeding_count": 0,
+        "wintering_count": 0,
+        "migration_count": 2,
+        "region_code": "PM-",
+        "density": 0,
+        "season": "migration"
+    },
+    {
+        "latitude": 13.5,
+        "longitude": -87.5,
+        "breeding_count": 0,
+        "wintering_count": 5,
+        "migration_count": 0,
+        "region_code": "SV-CH",
+        "density": 0,
+        "season": "wintering"
+    },
+    {
+        "latitude": 13.5,
+        "longitude": -88.5,
+        "breeding_count": 0,
+        "wintering_count": 14,
+        "migration_count": 3,
+        "region_code": "SV-SA",
+        "density": 0,
+        "season": "wintering"
+    },
+    {
+        "latitude": 32.5,
+        "longitude": -85.5,
+        "breeding_count": 8,
+        "wintering_count": 0,
+        "migration_count": 23,
+        "region_code": "AL",
+        "density": 0.2172,
+        "season": "breeding"
+    },
+    {
+        "latitude": 30.5,
+        "longitude": -86.5,
+        "breeding_count": 6,
+        "wintering_count": 0,
+        "migration_count": 52,
+        "region_code": "FL",
+        "density": 0.0041,
+        "season": "breeding"
+    },
+    {
+        "latitude": 31.5,
+        "longitude": -86.5,
+        "breeding_count": 0,
+        "wintering_count": 0,
+        "migration_count": 10,
+        "region_code": "AL",
+        "density": 0.2172,
+        "season": "migration"
+    },
+    {
+        "latitude": 30.5,
+        "longitude": -87.5,
+        "breeding_count": 3,
+        "wintering_count": 0,
+        "migration_count": 95,
+        "region_code": "MS",
+        "density": 0.3411,
+        "season": "breeding"
+    },
+    {
+        "latitude": 31.5,
+        "longitude": -84.5,
+        "breeding_count": 9,
+        "wintering_count": 0,
+        "migration_count": 19,
+        "region_code": "GA",
+        "density": 0.1583,
+        "season": "breeding"
+    },
+    {
+        "latitude": 32.5,
+        "longitude": -84.5,
+        "breeding_count": 55,
+        "wintering_count": 0,
+        "migration_count": 84,
+        "region_code": "GA",
+        "density": 0.1583,
+        "season": "breeding"
+    },
+    {
+        "latitude": 33.5,
+        "longitude": -86.5,
+        "breeding_count": 9,
+        "wintering_count": 0,
+        "migration_count": 26,
+        "region_code": "AL",
+        "density": 0.2172,
+        "season": "breeding"
+    },
+    {
+        "latitude": 32.5,
+        "longitude": -86.5,
+        "breeding_count": 79,
+        "wintering_count": 0,
+        "migration_count": 25,
+        "region_code": "AL",
+        "density": 0.2172,
+        "season": "breeding"
+    },
+    {
+        "latitude": 33.5,
+        "longitude": -85.5,
+        "breeding_count": 31,
+        "wintering_count": 0,
+        "migration_count": 96,
+        "region_code": "AL",
+        "density": 0.2172,
+        "season": "breeding"
+    },
+    {
+        "latitude": 33.5,
+        "longitude": -84.5,
+        "breeding_count": 52,
+        "wintering_count": 0,
+        "migration_count": 41,
+        "region_code": "GA",
+        "density": 0.1583,
+        "season": "breeding"
+    },
+    {
+        "latitude": 34.5,
+        "longitude": -84.5,
+        "breeding_count": 43,
+        "wintering_count": 0,
+        "migration_count": 73,
+        "region_code": "TN",
+        "density": 0.2917,
+        "season": "breeding"
+    },
+    {
+        "latitude": 32.5,
+        "longitude": -87.5,
+        "breeding_count": 31,
+        "wintering_count": 0,
+        "migration_count": 8,
+        "region_code": "MS",
+        "density": 0.3411,
+        "season": "breeding"
+    },
+    {
+        "latitude": 31.5,
+        "longitude": -87.5,
+        "breeding_count": 5,
+        "wintering_count": 0,
+        "migration_count": 1,
+        "region_code": "AL",
+        "density": 0.2172,
+        "season": "breeding"
+    },
+    {
+        "latitude": 34.5,
+        "longitude": -86.5,
+        "breeding_count": 15,
+        "wintering_count": 0,
+        "migration_count": 42,
+        "region_code": "AL",
+        "density": 0.2172,
+        "season": "breeding"
+    },
+    {
+        "latitude": 31.5,
+        "longitude": -85.5,
+        "breeding_count": 5,
+        "wintering_count": 0,
+        "migration_count": 14,
+        "region_code": "AL",
+        "density": 0.2172,
+        "season": "breeding"
+    },
+    {
+        "latitude": 34.5,
+        "longitude": -85.5,
+        "breeding_count": 21,
+        "wintering_count": 0,
+        "migration_count": 100,
+        "region_code": "AL",
+        "density": 0.2172,
+        "season": "breeding"
+    },
+    {
+        "latitude": 34.5,
+        "longitude": -87.5,
+        "breeding_count": 11,
+        "wintering_count": 0,
+        "migration_count": 26,
+        "region_code": "MS",
+        "density": 0.3411,
+        "season": "breeding"
+    },
+    {
+        "latitude": 34.5,
+        "longitude": -90.5,
+        "breeding_count": 2,
+        "wintering_count": 0,
+        "migration_count": 0,
+        "region_code": "AR",
+        "density": 0.122,
+        "season": "breeding"
+    },
+    {
+        "latitude": 33.5,
+        "longitude": -91.5,
+        "breeding_count": 1,
+        "wintering_count": 0,
+        "migration_count": 4,
+        "region_code": "AR",
+        "density": 0.122,
+        "season": "breeding"
+    },
+    {
+        "latitude": 36.5,
+        "longitude": -91.5,
+        "breeding_count": 9,
+        "wintering_count": 0,
+        "migration_count": 8,
+        "region_code": "MO",
+        "density": 0.1211,
+        "season": "breeding"
+    },
+    {
+        "latitude": 36.5,
+        "longitude": -93.5,
+        "breeding_count": 18,
+        "wintering_count": 0,
+        "migration_count": 18,
+        "region_code": "OK",
+        "density": 0.0064,
+        "season": "breeding"
+    },
+    {
+        "latitude": 36.5,
+        "longitude": -92.5,
+        "breeding_count": 18,
+        "wintering_count": 0,
+        "migration_count": 72,
+        "region_code": "MO",
+        "density": 0.1211,
+        "season": "breeding"
+    },
+    {
+        "latitude": 33.5,
+        "longitude": -90.5,
+        "breeding_count": 6,
+        "wintering_count": 0,
+        "migration_count": 3,
+        "region_code": "AR",
+        "density": 0.122,
+        "season": "breeding"
+    },
+    {
+        "latitude": 35.5,
+        "longitude": -90.5,
+        "breeding_count": 3,
+        "wintering_count": 0,
+        "migration_count": 1,
+        "region_code": "AR",
+        "density": 0.122,
+        "season": "breeding"
+    },
+    {
+        "latitude": 33.5,
+        "longitude": -92.5,
+        "breeding_count": 4,
+        "wintering_count": 0,
+        "migration_count": 7,
+        "region_code": "AR",
+        "density": 0.122,
+        "season": "breeding"
+    },
+    {
+        "latitude": 35.5,
+        "longitude": -91.5,
+        "breeding_count": 9,
+        "wintering_count": 0,
+        "migration_count": 4,
+        "region_code": "AR",
+        "density": 0.122,
+        "season": "breeding"
+    },
+    {
+        "latitude": 35.5,
+        "longitude": -89.5,
+        "breeding_count": 12,
+        "wintering_count": 0,
+        "migration_count": 85,
+        "region_code": "TN",
+        "density": 0.2917,
+        "season": "breeding"
+    },
+    {
+        "latitude": 35.5,
+        "longitude": -93.5,
+        "breeding_count": 4,
+        "wintering_count": 0,
+        "migration_count": 11,
+        "region_code": "AR",
+        "density": 0.122,
+        "season": "breeding"
+    },
+    {
+        "latitude": 34.5,
+        "longitude": -91.5,
+        "breeding_count": 19,
+        "wintering_count": 0,
+        "migration_count": 51,
+        "region_code": "AR",
+        "density": 0.122,
+        "season": "breeding"
+    },
+    {
+        "latitude": 35.5,
+        "longitude": -92.5,
+        "breeding_count": 20,
+        "wintering_count": 0,
+        "migration_count": 61,
+        "region_code": "AR",
+        "density": 0.122,
+        "season": "breeding"
+    },
+    {
+        "latitude": 34.5,
+        "longitude": -92.5,
+        "breeding_count": 2,
+        "wintering_count": 0,
+        "migration_count": 6,
+        "region_code": "AR",
+        "density": 0.122,
+        "season": "breeding"
+    },
+    {
+        "latitude": 34.5,
+        "longitude": -93.5,
+        "breeding_count": 4,
+        "wintering_count": 0,
+        "migration_count": 6,
+        "region_code": "OK",
+        "density": 0.0064,
+        "season": "breeding"
+    },
+    {
+        "latitude": 34.5,
+        "longitude": -89.5,
+        "breeding_count": 13,
+        "wintering_count": 0,
+        "migration_count": 12,
+        "region_code": "MS",
+        "density": 0.3411,
+        "season": "breeding"
+    },
+    {
+        "latitude": 33.5,
+        "longitude": -93.5,
+        "breeding_count": 11,
+        "wintering_count": 0,
+        "migration_count": 21,
+        "region_code": "TX",
+        "density": 0.011,
+        "season": "breeding"
+    },
+    {
+        "latitude": 36.5,
+        "longitude": -90.5,
+        "breeding_count": 2,
+        "wintering_count": 0,
+        "migration_count": 10,
+        "region_code": "MO",
+        "density": 0.1211,
+        "season": "breeding"
+    },
+    {
+        "latitude": 32.5,
+        "longitude": -112.5,
+        "breeding_count": 0,
+        "wintering_count": 0,
+        "migration_count": 19,
+        "region_code": "AZ",
+        "density": 0,
+        "season": "migration"
+    },
+    {
+        "latitude": 33.5,
+        "longitude": -115.5,
+        "breeding_count": 40,
+        "wintering_count": 0,
+        "migration_count": 21,
+        "region_code": "CA",
+        "density": 0,
+        "season": "breeding"
+    },
+    {
+        "latitude": 37.5,
+        "longitude": -120.5,
+        "breeding_count": 8,
+        "wintering_count": 0,
+        "migration_count": 0,
+        "region_code": "CA",
+        "density": 0,
+        "season": "breeding"
+    },
+    {
+        "latitude": 38.5,
+        "longitude": -101.5,
+        "breeding_count": 0,
+        "wintering_count": 0,
+        "migration_count": 9,
+        "region_code": "CO",
+        "density": 0.0,
+        "season": "migration"
+    },
+    {
+        "latitude": 40.5,
+        "longitude": -104.5,
+        "breeding_count": 3,
+        "wintering_count": 0,
+        "migration_count": 0,
+        "region_code": "CO",
+        "density": 0.0,
+        "season": "breeding"
+    },
+    {
+        "latitude": 39.5,
+        "longitude": -102.5,
+        "breeding_count": 0,
+        "wintering_count": 0,
+        "migration_count": 7,
+        "region_code": "CO",
+        "density": 0.0,
+        "season": "migration"
+    },
+    {
+        "latitude": 41.5,
+        "longitude": -72.5,
+        "breeding_count": 1230,
+        "wintering_count": 0,
+        "migration_count": 1556,
+        "region_code": "NY",
+        "density": 0.2057,
+        "season": "breeding"
+    },
+    {
+        "latitude": 41.5,
+        "longitude": -71.5,
+        "breeding_count": 588,
+        "wintering_count": 0,
+        "migration_count": 1013,
+        "region_code": "NY",
+        "density": 0.2057,
+        "season": "breeding"
+    },
+    {
+        "latitude": 42.5,
+        "longitude": -71.5,
+        "breeding_count": 580,
+        "wintering_count": 0,
+        "migration_count": 834,
+        "region_code": "VT",
+        "density": 0.1403,
+        "season": "breeding"
+    },
+    {
+        "latitude": 42.5,
+        "longitude": -72.5,
+        "breeding_count": 497,
+        "wintering_count": 0,
+        "migration_count": 738,
+        "region_code": "VT",
+        "density": 0.1403,
+        "season": "breeding"
+    },
+    {
+        "latitude": 41.5,
+        "longitude": -70.5,
+        "breeding_count": 294,
+        "wintering_count": 0,
+        "migration_count": 412,
+        "region_code": "RI",
+        "density": 0.1582,
+        "season": "breeding"
+    },
+    {
+        "latitude": 42.5,
+        "longitude": -70.5,
+        "breeding_count": 560,
+        "wintering_count": 0,
+        "migration_count": 749,
+        "region_code": "RI",
+        "density": 0.1582,
+        "season": "breeding"
+    },
+    {
+        "latitude": 38.5,
+        "longitude": -75.5,
+        "breeding_count": 551,
+        "wintering_count": 0,
+        "migration_count": 775,
+        "region_code": "VA",
+        "density": 0.2848,
+        "season": "breeding"
+    },
+    {
+        "latitude": 38.5,
+        "longitude": -76.5,
+        "breeding_count": 550,
+        "wintering_count": 0,
+        "migration_count": 1443,
+        "region_code": "VA",
+        "density": 0.2848,
+        "season": "breeding"
+    },
+    {
+        "latitude": 39.5,
+        "longitude": -74.5,
+        "breeding_count": 1173,
+        "wintering_count": 0,
+        "migration_count": 1936,
+        "region_code": "PA",
+        "density": 0.4167,
+        "season": "breeding"
+    },
+    {
+        "latitude": 38.5,
+        "longitude": -74.5,
+        "breeding_count": 121,
+        "wintering_count": 0,
+        "migration_count": 303,
+        "region_code": "MD",
+        "density": 0.3002,
+        "season": "breeding"
+    },
+    {
+        "latitude": 29.5,
+        "longitude": -81.5,
+        "breeding_count": 0,
+        "wintering_count": 0,
+        "migration_count": 21,
+        "region_code": "FL",
+        "density": 0.0041,
+        "season": "migration"
+    },
+    {
+        "latitude": 30.5,
+        "longitude": -84.5,
+        "breeding_count": 2,
+        "wintering_count": 0,
+        "migration_count": 15,
+        "region_code": "FL",
+        "density": 0.0041,
+        "season": "breeding"
+    },
+    {
+        "latitude": 27.5,
+        "longitude": -79.5,
+        "breeding_count": 0,
+        "wintering_count": 0,
+        "migration_count": 2,
+        "region_code": "FL",
+        "density": 0.0041,
+        "season": "migration"
+    },
+    {
+        "latitude": 28.5,
+        "longitude": -79.5,
+        "breeding_count": 0,
+        "wintering_count": 0,
+        "migration_count": 3,
+        "region_code": "FL",
+        "density": 0.0041,
+        "season": "migration"
+    },
+    {
+        "latitude": 26.5,
+        "longitude": -79.5,
+        "breeding_count": 0,
+        "wintering_count": 0,
+        "migration_count": 24,
+        "region_code": "FL",
+        "density": 0.0041,
+        "season": "migration"
+    },
+    {
+        "latitude": 26.5,
+        "longitude": -80.5,
+        "breeding_count": 0,
+        "wintering_count": 0,
+        "migration_count": 21,
+        "region_code": "FL",
+        "density": 0.0041,
+        "season": "migration"
+    },
+    {
+        "latitude": 27.5,
+        "longitude": -81.5,
+        "breeding_count": 0,
+        "wintering_count": 0,
+        "migration_count": 145,
+        "region_code": "FL",
+        "density": 0.0041,
+        "season": "migration"
+    },
+    {
+        "latitude": 26.5,
+        "longitude": -81.5,
+        "breeding_count": 0,
+        "wintering_count": 0,
+        "migration_count": 12,
+        "region_code": "FL",
+        "density": 0.0041,
+        "season": "migration"
+    },
+    {
+        "latitude": 29.5,
+        "longitude": -80.5,
+        "breeding_count": 0,
+        "wintering_count": 0,
+        "migration_count": 5,
+        "region_code": "FL",
+        "density": 0.0041,
+        "season": "migration"
+    },
+    {
+        "latitude": 25.5,
+        "longitude": -80.5,
+        "breeding_count": 0,
+        "wintering_count": 0,
+        "migration_count": 2,
+        "region_code": "FL",
+        "density": 0.0041,
+        "season": "migration"
+    },
+    {
+        "latitude": 30.5,
+        "longitude": -81.5,
+        "breeding_count": 0,
+        "wintering_count": 0,
+        "migration_count": 1,
+        "region_code": "FL",
+        "density": 0.0041,
+        "season": "migration"
+    },
+    {
+        "latitude": 30.5,
+        "longitude": -80.5,
+        "breeding_count": 0,
+        "wintering_count": 0,
+        "migration_count": 6,
+        "region_code": "FL",
+        "density": 0.0041,
+        "season": "migration"
+    },
+    {
+        "latitude": 29.5,
+        "longitude": -83.5,
+        "breeding_count": 0,
+        "wintering_count": 0,
+        "migration_count": 8,
+        "region_code": "FL",
+        "density": 0.0041,
+        "season": "migration"
+    },
+    {
+        "latitude": 29.5,
+        "longitude": -84.5,
+        "breeding_count": 0,
+        "wintering_count": 0,
+        "migration_count": 1,
+        "region_code": "FL",
+        "density": 0.0041,
+        "season": "migration"
+    },
+    {
+        "latitude": 30.5,
+        "longitude": -83.5,
+        "breeding_count": 14,
+        "wintering_count": 0,
+        "migration_count": 70,
+        "region_code": "GA",
+        "density": 0.1583,
+        "season": "breeding"
+    },
+    {
+        "latitude": 28.5,
+        "longitude": -81.5,
+        "breeding_count": 0,
+        "wintering_count": 0,
+        "migration_count": 14,
+        "region_code": "FL",
+        "density": 0.0041,
+        "season": "migration"
+    },
+    {
+        "latitude": 28.5,
+        "longitude": -80.5,
+        "breeding_count": 0,
+        "wintering_count": 0,
+        "migration_count": 10,
+        "region_code": "FL",
+        "density": 0.0041,
+        "season": "migration"
+    },
+    {
+        "latitude": 25.5,
+        "longitude": -79.5,
+        "breeding_count": 0,
+        "wintering_count": 0,
+        "migration_count": 6,
+        "region_code": "FL",
+        "density": 0.0041,
+        "season": "migration"
+    },
+    {
+        "latitude": 24.5,
+        "longitude": -81.5,
+        "breeding_count": 0,
+        "wintering_count": 0,
+        "migration_count": 2,
+        "region_code": "FL",
+        "density": 0.0041,
+        "season": "migration"
+    },
+    {
+        "latitude": 24.5,
+        "longitude": -80.5,
+        "breeding_count": 0,
+        "wintering_count": 0,
+        "migration_count": 17,
+        "region_code": "FL",
+        "density": 0.0041,
+        "season": "migration"
+    },
+    {
+        "latitude": 24.5,
+        "longitude": -79.5,
+        "breeding_count": 0,
+        "wintering_count": 0,
+        "migration_count": 1,
+        "region_code": "FL",
+        "density": 0.0041,
+        "season": "migration"
+    },
+    {
+        "latitude": 30.5,
+        "longitude": -85.5,
+        "breeding_count": 2,
+        "wintering_count": 0,
+        "migration_count": 7,
+        "region_code": "FL",
+        "density": 0.0041,
+        "season": "breeding"
+    },
+    {
+        "latitude": 31.5,
+        "longitude": -81.5,
+        "breeding_count": 2,
+        "wintering_count": 0,
+        "migration_count": 4,
+        "region_code": "GA",
+        "density": 0.1583,
+        "season": "breeding"
+    },
+    {
+        "latitude": 31.5,
+        "longitude": -83.5,
+        "breeding_count": 1,
+        "wintering_count": 0,
+        "migration_count": 29,
+        "region_code": "GA",
+        "density": 0.1583,
+        "season": "breeding"
+    },
+    {
+        "latitude": 34.5,
+        "longitude": -82.5,
+        "breeding_count": 196,
+        "wintering_count": 0,
+        "migration_count": 358,
+        "region_code": "SC",
+        "density": 0.1024,
+        "season": "breeding"
+    },
+    {
+        "latitude": 33.5,
+        "longitude": -82.5,
+        "breeding_count": 82,
+        "wintering_count": 0,
+        "migration_count": 203,
+        "region_code": "GA",
+        "density": 0.1583,
+        "season": "breeding"
+    },
+    {
+        "latitude": 34.5,
+        "longitude": -83.5,
+        "breeding_count": 231,
+        "wintering_count": 0,
+        "migration_count": 337,
+        "region_code": "GA",
+        "density": 0.1583,
+        "season": "breeding"
+    },
+    {
+        "latitude": 31.5,
+        "longitude": -82.5,
+        "breeding_count": 30,
+        "wintering_count": 0,
+        "migration_count": 4,
+        "region_code": "GA",
+        "density": 0.1583,
+        "season": "breeding"
+    },
+    {
+        "latitude": 32.5,
+        "longitude": -82.5,
+        "breeding_count": 145,
+        "wintering_count": 0,
+        "migration_count": 170,
+        "region_code": "GA",
+        "density": 0.1583,
+        "season": "breeding"
+    },
+    {
+        "latitude": 30.5,
+        "longitude": -82.5,
+        "breeding_count": 2,
+        "wintering_count": 0,
+        "migration_count": 9,
+        "region_code": "GA",
+        "density": 0.1583,
+        "season": "breeding"
+    },
+    {
+        "latitude": 32.5,
+        "longitude": -80.5,
+        "breeding_count": 4,
+        "wintering_count": 0,
+        "migration_count": 15,
+        "region_code": "SC",
+        "density": 0.1024,
+        "season": "breeding"
+    },
+    {
+        "latitude": 33.5,
+        "longitude": -80.5,
+        "breeding_count": 13,
+        "wintering_count": 0,
+        "migration_count": 23,
+        "region_code": "SC",
+        "density": 0.1024,
+        "season": "breeding"
+    },
+    {
+        "latitude": 33.5,
+        "longitude": -81.5,
+        "breeding_count": 37,
+        "wintering_count": 0,
+        "migration_count": 13,
+        "region_code": "SC",
+        "density": 0.1024,
+        "season": "breeding"
+    },
+    {
+        "latitude": 32.5,
+        "longitude": -81.5,
+        "breeding_count": 6,
+        "wintering_count": 0,
+        "migration_count": 10,
+        "region_code": "GA",
+        "density": 0.1583,
+        "season": "breeding"
+    },
+    {
+        "latitude": 33.5,
+        "longitude": -83.5,
+        "breeding_count": 162,
+        "wintering_count": 0,
+        "migration_count": 631,
+        "region_code": "GA",
+        "density": 0.1583,
+        "season": "breeding"
+    },
+    {
+        "latitude": 31.5,
+        "longitude": -80.5,
+        "breeding_count": 2,
+        "wintering_count": 0,
+        "migration_count": 12,
+        "region_code": "GA",
+        "density": 0.1583,
+        "season": "breeding"
+    },
+    {
+        "latitude": 32.5,
+        "longitude": -79.5,
+        "breeding_count": 10,
+        "wintering_count": 0,
+        "migration_count": 14,
+        "region_code": "SC",
+        "density": 0.1024,
+        "season": "breeding"
+    },
+    {
+        "latitude": 34.5,
+        "longitude": -81.5,
+        "breeding_count": 34,
+        "wintering_count": 0,
+        "migration_count": 82,
+        "region_code": "SC",
+        "density": 0.1024,
+        "season": "breeding"
+    },
+    {
+        "latitude": 32.5,
+        "longitude": -83.5,
+        "breeding_count": 42,
+        "wintering_count": 0,
+        "migration_count": 60,
+        "region_code": "GA",
+        "density": 0.1583,
+        "season": "breeding"
+    },
+    {
+        "latitude": 43.5,
+        "longitude": -90.5,
+        "breeding_count": 97,
+        "wintering_count": 0,
+        "migration_count": 68,
+        "region_code": "WI",
+        "density": 0.0785,
+        "season": "breeding"
+    },
+    {
+        "latitude": 42.5,
+        "longitude": -91.5,
+        "breeding_count": 2,
+        "wintering_count": 0,
+        "migration_count": 19,
+        "region_code": "IA",
+        "density": 0.0286,
+        "season": "breeding"
+    },
+    {
+        "latitude": 41.5,
+        "longitude": -92.5,
+        "breeding_count": 8,
+        "wintering_count": 0,
+        "migration_count": 46,
+        "region_code": "IA",
+        "density": 0.0286,
+        "season": "breeding"
+    },
+    {
+        "latitude": 41.5,
+        "longitude": -90.5,
+        "breeding_count": 32,
+        "wintering_count": 0,
+        "migration_count": 82,
+        "region_code": "IA",
+        "density": 0.0286,
+        "season": "breeding"
+    },
+    {
+        "latitude": 43.5,
+        "longitude": -92.5,
+        "breeding_count": 3,
+        "wintering_count": 0,
+        "migration_count": 4,
+        "region_code": "IA",
+        "density": 0.0286,
+        "season": "breeding"
+    },
+    {
+        "latitude": 42.5,
+        "longitude": -94.5,
+        "breeding_count": 3,
+        "wintering_count": 0,
+        "migration_count": 1,
+        "region_code": "IA",
+        "density": 0.0286,
+        "season": "breeding"
+    },
+    {
+        "latitude": 42.5,
+        "longitude": -90.5,
+        "breeding_count": 45,
+        "wintering_count": 0,
+        "migration_count": 83,
+        "region_code": "WI",
+        "density": 0.0785,
+        "season": "breeding"
+    },
+    {
+        "latitude": 41.5,
+        "longitude": -89.5,
+        "breeding_count": 28,
+        "wintering_count": 0,
+        "migration_count": 40,
+        "region_code": "IL",
+        "density": 0.1075,
+        "season": "breeding"
+    },
+    {
+        "latitude": 41.5,
+        "longitude": -93.5,
+        "breeding_count": 5,
+        "wintering_count": 0,
+        "migration_count": 2,
+        "region_code": "IA",
+        "density": 0.0286,
+        "season": "breeding"
+    },
+    {
+        "latitude": 40.5,
+        "longitude": -92.5,
+        "breeding_count": 21,
+        "wintering_count": 0,
+        "migration_count": 11,
+        "region_code": "MO",
+        "density": 0.1211,
+        "season": "breeding"
+    },
+    {
+        "latitude": 40.5,
+        "longitude": -90.5,
+        "breeding_count": 9,
+        "wintering_count": 0,
+        "migration_count": 27,
+        "region_code": "MO",
+        "density": 0.1211,
+        "season": "breeding"
+    },
+    {
+        "latitude": 43.5,
+        "longitude": -94.5,
+        "breeding_count": 1,
+        "wintering_count": 0,
+        "migration_count": 9,
+        "region_code": "MN",
+        "density": 0.024,
+        "season": "breeding"
+    },
+    {
+        "latitude": 43.5,
+        "longitude": -93.5,
+        "breeding_count": 1,
+        "wintering_count": 0,
+        "migration_count": 3,
+        "region_code": "MN",
+        "density": 0.024,
+        "season": "breeding"
+    },
+    {
+        "latitude": 42.5,
+        "longitude": -89.5,
+        "breeding_count": 40,
+        "wintering_count": 0,
+        "migration_count": 85,
+        "region_code": "WI",
+        "density": 0.0785,
+        "season": "breeding"
+    },
+    {
+        "latitude": 40.5,
+        "longitude": -94.5,
+        "breeding_count": 11,
+        "wintering_count": 0,
+        "migration_count": 77,
+        "region_code": "NE",
+        "density": 0.0009,
+        "season": "breeding"
+    },
+    {
+        "latitude": 42.5,
+        "longitude": -92.5,
+        "breeding_count": 4,
+        "wintering_count": 0,
+        "migration_count": 12,
+        "region_code": "IA",
+        "density": 0.0286,
+        "season": "breeding"
+    },
+    {
+        "latitude": 41.5,
+        "longitude": -95.5,
+        "breeding_count": 7,
+        "wintering_count": 0,
+        "migration_count": 20,
+        "region_code": "NE",
+        "density": 0.0009,
+        "season": "breeding"
+    },
+    {
+        "latitude": 41.5,
+        "longitude": -94.5,
+        "breeding_count": 22,
+        "wintering_count": 0,
+        "migration_count": 55,
+        "region_code": "NE",
+        "density": 0.0009,
+        "season": "breeding"
+    },
+    {
+        "latitude": 41.5,
+        "longitude": -91.5,
+        "breeding_count": 0,
+        "wintering_count": 0,
+        "migration_count": 6,
+        "region_code": "IA",
+        "density": 0.0286,
+        "season": "migration"
+    },
+    {
+        "latitude": 43.5,
+        "longitude": -95.5,
+        "breeding_count": 12,
+        "wintering_count": 0,
+        "migration_count": 22,
+        "region_code": "SD",
+        "density": 0.0002,
+        "season": "breeding"
+    },
+    {
+        "latitude": 43.5,
+        "longitude": -91.5,
+        "breeding_count": 3,
+        "wintering_count": 0,
+        "migration_count": 5,
+        "region_code": "MN",
+        "density": 0.024,
+        "season": "breeding"
+    },
+    {
+        "latitude": 42.5,
+        "longitude": -95.5,
+        "breeding_count": 19,
+        "wintering_count": 0,
+        "migration_count": 13,
+        "region_code": "SD",
+        "density": 0.0002,
+        "season": "breeding"
+    },
+    {
+        "latitude": 42.5,
+        "longitude": -93.5,
+        "breeding_count": 2,
+        "wintering_count": 0,
+        "migration_count": 1,
+        "region_code": "IA",
+        "density": 0.0286,
+        "season": "breeding"
+    },
+    {
+        "latitude": 39.5,
+        "longitude": -90.5,
+        "breeding_count": 18,
+        "wintering_count": 0,
+        "migration_count": 58,
+        "region_code": "MO",
+        "density": 0.1211,
+        "season": "breeding"
+    },
+    {
+        "latitude": 39.5,
+        "longitude": -89.5,
+        "breeding_count": 10,
+        "wintering_count": 0,
+        "migration_count": 64,
+        "region_code": "MO",
+        "density": 0.1211,
+        "season": "breeding"
+    },
+    {
+        "latitude": 37.5,
+        "longitude": -88.5,
+        "breeding_count": 108,
+        "wintering_count": 0,
+        "migration_count": 253,
+        "region_code": "MO",
+        "density": 0.1211,
+        "season": "breeding"
+    },
+    {
+        "latitude": 42.5,
+        "longitude": -87.5,
+        "breeding_count": 214,
+        "wintering_count": 0,
+        "migration_count": 338,
+        "region_code": "WI",
+        "density": 0.0785,
+        "season": "breeding"
+    },
+    {
+        "latitude": 41.5,
+        "longitude": -88.5,
+        "breeding_count": 67,
+        "wintering_count": 0,
+        "migration_count": 67,
+        "region_code": "IL",
+        "density": 0.1075,
+        "season": "breeding"
+    },
+    {
+        "latitude": 40.5,
+        "longitude": -87.5,
+        "breeding_count": 19,
+        "wintering_count": 0,
+        "migration_count": 116,
+        "region_code": "IL",
+        "density": 0.1075,
+        "season": "breeding"
+    },
+    {
+        "latitude": 40.5,
+        "longitude": -86.5,
+        "breeding_count": 52,
+        "wintering_count": 0,
+        "migration_count": 44,
+        "region_code": "IN",
+        "density": 0.2377,
+        "season": "breeding"
+    },
+    {
+        "latitude": 39.5,
+        "longitude": -88.5,
+        "breeding_count": 34,
+        "wintering_count": 0,
+        "migration_count": 36,
+        "region_code": "IL",
+        "density": 0.1075,
+        "season": "breeding"
+    },
+    {
+        "latitude": 39.5,
+        "longitude": -86.5,
+        "breeding_count": 29,
+        "wintering_count": 0,
+        "migration_count": 79,
+        "region_code": "IN",
+        "density": 0.2377,
+        "season": "breeding"
+    },
+    {
+        "latitude": 38.5,
+        "longitude": -88.5,
+        "breeding_count": 17,
+        "wintering_count": 0,
+        "migration_count": 51,
+        "region_code": "IL",
+        "density": 0.1075,
+        "season": "breeding"
+    },
+    {
+        "latitude": 39.5,
+        "longitude": -87.5,
+        "breeding_count": 69,
+        "wintering_count": 0,
+        "migration_count": 82,
+        "region_code": "IL",
+        "density": 0.1075,
+        "season": "breeding"
+    },
+    {
+        "latitude": 41.5,
+        "longitude": -86.5,
+        "breeding_count": 193,
+        "wintering_count": 0,
+        "migration_count": 761,
+        "region_code": "IN",
+        "density": 0.2377,
+        "season": "breeding"
+    },
+    {
+        "latitude": 42.5,
+        "longitude": -86.5,
+        "breeding_count": 44,
+        "wintering_count": 0,
+        "migration_count": 209,
+        "region_code": "WI",
+        "density": 0.0785,
+        "season": "breeding"
+    },
+    {
+        "latitude": 41.5,
+        "longitude": -87.5,
+        "breeding_count": 135,
+        "wintering_count": 0,
+        "migration_count": 254,
+        "region_code": "IL",
+        "density": 0.1075,
+        "season": "breeding"
+    },
+    {
+        "latitude": 40.5,
+        "longitude": -88.5,
+        "breeding_count": 87,
+        "wintering_count": 0,
+        "migration_count": 82,
+        "region_code": "IL",
+        "density": 0.1075,
+        "season": "breeding"
+    },
+    {
+        "latitude": 38.5,
+        "longitude": -87.5,
+        "breeding_count": 1,
+        "wintering_count": 0,
+        "migration_count": 7,
+        "region_code": "IL",
+        "density": 0.1075,
+        "season": "breeding"
+    },
+    {
+        "latitude": 37.5,
+        "longitude": -87.5,
+        "breeding_count": 21,
+        "wintering_count": 0,
+        "migration_count": 51,
+        "region_code": "KY",
+        "density": 0.334,
+        "season": "breeding"
+    },
+    {
+        "latitude": 40.5,
+        "longitude": -89.5,
+        "breeding_count": 12,
+        "wintering_count": 0,
+        "migration_count": 29,
+        "region_code": "IL",
+        "density": 0.1075,
+        "season": "breeding"
+    },
+    {
+        "latitude": 38.5,
+        "longitude": -89.5,
+        "breeding_count": 117,
+        "wintering_count": 0,
+        "migration_count": 219,
+        "region_code": "MO",
+        "density": 0.1211,
+        "season": "breeding"
+    },
+    {
+        "latitude": 42.5,
+        "longitude": -88.5,
+        "breeding_count": 90,
+        "wintering_count": 0,
+        "migration_count": 110,
+        "region_code": "WI",
+        "density": 0.0785,
+        "season": "breeding"
+    },
+    {
+        "latitude": 38.5,
+        "longitude": -86.5,
+        "breeding_count": 58,
+        "wintering_count": 0,
+        "migration_count": 168,
+        "region_code": "IN",
+        "density": 0.2377,
+        "season": "breeding"
+    },
+    {
+        "latitude": 41.5,
+        "longitude": -84.5,
+        "breeding_count": 116,
+        "wintering_count": 0,
+        "migration_count": 140,
+        "region_code": "MI",
+        "density": 0.0751,
+        "season": "breeding"
+    },
+    {
+        "latitude": 41.5,
+        "longitude": -83.5,
+        "breeding_count": 84,
+        "wintering_count": 0,
+        "migration_count": 100,
+        "region_code": "OH",
+        "density": 0.4112,
+        "season": "breeding"
+    },
+    {
+        "latitude": 40.5,
+        "longitude": -84.5,
+        "breeding_count": 94,
+        "wintering_count": 0,
+        "migration_count": 88,
+        "region_code": "IN",
+        "density": 0.2377,
+        "season": "breeding"
+    },
+    {
+        "latitude": 39.5,
+        "longitude": -84.5,
+        "breeding_count": 67,
+        "wintering_count": 0,
+        "migration_count": 91,
+        "region_code": "IN",
+        "density": 0.2377,
+        "season": "breeding"
+    },
+    {
+        "latitude": 39.5,
+        "longitude": -85.5,
+        "breeding_count": 329,
+        "wintering_count": 0,
+        "migration_count": 689,
+        "region_code": "IN",
+        "density": 0.2377,
+        "season": "breeding"
+    },
+    {
+        "latitude": 40.5,
+        "longitude": -85.5,
+        "breeding_count": 44,
+        "wintering_count": 0,
+        "migration_count": 78,
+        "region_code": "IN",
+        "density": 0.2377,
+        "season": "breeding"
+    },
+    {
+        "latitude": 38.5,
+        "longitude": -84.5,
+        "breeding_count": 142,
+        "wintering_count": 0,
+        "migration_count": 252,
+        "region_code": "KY",
+        "density": 0.334,
+        "season": "breeding"
+    },
+    {
+        "latitude": 38.5,
+        "longitude": -85.5,
+        "breeding_count": 137,
+        "wintering_count": 0,
+        "migration_count": 192,
+        "region_code": "KY",
+        "density": 0.334,
+        "season": "breeding"
+    },
+    {
+        "latitude": 39.5,
+        "longitude": -83.5,
+        "breeding_count": 260,
+        "wintering_count": 0,
+        "migration_count": 610,
+        "region_code": "OH",
+        "density": 0.4112,
+        "season": "breeding"
+    },
+    {
+        "latitude": 41.5,
+        "longitude": -85.5,
+        "breeding_count": 158,
+        "wintering_count": 0,
+        "migration_count": 310,
+        "region_code": "MI",
+        "density": 0.0751,
+        "season": "breeding"
+    },
+    {
+        "latitude": 38.5,
+        "longitude": -83.5,
+        "breeding_count": 62,
+        "wintering_count": 0,
+        "migration_count": 124,
+        "region_code": "OH",
+        "density": 0.4112,
+        "season": "breeding"
+    },
+    {
+        "latitude": 37.5,
+        "longitude": -86.5,
+        "breeding_count": 42,
+        "wintering_count": 0,
+        "migration_count": 163,
+        "region_code": "KY",
+        "density": 0.334,
+        "season": "breeding"
+    },
+    {
+        "latitude": 39.5,
+        "longitude": -94.5,
+        "breeding_count": 7,
+        "wintering_count": 0,
+        "migration_count": 23,
+        "region_code": "KS",
+        "density": 0.0035,
+        "season": "breeding"
+    },
+    {
+        "latitude": 37.5,
+        "longitude": -94.5,
+        "breeding_count": 3,
+        "wintering_count": 0,
+        "migration_count": 9,
+        "region_code": "KS",
+        "density": 0.0035,
+        "season": "breeding"
+    },
+    {
+        "latitude": 37.5,
+        "longitude": -95.5,
+        "breeding_count": 1,
+        "wintering_count": 0,
+        "migration_count": 0,
+        "region_code": "KS",
+        "density": 0.0035,
+        "season": "breeding"
+    },
+    {
+        "latitude": 37.5,
+        "longitude": -93.5,
+        "breeding_count": 1,
+        "wintering_count": 0,
+        "migration_count": 2,
+        "region_code": "MO",
+        "density": 0.1211,
+        "season": "breeding"
+    },
+    {
+        "latitude": 37.5,
+        "longitude": -98.5,
+        "breeding_count": 0,
+        "wintering_count": 0,
+        "migration_count": 1,
+        "region_code": "KS",
+        "density": 0.0035,
+        "season": "migration"
+    },
+    {
+        "latitude": 37.5,
+        "longitude": -96.5,
+        "breeding_count": 2,
+        "wintering_count": 0,
+        "migration_count": 3,
+        "region_code": "KS",
+        "density": 0.0035,
+        "season": "breeding"
+    },
+    {
+        "latitude": 39.5,
+        "longitude": -93.5,
+        "breeding_count": 76,
+        "wintering_count": 0,
+        "migration_count": 163,
+        "region_code": "MO",
+        "density": 0.1211,
+        "season": "breeding"
+    },
+    {
+        "latitude": 38.5,
+        "longitude": -94.5,
+        "breeding_count": 8,
+        "wintering_count": 0,
+        "migration_count": 24,
+        "region_code": "KS",
+        "density": 0.0035,
+        "season": "breeding"
+    },
+    {
+        "latitude": 38.5,
+        "longitude": -97.5,
+        "breeding_count": 1,
+        "wintering_count": 0,
+        "migration_count": 2,
+        "region_code": "KS",
+        "density": 0.0035,
+        "season": "breeding"
+    },
+    {
+        "latitude": 39.5,
+        "longitude": -95.5,
+        "breeding_count": 11,
+        "wintering_count": 0,
+        "migration_count": 14,
+        "region_code": "KS",
+        "density": 0.0035,
+        "season": "breeding"
+    },
+    {
+        "latitude": 38.5,
+        "longitude": -93.5,
+        "breeding_count": 71,
+        "wintering_count": 0,
+        "migration_count": 90,
+        "region_code": "MO",
+        "density": 0.1211,
+        "season": "breeding"
+    },
+    {
+        "latitude": 38.5,
+        "longitude": -95.5,
+        "breeding_count": 1,
+        "wintering_count": 0,
+        "migration_count": 1,
+        "region_code": "KS",
+        "density": 0.0035,
+        "season": "breeding"
+    },
+    {
+        "latitude": 38.5,
+        "longitude": -96.5,
+        "breeding_count": 1,
+        "wintering_count": 0,
+        "migration_count": 0,
+        "region_code": "KS",
+        "density": 0.0035,
+        "season": "breeding"
+    },
+    {
+        "latitude": 37.5,
+        "longitude": -84.5,
+        "breeding_count": 20,
+        "wintering_count": 0,
+        "migration_count": 53,
+        "region_code": "KY",
+        "density": 0.334,
+        "season": "breeding"
+    },
+    {
+        "latitude": 36.5,
+        "longitude": -85.5,
+        "breeding_count": 72,
+        "wintering_count": 0,
+        "migration_count": 214,
+        "region_code": "TN",
+        "density": 0.2917,
+        "season": "breeding"
+    },
+    {
+        "latitude": 37.5,
+        "longitude": -83.5,
+        "breeding_count": 70,
+        "wintering_count": 0,
+        "migration_count": 114,
+        "region_code": "KY",
+        "density": 0.334,
+        "season": "breeding"
+    },
+    {
+        "latitude": 38.5,
+        "longitude": -82.5,
+        "breeding_count": 46,
+        "wintering_count": 0,
+        "migration_count": 119,
+        "region_code": "OH",
+        "density": 0.4112,
+        "season": "breeding"
+    },
+    {
+        "latitude": 36.5,
+        "longitude": -82.5,
+        "breeding_count": 39,
+        "wintering_count": 0,
+        "migration_count": 143,
+        "region_code": "VA",
+        "density": 0.2848,
+        "season": "breeding"
+    },
+    {
+        "latitude": 38.5,
+        "longitude": -81.5,
+        "breeding_count": 45,
+        "wintering_count": 0,
+        "migration_count": 97,
+        "region_code": "WV",
+        "density": 0.5317,
+        "season": "breeding"
+    },
+    {
+        "latitude": 37.5,
+        "longitude": -82.5,
+        "breeding_count": 19,
+        "wintering_count": 0,
+        "migration_count": 14,
+        "region_code": "KY",
+        "density": 0.334,
+        "season": "breeding"
+    },
+    {
+        "latitude": 36.5,
+        "longitude": -87.5,
+        "breeding_count": 21,
+        "wintering_count": 0,
+        "migration_count": 132,
+        "region_code": "TN",
+        "density": 0.2917,
+        "season": "breeding"
+    },
+    {
+        "latitude": 36.5,
+        "longitude": -88.5,
+        "breeding_count": 14,
+        "wintering_count": 0,
+        "migration_count": 18,
+        "region_code": "TN",
+        "density": 0.2917,
+        "season": "breeding"
+    },
+    {
+        "latitude": 36.5,
+        "longitude": -86.5,
+        "breeding_count": 38,
+        "wintering_count": 0,
+        "migration_count": 86,
+        "region_code": "TN",
+        "density": 0.2917,
+        "season": "breeding"
+    },
+    {
+        "latitude": 36.5,
+        "longitude": -84.5,
+        "breeding_count": 23,
+        "wintering_count": 0,
+        "migration_count": 72,
+        "region_code": "TN",
+        "density": 0.2917,
+        "season": "breeding"
+    },
+    {
+        "latitude": 37.5,
+        "longitude": -85.5,
+        "breeding_count": 27,
+        "wintering_count": 0,
+        "migration_count": 71,
+        "region_code": "KY",
+        "density": 0.334,
+        "season": "breeding"
+    },
+    {
+        "latitude": 37.5,
+        "longitude": -81.5,
+        "breeding_count": 70,
+        "wintering_count": 0,
+        "migration_count": 41,
+        "region_code": "WV",
+        "density": 0.5317,
+        "season": "breeding"
+    },
+    {
+        "latitude": 36.5,
+        "longitude": -83.5,
+        "breeding_count": 75,
+        "wintering_count": 0,
+        "migration_count": 171,
+        "region_code": "TN",
+        "density": 0.2917,
+        "season": "breeding"
+    },
+    {
+        "latitude": 30.5,
+        "longitude": -91.5,
+        "breeding_count": 4,
+        "wintering_count": 0,
+        "migration_count": 12,
+        "region_code": "LA",
+        "density": 0.1366,
+        "season": "breeding"
+    },
+    {
+        "latitude": 30.5,
+        "longitude": -90.5,
+        "breeding_count": 13,
+        "wintering_count": 0,
+        "migration_count": 59,
+        "region_code": "LA",
+        "density": 0.1366,
+        "season": "breeding"
+    },
+    {
+        "latitude": 32.5,
+        "longitude": -91.5,
+        "breeding_count": 2,
+        "wintering_count": 0,
+        "migration_count": 28,
+        "region_code": "LA",
+        "density": 0.1366,
+        "season": "breeding"
+    },
+    {
+        "latitude": 32.5,
+        "longitude": -92.5,
+        "breeding_count": 2,
+        "wintering_count": 0,
+        "migration_count": 6,
+        "region_code": "LA",
+        "density": 0.1366,
+        "season": "breeding"
+    },
+    {
+        "latitude": 30.5,
+        "longitude": -92.5,
+        "breeding_count": 2,
+        "wintering_count": 0,
+        "migration_count": 6,
+        "region_code": "TX",
+        "density": 0.011,
+        "season": "breeding"
+    },
+    {
+        "latitude": 32.5,
+        "longitude": -90.5,
+        "breeding_count": 1,
+        "wintering_count": 0,
+        "migration_count": 11,
+        "region_code": "MS",
+        "density": 0.3411,
+        "season": "breeding"
+    },
+    {
+        "latitude": 29.5,
+        "longitude": -92.5,
+        "breeding_count": 0,
+        "wintering_count": 2,
+        "migration_count": 377,
+        "region_code": "TX",
+        "density": 0.011,
+        "season": "wintering"
+    },
+    {
+        "latitude": 29.5,
+        "longitude": -91.5,
+        "breeding_count": 0,
+        "wintering_count": 0,
+        "migration_count": 6,
+        "region_code": "LA",
+        "density": 0.1366,
+        "season": "migration"
+    },
+    {
+        "latitude": 31.5,
+        "longitude": -90.5,
+        "breeding_count": 15,
+        "wintering_count": 0,
+        "migration_count": 12,
+        "region_code": "MS",
+        "density": 0.3411,
+        "season": "breeding"
+    },
+    {
+        "latitude": 30.5,
+        "longitude": -89.5,
+        "breeding_count": 55,
+        "wintering_count": 0,
+        "migration_count": 72,
+        "region_code": "LA",
+        "density": 0.1366,
+        "season": "breeding"
+    },
+    {
+        "latitude": 29.5,
+        "longitude": -88.5,
+        "breeding_count": 0,
+        "wintering_count": 0,
+        "migration_count": 101,
+        "region_code": "LA",
+        "density": 0.1366,
+        "season": "migration"
+    },
+    {
+        "latitude": 29.5,
+        "longitude": -89.5,
+        "breeding_count": 0,
+        "wintering_count": 0,
+        "migration_count": 15,
+        "region_code": "LA",
+        "density": 0.1366,
+        "season": "migration"
+    },
+    {
+        "latitude": 31.5,
+        "longitude": -91.5,
+        "breeding_count": 20,
+        "wintering_count": 0,
+        "migration_count": 36,
+        "region_code": "LA",
+        "density": 0.1366,
+        "season": "breeding"
+    },
+    {
+        "latitude": 31.5,
+        "longitude": -92.5,
+        "breeding_count": 5,
+        "wintering_count": 0,
+        "migration_count": 17,
+        "region_code": "TX",
+        "density": 0.011,
+        "season": "breeding"
+    },
+    {
+        "latitude": 30.5,
+        "longitude": -88.5,
+        "breeding_count": 4,
+        "wintering_count": 0,
+        "migration_count": 50,
+        "region_code": "MS",
+        "density": 0.3411,
+        "season": "breeding"
+    },
+    {
+        "latitude": 29.5,
+        "longitude": -90.5,
+        "breeding_count": 0,
+        "wintering_count": 0,
+        "migration_count": 2,
+        "region_code": "LA",
+        "density": 0.1366,
+        "season": "migration"
+    },
+    {
+        "latitude": 41.5,
+        "longitude": -69.5,
+        "breeding_count": 44,
+        "wintering_count": 0,
+        "migration_count": 84,
+        "region_code": "MA",
+        "density": 0.1751,
+        "season": "breeding"
+    },
+    {
+        "latitude": 42.5,
+        "longitude": -69.5,
+        "breeding_count": 86,
+        "wintering_count": 0,
+        "migration_count": 391,
+        "region_code": "NH",
+        "density": 0.1138,
+        "season": "breeding"
+    },
+    {
+        "latitude": 41.5,
+        "longitude": -68.5,
+        "breeding_count": 1,
+        "wintering_count": 1,
+        "migration_count": 1,
+        "region_code": "MA",
+        "density": 0.1751,
+        "season": "wintering"
+    },
+    {
+        "latitude": 39.5,
+        "longitude": -77.5,
+        "breeding_count": 215,
+        "wintering_count": 0,
+        "migration_count": 256,
+        "region_code": "WV",
+        "density": 0.5317,
+        "season": "breeding"
+    },
+    {
+        "latitude": 39.5,
+        "longitude": -75.5,
+        "breeding_count": 989,
+        "wintering_count": 0,
+        "migration_count": 1919,
+        "region_code": "PA",
+        "density": 0.4167,
+        "season": "breeding"
+    },
+    {
+        "latitude": 39.5,
+        "longitude": -76.5,
+        "breeding_count": 952,
+        "wintering_count": 0,
+        "migration_count": 1229,
+        "region_code": "WV",
+        "density": 0.5317,
+        "season": "breeding"
+    },
+    {
+        "latitude": 39.5,
+        "longitude": -78.5,
+        "breeding_count": 295,
+        "wintering_count": 0,
+        "migration_count": 347,
+        "region_code": "WV",
+        "density": 0.5317,
+        "season": "breeding"
+    },
+    {
+        "latitude": 37.5,
+        "longitude": -74.5,
+        "breeding_count": 4,
+        "wintering_count": 0,
+        "migration_count": 15,
+        "region_code": "VA",
+        "density": 0.2848,
+        "season": "breeding"
+    },
+    {
+        "latitude": 44.5,
+        "longitude": -69.5,
+        "breeding_count": 46,
+        "wintering_count": 0,
+        "migration_count": 9,
+        "region_code": "ME",
+        "density": 0.0218,
+        "season": "breeding"
+    },
+    {
+        "latitude": 43.5,
+        "longitude": -69.5,
+        "breeding_count": 202,
+        "wintering_count": 0,
+        "migration_count": 401,
+        "region_code": "NH",
+        "density": 0.1138,
+        "season": "breeding"
+    },
+    {
+        "latitude": 46.5,
+        "longitude": -67.5,
+        "breeding_count": 4,
+        "wintering_count": 0,
+        "migration_count": 0,
+        "region_code": "ME",
+        "density": 0.0218,
+        "season": "breeding"
+    },
+    {
+        "latitude": 43.5,
+        "longitude": -68.5,
+        "breeding_count": 17,
+        "wintering_count": 0,
+        "migration_count": 25,
+        "region_code": "ME",
+        "density": 0.0218,
+        "season": "breeding"
+    },
+    {
+        "latitude": 44.5,
+        "longitude": -67.5,
+        "breeding_count": 95,
+        "wintering_count": 0,
+        "migration_count": 26,
+        "region_code": "ME",
+        "density": 0.0218,
+        "season": "breeding"
+    },
+    {
+        "latitude": 44.5,
+        "longitude": -66.5,
+        "breeding_count": 27,
+        "wintering_count": 0,
+        "migration_count": 6,
+        "region_code": "ME",
+        "density": 0.0218,
+        "season": "breeding"
+    },
+    {
+        "latitude": 44.5,
+        "longitude": -68.5,
+        "breeding_count": 118,
+        "wintering_count": 0,
+        "migration_count": 51,
+        "region_code": "ME",
+        "density": 0.0218,
+        "season": "breeding"
+    },
+    {
+        "latitude": 43.5,
+        "longitude": -67.5,
+        "breeding_count": 0,
+        "wintering_count": 0,
+        "migration_count": 1,
+        "region_code": "ME",
+        "density": 0.0218,
+        "season": "migration"
+    },
+    {
+        "latitude": 45.5,
+        "longitude": -67.5,
+        "breeding_count": 10,
+        "wintering_count": 0,
+        "migration_count": 1,
+        "region_code": "ME",
+        "density": 0.0218,
+        "season": "breeding"
+    },
+    {
+        "latitude": 45.5,
+        "longitude": -68.5,
+        "breeding_count": 11,
+        "wintering_count": 0,
+        "migration_count": 0,
+        "region_code": "ME",
+        "density": 0.0218,
+        "season": "breeding"
+    },
+    {
+        "latitude": 46.5,
+        "longitude": -68.5,
+        "breeding_count": 1,
+        "wintering_count": 0,
+        "migration_count": 0,
+        "region_code": "ME",
+        "density": 0.0218,
+        "season": "breeding"
+    },
+    {
+        "latitude": 45.5,
+        "longitude": -66.5,
+        "breeding_count": 3,
+        "wintering_count": 0,
+        "migration_count": 0,
+        "region_code": "ME",
+        "density": 0.0218,
+        "season": "breeding"
+    },
+    {
+        "latitude": 44.5,
+        "longitude": -65.5,
+        "breeding_count": 4,
+        "wintering_count": 0,
+        "migration_count": 0,
+        "region_code": "ME",
+        "density": 0.0218,
+        "season": "breeding"
+    },
+    {
+        "latitude": 44.5,
+        "longitude": -82.5,
+        "breeding_count": 22,
+        "wintering_count": 0,
+        "migration_count": 89,
+        "region_code": "MI",
+        "density": 0.0751,
+        "season": "breeding"
+    },
+    {
+        "latitude": 46.5,
+        "longitude": -85.5,
+        "breeding_count": 10,
+        "wintering_count": 0,
+        "migration_count": 2,
+        "region_code": "MI",
+        "density": 0.0751,
+        "season": "breeding"
+    },
+    {
+        "latitude": 42.5,
+        "longitude": -84.5,
+        "breeding_count": 222,
+        "wintering_count": 0,
+        "migration_count": 412,
+        "region_code": "MI",
+        "density": 0.0751,
+        "season": "breeding"
+    },
+    {
+        "latitude": 42.5,
+        "longitude": -85.5,
+        "breeding_count": 40,
+        "wintering_count": 0,
+        "migration_count": 61,
+        "region_code": "MI",
+        "density": 0.0751,
+        "season": "breeding"
+    },
+    {
+        "latitude": 44.5,
+        "longitude": -84.5,
+        "breeding_count": 73,
+        "wintering_count": 0,
+        "migration_count": 52,
+        "region_code": "MI",
+        "density": 0.0751,
+        "season": "breeding"
+    },
+    {
+        "latitude": 45.5,
+        "longitude": -83.5,
+        "breeding_count": 25,
+        "wintering_count": 0,
+        "migration_count": 29,
+        "region_code": "MI",
+        "density": 0.0751,
+        "season": "breeding"
+    },
+    {
+        "latitude": 45.5,
+        "longitude": -84.5,
+        "breeding_count": 22,
+        "wintering_count": 0,
+        "migration_count": 5,
+        "region_code": "MI",
+        "density": 0.0751,
+        "season": "breeding"
+    },
+    {
+        "latitude": 43.5,
+        "longitude": -82.5,
+        "breeding_count": 60,
+        "wintering_count": 0,
+        "migration_count": 88,
+        "region_code": "MI",
+        "density": 0.0751,
+        "season": "breeding"
+    },
+    {
+        "latitude": 43.5,
+        "longitude": -83.5,
+        "breeding_count": 83,
+        "wintering_count": 0,
+        "migration_count": 78,
+        "region_code": "MI",
+        "density": 0.0751,
+        "season": "breeding"
+    },
+    {
+        "latitude": 44.5,
+        "longitude": -85.5,
+        "breeding_count": 21,
+        "wintering_count": 0,
+        "migration_count": 18,
+        "region_code": "MI",
+        "density": 0.0751,
+        "season": "breeding"
+    },
+    {
+        "latitude": 42.5,
+        "longitude": -83.5,
+        "breeding_count": 177,
+        "wintering_count": 0,
+        "migration_count": 339,
+        "region_code": "MI",
+        "density": 0.0751,
+        "season": "breeding"
+    },
+    {
+        "latitude": 46.5,
+        "longitude": -84.5,
+        "breeding_count": 15,
+        "wintering_count": 0,
+        "migration_count": 5,
+        "region_code": "MI",
+        "density": 0.0751,
+        "season": "breeding"
+    },
+    {
+        "latitude": 44.5,
+        "longitude": -83.5,
+        "breeding_count": 62,
+        "wintering_count": 0,
+        "migration_count": 41,
+        "region_code": "MI",
+        "density": 0.0751,
+        "season": "breeding"
+    },
+    {
+        "latitude": 45.5,
+        "longitude": -86.5,
+        "breeding_count": 44,
+        "wintering_count": 0,
+        "migration_count": 15,
+        "region_code": "WI",
+        "density": 0.0785,
+        "season": "breeding"
+    },
+    {
+        "latitude": 45.5,
+        "longitude": -85.5,
+        "breeding_count": 3,
+        "wintering_count": 0,
+        "migration_count": 0,
+        "region_code": "WI",
+        "density": 0.0785,
+        "season": "breeding"
+    },
+    {
+        "latitude": 46.5,
+        "longitude": -88.5,
+        "breeding_count": 6,
+        "wintering_count": 0,
+        "migration_count": 2,
+        "region_code": "WI",
+        "density": 0.0785,
+        "season": "breeding"
+    },
+    {
+        "latitude": 47.5,
+        "longitude": -87.5,
+        "breeding_count": 2,
+        "wintering_count": 0,
+        "migration_count": 0,
+        "region_code": "MI",
+        "density": 0.0751,
+        "season": "breeding"
+    },
+    {
+        "latitude": 44.5,
+        "longitude": -81.5,
+        "breeding_count": 0,
+        "wintering_count": 0,
+        "migration_count": 1,
+        "region_code": "MI",
+        "density": 0.0751,
+        "season": "migration"
+    },
+    {
+        "latitude": 43.5,
+        "longitude": -84.5,
+        "breeding_count": 25,
+        "wintering_count": 0,
+        "migration_count": 47,
+        "region_code": "MI",
+        "density": 0.0751,
+        "season": "breeding"
+    },
+    {
+        "latitude": 46.5,
+        "longitude": -87.5,
+        "breeding_count": 4,
+        "wintering_count": 0,
+        "migration_count": 0,
+        "region_code": "MI",
+        "density": 0.0751,
+        "season": "breeding"
+    },
+    {
+        "latitude": 47.5,
+        "longitude": -86.5,
+        "breeding_count": 1,
+        "wintering_count": 0,
+        "migration_count": 1,
+        "region_code": "MI",
+        "density": 0.0751,
+        "season": "breeding"
+    },
+    {
+        "latitude": 41.5,
+        "longitude": -82.5,
+        "breeding_count": 134,
+        "wintering_count": 0,
+        "migration_count": 1531,
+        "region_code": "OH",
+        "density": 0.4112,
+        "season": "breeding"
+    },
+    {
+        "latitude": 46.5,
+        "longitude": -86.5,
+        "breeding_count": 8,
+        "wintering_count": 0,
+        "migration_count": 2,
+        "region_code": "MI",
+        "density": 0.0751,
+        "season": "breeding"
+    },
+    {
+        "latitude": 43.5,
+        "longitude": -85.5,
+        "breeding_count": 54,
+        "wintering_count": 0,
+        "migration_count": 121,
+        "region_code": "MI",
+        "density": 0.0751,
+        "season": "breeding"
+    },
+    {
+        "latitude": 46.5,
+        "longitude": -92.5,
+        "breeding_count": 20,
+        "wintering_count": 0,
+        "migration_count": 13,
+        "region_code": "MN",
+        "density": 0.024,
+        "season": "breeding"
+    },
+    {
+        "latitude": 45.5,
+        "longitude": -92.5,
+        "breeding_count": 26,
+        "wintering_count": 0,
+        "migration_count": 30,
+        "region_code": "MN",
+        "density": 0.024,
+        "season": "breeding"
+    },
+    {
+        "latitude": 46.5,
+        "longitude": -94.5,
+        "breeding_count": 5,
+        "wintering_count": 0,
+        "migration_count": 0,
+        "region_code": "MN",
+        "density": 0.024,
+        "season": "breeding"
+    },
+    {
+        "latitude": 46.5,
+        "longitude": -95.5,
+        "breeding_count": 1,
+        "wintering_count": 0,
+        "migration_count": 3,
+        "region_code": "ND",
+        "density": 0,
+        "season": "breeding"
+    },
+    {
+        "latitude": 47.5,
+        "longitude": -93.5,
+        "breeding_count": 20,
+        "wintering_count": 0,
+        "migration_count": 7,
+        "region_code": "MN",
+        "density": 0.024,
+        "season": "breeding"
+    },
+    {
+        "latitude": 48.5,
+        "longitude": -94.5,
+        "breeding_count": 4,
+        "wintering_count": 0,
+        "migration_count": 0,
+        "region_code": "MN",
+        "density": 0.024,
+        "season": "breeding"
+    },
+    {
+        "latitude": 45.5,
+        "longitude": -93.5,
+        "breeding_count": 17,
+        "wintering_count": 0,
+        "migration_count": 12,
+        "region_code": "MN",
+        "density": 0.024,
+        "season": "breeding"
+    },
+    {
+        "latitude": 44.5,
+        "longitude": -93.5,
+        "breeding_count": 13,
+        "wintering_count": 0,
+        "migration_count": 5,
+        "region_code": "MN",
+        "density": 0.024,
+        "season": "breeding"
+    },
+    {
+        "latitude": 46.5,
+        "longitude": -91.5,
+        "breeding_count": 43,
+        "wintering_count": 0,
+        "migration_count": 13,
+        "region_code": "WI",
+        "density": 0.0785,
+        "season": "breeding"
+    },
+    {
+        "latitude": 44.5,
+        "longitude": -92.5,
+        "breeding_count": 98,
+        "wintering_count": 0,
+        "migration_count": 192,
+        "region_code": "MN",
+        "density": 0.024,
+        "season": "breeding"
+    },
+    {
+        "latitude": 46.5,
+        "longitude": -93.5,
+        "breeding_count": 18,
+        "wintering_count": 0,
+        "migration_count": 1,
+        "region_code": "MN",
+        "density": 0.024,
+        "season": "breeding"
+    },
+    {
+        "latitude": 44.5,
+        "longitude": -94.5,
+        "breeding_count": 3,
+        "wintering_count": 0,
+        "migration_count": 6,
+        "region_code": "MN",
+        "density": 0.024,
+        "season": "breeding"
+    },
+    {
+        "latitude": 45.5,
+        "longitude": -91.5,
+        "breeding_count": 118,
+        "wintering_count": 0,
+        "migration_count": 103,
+        "region_code": "WI",
+        "density": 0.0785,
+        "season": "breeding"
+    },
+    {
+        "latitude": 47.5,
+        "longitude": -94.5,
+        "breeding_count": 4,
+        "wintering_count": 0,
+        "migration_count": 3,
+        "region_code": "MN",
+        "density": 0.024,
+        "season": "breeding"
+    },
+    {
+        "latitude": 47.5,
+        "longitude": -89.5,
+        "breeding_count": 4,
+        "wintering_count": 0,
+        "migration_count": 5,
+        "region_code": "MN",
+        "density": 0.024,
+        "season": "breeding"
+    },
+    {
+        "latitude": 48.5,
+        "longitude": -89.5,
+        "breeding_count": 1,
+        "wintering_count": 0,
+        "migration_count": 0,
+        "region_code": "MN",
+        "density": 0.024,
+        "season": "breeding"
+    },
+    {
+        "latitude": 48.5,
+        "longitude": -88.5,
+        "breeding_count": 1,
+        "wintering_count": 0,
+        "migration_count": 0,
+        "region_code": "MN",
+        "density": 0.024,
+        "season": "breeding"
+    },
+    {
+        "latitude": 44.5,
+        "longitude": -91.5,
+        "breeding_count": 73,
+        "wintering_count": 0,
+        "migration_count": 43,
+        "region_code": "WI",
+        "density": 0.0785,
+        "season": "breeding"
+    },
+    {
+        "latitude": 45.5,
+        "longitude": -94.5,
+        "breeding_count": 4,
+        "wintering_count": 0,
+        "migration_count": 6,
+        "region_code": "MN",
+        "density": 0.024,
+        "season": "breeding"
+    },
+    {
+        "latitude": 47.5,
+        "longitude": -92.5,
+        "breeding_count": 3,
+        "wintering_count": 0,
+        "migration_count": 0,
+        "region_code": "MN",
+        "density": 0.024,
+        "season": "breeding"
+    },
+    {
+        "latitude": 47.5,
+        "longitude": -90.5,
+        "breeding_count": 7,
+        "wintering_count": 0,
+        "migration_count": 1,
+        "region_code": "MN",
+        "density": 0.024,
+        "season": "breeding"
+    },
+    {
+        "latitude": 44.5,
+        "longitude": -95.5,
+        "breeding_count": 0,
+        "wintering_count": 0,
+        "migration_count": 1,
+        "region_code": "MN",
+        "density": 0.024,
+        "season": "migration"
+    },
+    {
+        "latitude": 47.5,
+        "longitude": -91.5,
+        "breeding_count": 9,
+        "wintering_count": 0,
+        "migration_count": 18,
+        "region_code": "MN",
+        "density": 0.024,
+        "season": "breeding"
+    },
+    {
+        "latitude": 48.5,
+        "longitude": -91.5,
+        "breeding_count": 1,
+        "wintering_count": 0,
+        "migration_count": 0,
+        "region_code": "MN",
+        "density": 0.024,
+        "season": "breeding"
+    },
+    {
+        "latitude": 44.5,
+        "longitude": -90.5,
+        "breeding_count": 51,
+        "wintering_count": 0,
+        "migration_count": 14,
+        "region_code": "WI",
+        "density": 0.0785,
+        "season": "breeding"
+    },
+    {
+        "latitude": 40.5,
+        "longitude": -91.5,
+        "breeding_count": 5,
+        "wintering_count": 0,
+        "migration_count": 13,
+        "region_code": "MO",
+        "density": 0.1211,
+        "season": "breeding"
+    },
+    {
+        "latitude": 38.5,
+        "longitude": -92.5,
+        "breeding_count": 15,
+        "wintering_count": 0,
+        "migration_count": 22,
+        "region_code": "MO",
+        "density": 0.1211,
+        "season": "breeding"
+    },
+    {
+        "latitude": 37.5,
+        "longitude": -89.5,
+        "breeding_count": 18,
+        "wintering_count": 0,
+        "migration_count": 25,
+        "region_code": "MO",
+        "density": 0.1211,
+        "season": "breeding"
+    },
+    {
+        "latitude": 38.5,
+        "longitude": -91.5,
+        "breeding_count": 57,
+        "wintering_count": 0,
+        "migration_count": 138,
+        "region_code": "MO",
+        "density": 0.1211,
+        "season": "breeding"
+    },
+    {
+        "latitude": 39.5,
+        "longitude": -91.5,
+        "breeding_count": 17,
+        "wintering_count": 0,
+        "migration_count": 20,
+        "region_code": "MO",
+        "density": 0.1211,
+        "season": "breeding"
+    },
+    {
+        "latitude": 37.5,
+        "longitude": -91.5,
+        "breeding_count": 7,
+        "wintering_count": 0,
+        "migration_count": 10,
+        "region_code": "MO",
+        "density": 0.1211,
+        "season": "breeding"
+    },
+    {
+        "latitude": 37.5,
+        "longitude": -90.5,
+        "breeding_count": 69,
+        "wintering_count": 0,
+        "migration_count": 63,
+        "region_code": "MO",
+        "density": 0.1211,
+        "season": "breeding"
+    },
+    {
+        "latitude": 36.5,
+        "longitude": -89.5,
+        "breeding_count": 8,
+        "wintering_count": 0,
+        "migration_count": 18,
+        "region_code": "MO",
+        "density": 0.1211,
+        "season": "breeding"
+    },
+    {
+        "latitude": 37.5,
+        "longitude": -92.5,
+        "breeding_count": 0,
+        "wintering_count": 0,
+        "migration_count": 17,
+        "region_code": "MO",
+        "density": 0.1211,
+        "season": "migration"
+    },
+    {
+        "latitude": 39.5,
+        "longitude": -92.5,
+        "breeding_count": 10,
+        "wintering_count": 0,
+        "migration_count": 6,
+        "region_code": "MO",
+        "density": 0.1211,
+        "season": "breeding"
+    },
+    {
+        "latitude": 38.5,
+        "longitude": -90.5,
+        "breeding_count": 9,
+        "wintering_count": 0,
+        "migration_count": 9,
+        "region_code": "MO",
+        "density": 0.1211,
+        "season": "breeding"
+    },
+    {
+        "latitude": 40.5,
+        "longitude": -93.5,
+        "breeding_count": 2,
+        "wintering_count": 0,
+        "migration_count": 1,
+        "region_code": "MO",
+        "density": 0.1211,
+        "season": "breeding"
+    },
+    {
+        "latitude": 33.5,
+        "longitude": -88.5,
+        "breeding_count": 10,
+        "wintering_count": 0,
+        "migration_count": 9,
+        "region_code": "MS",
+        "density": 0.3411,
+        "season": "breeding"
+    },
+    {
+        "latitude": 33.5,
+        "longitude": -87.5,
+        "breeding_count": 17,
+        "wintering_count": 0,
+        "migration_count": 85,
+        "region_code": "MS",
+        "density": 0.3411,
+        "season": "breeding"
+    },
+    {
+        "latitude": 32.5,
+        "longitude": -89.5,
+        "breeding_count": 2,
+        "wintering_count": 0,
+        "migration_count": 37,
+        "region_code": "MS",
+        "density": 0.3411,
+        "season": "breeding"
+    },
+    {
+        "latitude": 31.5,
+        "longitude": -89.5,
+        "breeding_count": 3,
+        "wintering_count": 0,
+        "migration_count": 1,
+        "region_code": "MS",
+        "density": 0.3411,
+        "season": "breeding"
+    },
+    {
+        "latitude": 31.5,
+        "longitude": -88.5,
+        "breeding_count": 10,
+        "wintering_count": 0,
+        "migration_count": 25,
+        "region_code": "MS",
+        "density": 0.3411,
+        "season": "breeding"
+    },
+    {
+        "latitude": 34.5,
+        "longitude": -88.5,
+        "breeding_count": 33,
+        "wintering_count": 0,
+        "migration_count": 116,
+        "region_code": "MS",
+        "density": 0.3411,
+        "season": "breeding"
+    },
+    {
+        "latitude": 33.5,
+        "longitude": -89.5,
+        "breeding_count": 2,
+        "wintering_count": 0,
+        "migration_count": 1,
+        "region_code": "MS",
+        "density": 0.3411,
+        "season": "breeding"
+    },
+    {
+        "latitude": 32.5,
+        "longitude": -88.5,
+        "breeding_count": 7,
+        "wintering_count": 0,
+        "migration_count": 21,
+        "region_code": "MS",
+        "density": 0.3411,
+        "season": "breeding"
+    },
+    {
+        "latitude": 36.5,
+        "longitude": -78.5,
+        "breeding_count": 92,
+        "wintering_count": 0,
+        "migration_count": 158,
+        "region_code": "VA",
+        "density": 0.2848,
+        "season": "breeding"
+    },
+    {
+        "latitude": 35.5,
+        "longitude": -78.5,
+        "breeding_count": 121,
+        "wintering_count": 0,
+        "migration_count": 164,
+        "region_code": "NC",
+        "density": 0.1573,
+        "season": "breeding"
+    },
+    {
+        "latitude": 36.5,
+        "longitude": -80.5,
+        "breeding_count": 229,
+        "wintering_count": 0,
+        "migration_count": 326,
+        "region_code": "VA",
+        "density": 0.2848,
+        "season": "breeding"
+    },
+    {
+        "latitude": 36.5,
+        "longitude": -79.5,
+        "breeding_count": 239,
+        "wintering_count": 0,
+        "migration_count": 465,
+        "region_code": "VA",
+        "density": 0.2848,
+        "season": "breeding"
+    },
+    {
+        "latitude": 35.5,
+        "longitude": -79.5,
+        "breeding_count": 29,
+        "wintering_count": 0,
+        "migration_count": 180,
+        "region_code": "NC",
+        "density": 0.1573,
+        "season": "breeding"
+    },
+    {
+        "latitude": 35.5,
+        "longitude": -80.5,
+        "breeding_count": 38,
+        "wintering_count": 0,
+        "migration_count": 68,
+        "region_code": "SC",
+        "density": 0.1024,
+        "season": "breeding"
+    },
+    {
+        "latitude": 36.5,
+        "longitude": -81.5,
+        "breeding_count": 163,
+        "wintering_count": 0,
+        "migration_count": 170,
+        "region_code": "VA",
+        "density": 0.2848,
+        "season": "breeding"
+    },
+    {
+        "latitude": 35.5,
+        "longitude": -81.5,
+        "breeding_count": 322,
+        "wintering_count": 0,
+        "migration_count": 591,
+        "region_code": "TN",
+        "density": 0.2917,
+        "season": "breeding"
+    },
+    {
+        "latitude": 35.5,
+        "longitude": -76.5,
+        "breeding_count": 11,
+        "wintering_count": 0,
+        "migration_count": 28,
+        "region_code": "NC",
+        "density": 0.1573,
+        "season": "breeding"
+    },
+    {
+        "latitude": 35.5,
+        "longitude": -75.5,
+        "breeding_count": 18,
+        "wintering_count": 0,
+        "migration_count": 31,
+        "region_code": "NC",
+        "density": 0.1573,
+        "season": "breeding"
+    },
+    {
+        "latitude": 36.5,
+        "longitude": -75.5,
+        "breeding_count": 17,
+        "wintering_count": 0,
+        "migration_count": 79,
+        "region_code": "VA",
+        "density": 0.2848,
+        "season": "breeding"
+    },
+    {
+        "latitude": 34.5,
+        "longitude": -77.5,
+        "breeding_count": 2,
+        "wintering_count": 0,
+        "migration_count": 5,
+        "region_code": "NC",
+        "density": 0.1573,
+        "season": "breeding"
+    },
+    {
+        "latitude": 34.5,
+        "longitude": -75.5,
+        "breeding_count": 9,
+        "wintering_count": 0,
+        "migration_count": 6,
+        "region_code": "NC",
+        "density": 0.1573,
+        "season": "breeding"
+    },
+    {
+        "latitude": 34.5,
+        "longitude": -76.5,
+        "breeding_count": 11,
+        "wintering_count": 0,
+        "migration_count": 4,
+        "region_code": "NC",
+        "density": 0.1573,
+        "season": "breeding"
+    },
+    {
+        "latitude": 35.5,
+        "longitude": -77.5,
+        "breeding_count": 178,
+        "wintering_count": 0,
+        "migration_count": 394,
+        "region_code": "NC",
+        "density": 0.1573,
+        "season": "breeding"
+    },
+    {
+        "latitude": 35.5,
+        "longitude": -82.5,
+        "breeding_count": 177,
+        "wintering_count": 0,
+        "migration_count": 315,
+        "region_code": "TN",
+        "density": 0.2917,
+        "season": "breeding"
+    },
+    {
+        "latitude": 35.5,
+        "longitude": -83.5,
+        "breeding_count": 64,
+        "wintering_count": 0,
+        "migration_count": 201,
+        "region_code": "TN",
+        "density": 0.2917,
+        "season": "breeding"
+    },
+    {
+        "latitude": 35.5,
+        "longitude": -74.5,
+        "breeding_count": 2,
+        "wintering_count": 0,
+        "migration_count": 2,
+        "region_code": "NC",
+        "density": 0.1573,
+        "season": "breeding"
+    },
+    {
+        "latitude": 36.5,
+        "longitude": -77.5,
+        "breeding_count": 117,
+        "wintering_count": 0,
+        "migration_count": 141,
+        "region_code": "VA",
+        "density": 0.2848,
+        "season": "breeding"
+    },
+    {
+        "latitude": 36.5,
+        "longitude": -76.5,
+        "breeding_count": 24,
+        "wintering_count": 0,
+        "migration_count": 39,
+        "region_code": "VA",
+        "density": 0.2848,
+        "season": "breeding"
+    },
+    {
+        "latitude": 34.5,
+        "longitude": -78.5,
+        "breeding_count": 6,
+        "wintering_count": 0,
+        "migration_count": 9,
+        "region_code": "SC",
+        "density": 0.1024,
+        "season": "breeding"
+    },
+    {
+        "latitude": 34.5,
+        "longitude": -79.5,
+        "breeding_count": 63,
+        "wintering_count": 0,
+        "migration_count": 52,
+        "region_code": "SC",
+        "density": 0.1024,
+        "season": "breeding"
+    },
+    {
+        "latitude": 40.5,
+        "longitude": -95.5,
+        "breeding_count": 3,
+        "wintering_count": 0,
+        "migration_count": 9,
+        "region_code": "NE",
+        "density": 0.0009,
+        "season": "breeding"
+    },
+    {
+        "latitude": 41.5,
+        "longitude": -96.5,
+        "breeding_count": 0,
+        "wintering_count": 0,
+        "migration_count": 4,
+        "region_code": "NE",
+        "density": 0.0009,
+        "season": "migration"
+    },
+    {
+        "latitude": 43.5,
+        "longitude": -70.5,
+        "breeding_count": 153,
+        "wintering_count": 0,
+        "migration_count": 111,
+        "region_code": "NH",
+        "density": 0.1138,
+        "season": "breeding"
+    },
+    {
+        "latitude": 44.5,
+        "longitude": -70.5,
+        "breeding_count": 108,
+        "wintering_count": 0,
+        "migration_count": 96,
+        "region_code": "VT",
+        "density": 0.1403,
+        "season": "breeding"
+    },
+    {
+        "latitude": 43.5,
+        "longitude": -71.5,
+        "breeding_count": 206,
+        "wintering_count": 0,
+        "migration_count": 176,
+        "region_code": "VT",
+        "density": 0.1403,
+        "season": "breeding"
+    },
+    {
+        "latitude": 39.5,
+        "longitude": -73.5,
+        "breeding_count": 240,
+        "wintering_count": 0,
+        "migration_count": 697,
+        "region_code": "NJ",
+        "density": 0.3199,
+        "season": "breeding"
+    },
+    {
+        "latitude": 40.5,
+        "longitude": -73.5,
+        "breeding_count": 1040,
+        "wintering_count": 0,
+        "migration_count": 2069,
+        "region_code": "PA",
+        "density": 0.4167,
+        "season": "breeding"
+    },
+    {
+        "latitude": 41.5,
+        "longitude": -73.5,
+        "breeding_count": 681,
+        "wintering_count": 0,
+        "migration_count": 1032,
+        "region_code": "PA",
+        "density": 0.4167,
+        "season": "breeding"
+    },
+    {
+        "latitude": 40.5,
+        "longitude": -72.5,
+        "breeding_count": 223,
+        "wintering_count": 0,
+        "migration_count": 1548,
+        "region_code": "NY",
+        "density": 0.2057,
+        "season": "breeding"
+    },
+    {
+        "latitude": 40.5,
+        "longitude": -74.5,
+        "breeding_count": 1402,
+        "wintering_count": 0,
+        "migration_count": 2243,
+        "region_code": "PA",
+        "density": 0.4167,
+        "season": "breeding"
+    },
+    {
+        "latitude": 38.5,
+        "longitude": -73.5,
+        "breeding_count": 6,
+        "wintering_count": 0,
+        "migration_count": 62,
+        "region_code": "NJ",
+        "density": 0.3199,
+        "season": "breeding"
+    },
+    {
+        "latitude": 41.5,
+        "longitude": -74.5,
+        "breeding_count": 299,
+        "wintering_count": 0,
+        "migration_count": 371,
+        "region_code": "PA",
+        "density": 0.4167,
+        "season": "breeding"
+    },
+    {
+        "latitude": 34.5,
+        "longitude": -102.5,
+        "breeding_count": 0,
+        "wintering_count": 0,
+        "migration_count": 1,
+        "region_code": "NM",
+        "density": 0,
+        "season": "migration"
+    },
+    {
+        "latitude": 42.5,
+        "longitude": -73.5,
+        "breeding_count": 130,
+        "wintering_count": 0,
+        "migration_count": 112,
+        "region_code": "NY",
+        "density": 0.2057,
+        "season": "breeding"
+    },
+    {
+        "latitude": 42.5,
+        "longitude": -76.5,
+        "breeding_count": 181,
+        "wintering_count": 0,
+        "migration_count": 173,
+        "region_code": "NY",
+        "density": 0.2057,
+        "season": "breeding"
+    },
+    {
+        "latitude": 42.5,
+        "longitude": -74.5,
+        "breeding_count": 207,
+        "wintering_count": 0,
+        "migration_count": 149,
+        "region_code": "NY",
+        "density": 0.2057,
+        "season": "breeding"
+    },
+    {
+        "latitude": 42.5,
+        "longitude": -75.5,
+        "breeding_count": 1284,
+        "wintering_count": 0,
+        "migration_count": 1426,
+        "region_code": "NY",
+        "density": 0.2057,
+        "season": "breeding"
+    },
+    {
+        "latitude": 44.5,
+        "longitude": -72.5,
+        "breeding_count": 362,
+        "wintering_count": 0,
+        "migration_count": 413,
+        "region_code": "VT",
+        "density": 0.1403,
+        "season": "breeding"
+    },
+    {
+        "latitude": 43.5,
+        "longitude": -72.5,
+        "breeding_count": 282,
+        "wintering_count": 0,
+        "migration_count": 289,
+        "region_code": "VT",
+        "density": 0.1403,
+        "season": "breeding"
+    },
+    {
+        "latitude": 43.5,
+        "longitude": -73.5,
+        "breeding_count": 46,
+        "wintering_count": 0,
+        "migration_count": 19,
+        "region_code": "NY",
+        "density": 0.2057,
+        "season": "breeding"
+    },
+    {
+        "latitude": 43.5,
+        "longitude": -74.5,
+        "breeding_count": 134,
+        "wintering_count": 0,
+        "migration_count": 139,
+        "region_code": "NY",
+        "density": 0.2057,
+        "season": "breeding"
+    },
+    {
+        "latitude": 40.5,
+        "longitude": -71.5,
+        "breeding_count": 8,
+        "wintering_count": 0,
+        "migration_count": 31,
+        "region_code": "NY",
+        "density": 0.2057,
+        "season": "breeding"
+    },
+    {
+        "latitude": 39.5,
+        "longitude": -82.5,
+        "breeding_count": 185,
+        "wintering_count": 0,
+        "migration_count": 258,
+        "region_code": "OH",
+        "density": 0.4112,
+        "season": "breeding"
+    },
+    {
+        "latitude": 40.5,
+        "longitude": -83.5,
+        "breeding_count": 32,
+        "wintering_count": 0,
+        "migration_count": 71,
+        "region_code": "OH",
+        "density": 0.4112,
+        "season": "breeding"
+    },
+    {
+        "latitude": 40.5,
+        "longitude": -82.5,
+        "breeding_count": 148,
+        "wintering_count": 0,
+        "migration_count": 340,
+        "region_code": "OH",
+        "density": 0.4112,
+        "season": "breeding"
+    },
+    {
+        "latitude": 40.5,
+        "longitude": -81.5,
+        "breeding_count": 248,
+        "wintering_count": 0,
+        "migration_count": 438,
+        "region_code": "OH",
+        "density": 0.4112,
+        "season": "breeding"
+    },
+    {
+        "latitude": 41.5,
+        "longitude": -79.5,
+        "breeding_count": 196,
+        "wintering_count": 0,
+        "migration_count": 252,
+        "region_code": "PA",
+        "density": 0.4167,
+        "season": "breeding"
+    },
+    {
+        "latitude": 39.5,
+        "longitude": -80.5,
+        "breeding_count": 127,
+        "wintering_count": 0,
+        "migration_count": 102,
+        "region_code": "WV",
+        "density": 0.5317,
+        "season": "breeding"
+    },
+    {
+        "latitude": 39.5,
+        "longitude": -81.5,
+        "breeding_count": 310,
+        "wintering_count": 0,
+        "migration_count": 519,
+        "region_code": "OH",
+        "density": 0.4112,
+        "season": "breeding"
+    },
+    {
+        "latitude": 40.5,
+        "longitude": -79.5,
+        "breeding_count": 287,
+        "wintering_count": 0,
+        "migration_count": 604,
+        "region_code": "WV",
+        "density": 0.5317,
+        "season": "breeding"
+    },
+    {
+        "latitude": 39.5,
+        "longitude": -79.5,
+        "breeding_count": 125,
+        "wintering_count": 0,
+        "migration_count": 205,
+        "region_code": "WV",
+        "density": 0.5317,
+        "season": "breeding"
+    },
+    {
+        "latitude": 40.5,
+        "longitude": -80.5,
+        "breeding_count": 209,
+        "wintering_count": 0,
+        "migration_count": 338,
+        "region_code": "OH",
+        "density": 0.4112,
+        "season": "breeding"
+    },
+    {
+        "latitude": 41.5,
+        "longitude": -80.5,
+        "breeding_count": 459,
+        "wintering_count": 0,
+        "migration_count": 1071,
+        "region_code": "OH",
+        "density": 0.4112,
+        "season": "breeding"
+    },
+    {
+        "latitude": 35.5,
+        "longitude": -97.5,
+        "breeding_count": 1,
+        "wintering_count": 0,
+        "migration_count": 0,
+        "region_code": "OK",
+        "density": 0.0064,
+        "season": "breeding"
+    },
+    {
+        "latitude": 35.5,
+        "longitude": -94.5,
+        "breeding_count": 0,
+        "wintering_count": 0,
+        "migration_count": 4,
+        "region_code": "OK",
+        "density": 0.0064,
+        "season": "migration"
+    },
+    {
+        "latitude": 35.5,
+        "longitude": -96.5,
+        "breeding_count": 2,
+        "wintering_count": 0,
+        "migration_count": 13,
+        "region_code": "OK",
+        "density": 0.0064,
+        "season": "breeding"
+    },
+    {
+        "latitude": 36.5,
+        "longitude": -95.5,
+        "breeding_count": 1,
+        "wintering_count": 0,
+        "migration_count": 4,
+        "region_code": "OK",
+        "density": 0.0064,
+        "season": "breeding"
+    },
+    {
+        "latitude": 35.5,
+        "longitude": -95.5,
+        "breeding_count": 0,
+        "wintering_count": 0,
+        "migration_count": 1,
+        "region_code": "OK",
+        "density": 0.0064,
+        "season": "migration"
+    },
+    {
+        "latitude": 36.5,
+        "longitude": -94.5,
+        "breeding_count": 2,
+        "wintering_count": 0,
+        "migration_count": 4,
+        "region_code": "OK",
+        "density": 0.0064,
+        "season": "breeding"
+    },
+    {
+        "latitude": 40.5,
+        "longitude": -76.5,
+        "breeding_count": 401,
+        "wintering_count": 0,
+        "migration_count": 853,
+        "region_code": "PA",
+        "density": 0.4167,
+        "season": "breeding"
+    },
+    {
+        "latitude": 40.5,
+        "longitude": -78.5,
+        "breeding_count": 479,
+        "wintering_count": 0,
+        "migration_count": 868,
+        "region_code": "PA",
+        "density": 0.4167,
+        "season": "breeding"
+    },
+    {
+        "latitude": 41.5,
+        "longitude": -78.5,
+        "breeding_count": 175,
+        "wintering_count": 0,
+        "migration_count": 184,
+        "region_code": "PA",
+        "density": 0.4167,
+        "season": "breeding"
+    },
+    {
+        "latitude": 40.5,
+        "longitude": -77.5,
+        "breeding_count": 222,
+        "wintering_count": 0,
+        "migration_count": 228,
+        "region_code": "PA",
+        "density": 0.4167,
+        "season": "breeding"
+    },
+    {
+        "latitude": 40.5,
+        "longitude": -75.5,
+        "breeding_count": 717,
+        "wintering_count": 0,
+        "migration_count": 1168,
+        "region_code": "PA",
+        "density": 0.4167,
+        "season": "breeding"
+    },
+    {
+        "latitude": 41.5,
+        "longitude": -75.5,
+        "breeding_count": 255,
+        "wintering_count": 0,
+        "migration_count": 450,
+        "region_code": "PA",
+        "density": 0.4167,
+        "season": "breeding"
+    },
+    {
+        "latitude": 41.5,
+        "longitude": -77.5,
+        "breeding_count": 66,
+        "wintering_count": 0,
+        "migration_count": 47,
+        "region_code": "PA",
+        "density": 0.4167,
+        "season": "breeding"
+    },
+    {
+        "latitude": 41.5,
+        "longitude": -76.5,
+        "breeding_count": 237,
+        "wintering_count": 0,
+        "migration_count": 431,
+        "region_code": "PA",
+        "density": 0.4167,
+        "season": "breeding"
+    },
+    {
+        "latitude": 33.5,
+        "longitude": -78.5,
+        "breeding_count": 6,
+        "wintering_count": 0,
+        "migration_count": 21,
+        "region_code": "SC",
+        "density": 0.1024,
+        "season": "breeding"
+    },
+    {
+        "latitude": 33.5,
+        "longitude": -79.5,
+        "breeding_count": 24,
+        "wintering_count": 0,
+        "migration_count": 59,
+        "region_code": "SC",
+        "density": 0.1024,
+        "season": "breeding"
+    },
+    {
+        "latitude": 32.5,
+        "longitude": -78.5,
+        "breeding_count": 1,
+        "wintering_count": 0,
+        "migration_count": 6,
+        "region_code": "SC",
+        "density": 0.1024,
+        "season": "breeding"
+    },
+    {
+        "latitude": 34.5,
+        "longitude": -80.5,
+        "breeding_count": 10,
+        "wintering_count": 0,
+        "migration_count": 33,
+        "region_code": "SC",
+        "density": 0.1024,
+        "season": "breeding"
+    },
+    {
+        "latitude": 33.5,
+        "longitude": -77.5,
+        "breeding_count": 2,
+        "wintering_count": 0,
+        "migration_count": 5,
+        "region_code": "SC",
+        "density": 0.1024,
+        "season": "breeding"
+    },
+    {
+        "latitude": 42.5,
+        "longitude": -96.5,
+        "breeding_count": 1,
+        "wintering_count": 0,
+        "migration_count": 0,
+        "region_code": "SD",
+        "density": 0.0002,
+        "season": "breeding"
+    },
+    {
+        "latitude": 43.5,
+        "longitude": -97.5,
+        "breeding_count": 2,
+        "wintering_count": 0,
+        "migration_count": 0,
+        "region_code": "SD",
+        "density": 0.0002,
+        "season": "breeding"
+    },
+    {
+        "latitude": 35.5,
+        "longitude": -85.5,
+        "breeding_count": 47,
+        "wintering_count": 0,
+        "migration_count": 95,
+        "region_code": "TN",
+        "density": 0.2917,
+        "season": "breeding"
+    },
+    {
+        "latitude": 35.5,
+        "longitude": -84.5,
+        "breeding_count": 67,
+        "wintering_count": 0,
+        "migration_count": 151,
+        "region_code": "TN",
+        "density": 0.2917,
+        "season": "breeding"
+    },
+    {
+        "latitude": 35.5,
+        "longitude": -87.5,
+        "breeding_count": 11,
+        "wintering_count": 0,
+        "migration_count": 35,
+        "region_code": "TN",
+        "density": 0.2917,
+        "season": "breeding"
+    },
+    {
+        "latitude": 35.5,
+        "longitude": -88.5,
+        "breeding_count": 26,
+        "wintering_count": 0,
+        "migration_count": 81,
+        "region_code": "TN",
+        "density": 0.2917,
+        "season": "breeding"
+    },
+    {
+        "latitude": 35.5,
+        "longitude": -86.5,
+        "breeding_count": 45,
+        "wintering_count": 0,
+        "migration_count": 68,
+        "region_code": "TN",
+        "density": 0.2917,
+        "season": "breeding"
+    },
+    {
+        "latitude": 31.5,
+        "longitude": -93.5,
+        "breeding_count": 3,
+        "wintering_count": 0,
+        "migration_count": 44,
+        "region_code": "TX",
+        "density": 0.011,
+        "season": "breeding"
+    },
+    {
+        "latitude": 28.5,
+        "longitude": -95.5,
+        "breeding_count": 0,
+        "wintering_count": 0,
+        "migration_count": 62,
+        "region_code": "TX",
+        "density": 0.011,
+        "season": "migration"
+    },
+    {
+        "latitude": 28.5,
+        "longitude": -96.5,
+        "breeding_count": 0,
+        "wintering_count": 0,
+        "migration_count": 9,
+        "region_code": "TX",
+        "density": 0.011,
+        "season": "migration"
+    },
+    {
+        "latitude": 30.5,
+        "longitude": -96.5,
+        "breeding_count": 0,
+        "wintering_count": 6,
+        "migration_count": 13,
+        "region_code": "TX",
+        "density": 0.011,
+        "season": "wintering"
+    },
+    {
+        "latitude": 29.5,
+        "longitude": -97.5,
+        "breeding_count": 0,
+        "wintering_count": 0,
+        "migration_count": 9,
+        "region_code": "TX",
+        "density": 0.011,
+        "season": "migration"
+    },
+    {
+        "latitude": 28.5,
+        "longitude": -94.5,
+        "breeding_count": 0,
+        "wintering_count": 0,
+        "migration_count": 21,
+        "region_code": "TX",
+        "density": 0.011,
+        "season": "migration"
+    },
+    {
+        "latitude": 29.5,
+        "longitude": -94.5,
+        "breeding_count": 7,
+        "wintering_count": 2,
+        "migration_count": 148,
+        "region_code": "TX",
+        "density": 0.011,
+        "season": "wintering"
+    },
+    {
+        "latitude": 30.5,
+        "longitude": -95.5,
+        "breeding_count": 0,
+        "wintering_count": 0,
+        "migration_count": 7,
+        "region_code": "TX",
+        "density": 0.011,
+        "season": "migration"
+    },
+    {
+        "latitude": 26.5,
+        "longitude": -96.5,
+        "breeding_count": 0,
+        "wintering_count": 0,
+        "migration_count": 233,
+        "region_code": "TX",
+        "density": 0.011,
+        "season": "migration"
+    },
+    {
+        "latitude": 25.5,
+        "longitude": -96.5,
+        "breeding_count": 0,
+        "wintering_count": 0,
+        "migration_count": 4,
+        "region_code": "TX",
+        "density": 0.011,
+        "season": "migration"
+    },
+    {
+        "latitude": 33.5,
+        "longitude": -94.5,
+        "breeding_count": 0,
+        "wintering_count": 0,
+        "migration_count": 1,
+        "region_code": "TX",
+        "density": 0.011,
+        "season": "migration"
+    },
+    {
+        "latitude": 29.5,
+        "longitude": -93.5,
+        "breeding_count": 0,
+        "wintering_count": 0,
+        "migration_count": 487,
+        "region_code": "TX",
+        "density": 0.011,
+        "season": "migration"
+    },
+    {
+        "latitude": 31.5,
+        "longitude": -94.5,
+        "breeding_count": 0,
+        "wintering_count": 0,
+        "migration_count": 6,
+        "region_code": "TX",
+        "density": 0.011,
+        "season": "migration"
+    },
+    {
+        "latitude": 29.5,
+        "longitude": -95.5,
+        "breeding_count": 0,
+        "wintering_count": 0,
+        "migration_count": 1,
+        "region_code": "TX",
+        "density": 0.011,
+        "season": "migration"
+    },
+    {
+        "latitude": 33.5,
+        "longitude": -96.5,
+        "breeding_count": 0,
+        "wintering_count": 0,
+        "migration_count": 2,
+        "region_code": "TX",
+        "density": 0.011,
+        "season": "migration"
+    },
+    {
+        "latitude": 32.5,
+        "longitude": -95.5,
+        "breeding_count": 0,
+        "wintering_count": 0,
+        "migration_count": 1,
+        "region_code": "TX",
+        "density": 0.011,
+        "season": "migration"
+    },
+    {
+        "latitude": 32.5,
+        "longitude": -93.5,
+        "breeding_count": 3,
+        "wintering_count": 0,
+        "migration_count": 16,
+        "region_code": "TX",
+        "density": 0.011,
+        "season": "breeding"
+    },
+    {
+        "latitude": 30.5,
+        "longitude": -94.5,
+        "breeding_count": 10,
+        "wintering_count": 0,
+        "migration_count": 28,
+        "region_code": "TX",
+        "density": 0.011,
+        "season": "breeding"
+    },
+    {
+        "latitude": 30.5,
+        "longitude": -93.5,
+        "breeding_count": 16,
+        "wintering_count": 0,
+        "migration_count": 39,
+        "region_code": "TX",
+        "density": 0.011,
+        "season": "breeding"
+    },
+    {
+        "latitude": 26.5,
+        "longitude": -97.5,
+        "breeding_count": 0,
+        "wintering_count": 0,
+        "migration_count": 12,
+        "region_code": "TX",
+        "density": 0.011,
+        "season": "migration"
+    },
+    {
+        "latitude": 31.5,
+        "longitude": -104.5,
+        "breeding_count": 0,
+        "wintering_count": 0,
+        "migration_count": 1,
+        "region_code": "TX",
+        "density": 0.011,
+        "season": "migration"
+    },
+    {
+        "latitude": 32.5,
+        "longitude": -94.5,
+        "breeding_count": 0,
+        "wintering_count": 0,
+        "migration_count": 7,
+        "region_code": "TX",
+        "density": 0.011,
+        "season": "migration"
+    },
+    {
+        "latitude": 33.5,
+        "longitude": -100.5,
+        "breeding_count": 0,
+        "wintering_count": 0,
+        "migration_count": 1,
+        "region_code": "TX",
+        "density": 0.011,
+        "season": "migration"
+    },
+    {
+        "latitude": 31.5,
+        "longitude": -96.5,
+        "breeding_count": 0,
+        "wintering_count": 0,
+        "migration_count": 1,
+        "region_code": "TX",
+        "density": 0.011,
+        "season": "migration"
+    },
+    {
+        "latitude": 27.5,
+        "longitude": -96.5,
+        "breeding_count": 0,
+        "wintering_count": 0,
+        "migration_count": 218,
+        "region_code": "TX",
+        "density": 0.011,
+        "season": "migration"
+    },
+    {
+        "latitude": 32.5,
+        "longitude": -96.5,
+        "breeding_count": 0,
+        "wintering_count": 0,
+        "migration_count": 5,
+        "region_code": "TX",
+        "density": 0.011,
+        "season": "migration"
+    },
+    {
+        "latitude": 38.5,
+        "longitude": -77.5,
+        "breeding_count": 480,
+        "wintering_count": 0,
+        "migration_count": 680,
+        "region_code": "WV",
+        "density": 0.5317,
+        "season": "breeding"
+    },
+    {
+        "latitude": 37.5,
+        "longitude": -77.5,
+        "breeding_count": 186,
+        "wintering_count": 0,
+        "migration_count": 193,
+        "region_code": "VA",
+        "density": 0.2848,
+        "season": "breeding"
+    },
+    {
+        "latitude": 37.5,
+        "longitude": -79.5,
+        "breeding_count": 263,
+        "wintering_count": 0,
+        "migration_count": 275,
+        "region_code": "WV",
+        "density": 0.5317,
+        "season": "breeding"
+    },
+    {
+        "latitude": 37.5,
+        "longitude": -78.5,
+        "breeding_count": 208,
+        "wintering_count": 2,
+        "migration_count": 367,
+        "region_code": "VA",
+        "density": 0.2848,
+        "season": "wintering"
+    },
+    {
+        "latitude": 37.5,
+        "longitude": -76.5,
+        "breeding_count": 142,
+        "wintering_count": 0,
+        "migration_count": 207,
+        "region_code": "VA",
+        "density": 0.2848,
+        "season": "breeding"
+    },
+    {
+        "latitude": 38.5,
+        "longitude": -78.5,
+        "breeding_count": 197,
+        "wintering_count": 0,
+        "migration_count": 149,
+        "region_code": "WV",
+        "density": 0.5317,
+        "season": "breeding"
+    },
+    {
+        "latitude": 37.5,
+        "longitude": -80.5,
+        "breeding_count": 87,
+        "wintering_count": 0,
+        "migration_count": 76,
+        "region_code": "WV",
+        "density": 0.5317,
+        "season": "breeding"
+    },
+    {
+        "latitude": 37.5,
+        "longitude": -75.5,
+        "breeding_count": 157,
+        "wintering_count": 0,
+        "migration_count": 236,
+        "region_code": "VA",
+        "density": 0.2848,
+        "season": "breeding"
+    },
+    {
+        "latitude": 36.5,
+        "longitude": -74.5,
+        "breeding_count": 1,
+        "wintering_count": 0,
+        "migration_count": 8,
+        "region_code": "VA",
+        "density": 0.2848,
+        "season": "breeding"
+    },
+    {
+        "latitude": 44.5,
+        "longitude": -71.5,
+        "breeding_count": 107,
+        "wintering_count": 0,
+        "migration_count": 118,
+        "region_code": "VT",
+        "density": 0.1403,
+        "season": "breeding"
+    },
+    {
+        "latitude": 44.5,
+        "longitude": -88.5,
+        "breeding_count": 69,
+        "wintering_count": 0,
+        "migration_count": 37,
+        "region_code": "WI",
+        "density": 0.0785,
+        "season": "breeding"
+    },
+    {
+        "latitude": 43.5,
+        "longitude": -88.5,
+        "breeding_count": 221,
+        "wintering_count": 1,
+        "migration_count": 275,
+        "region_code": "WI",
+        "density": 0.0785,
+        "season": "wintering"
+    },
+    {
+        "latitude": 46.5,
+        "longitude": -89.5,
+        "breeding_count": 42,
+        "wintering_count": 0,
+        "migration_count": 6,
+        "region_code": "WI",
+        "density": 0.0785,
+        "season": "breeding"
+    },
+    {
+        "latitude": 45.5,
+        "longitude": -90.5,
+        "breeding_count": 88,
+        "wintering_count": 0,
+        "migration_count": 10,
+        "region_code": "WI",
+        "density": 0.0785,
+        "season": "breeding"
+    },
+    {
+        "latitude": 46.5,
+        "longitude": -90.5,
+        "breeding_count": 30,
+        "wintering_count": 0,
+        "migration_count": 17,
+        "region_code": "WI",
+        "density": 0.0785,
+        "season": "breeding"
+    },
+    {
+        "latitude": 44.5,
+        "longitude": -86.5,
+        "breeding_count": 70,
+        "wintering_count": 0,
+        "migration_count": 72,
+        "region_code": "WI",
+        "density": 0.0785,
+        "season": "breeding"
+    },
+    {
+        "latitude": 44.5,
+        "longitude": -87.5,
+        "breeding_count": 126,
+        "wintering_count": 0,
+        "migration_count": 58,
+        "region_code": "WI",
+        "density": 0.0785,
+        "season": "breeding"
+    },
+    {
+        "latitude": 43.5,
+        "longitude": -87.5,
+        "breeding_count": 122,
+        "wintering_count": 0,
+        "migration_count": 172,
+        "region_code": "WI",
+        "density": 0.0785,
+        "season": "breeding"
+    },
+    {
+        "latitude": 45.5,
+        "longitude": -89.5,
+        "breeding_count": 71,
+        "wintering_count": 0,
+        "migration_count": 6,
+        "region_code": "WI",
+        "density": 0.0785,
+        "season": "breeding"
+    },
+    {
+        "latitude": 44.5,
+        "longitude": -89.5,
+        "breeding_count": 44,
+        "wintering_count": 0,
+        "migration_count": 18,
+        "region_code": "WI",
+        "density": 0.0785,
+        "season": "breeding"
+    },
+    {
+        "latitude": 43.5,
+        "longitude": -89.5,
+        "breeding_count": 206,
+        "wintering_count": 0,
+        "migration_count": 43,
+        "region_code": "WI",
+        "density": 0.0785,
+        "season": "breeding"
+    },
+    {
+        "latitude": 45.5,
+        "longitude": -87.5,
+        "breeding_count": 148,
+        "wintering_count": 0,
+        "migration_count": 23,
+        "region_code": "WI",
+        "density": 0.0785,
+        "season": "breeding"
+    },
+    {
+        "latitude": 45.5,
+        "longitude": -88.5,
+        "breeding_count": 49,
+        "wintering_count": 0,
+        "migration_count": 20,
+        "region_code": "WI",
+        "density": 0.0785,
+        "season": "breeding"
+    },
+    {
+        "latitude": 43.5,
+        "longitude": -86.5,
+        "breeding_count": 51,
+        "wintering_count": 0,
+        "migration_count": 171,
+        "region_code": "WI",
+        "density": 0.0785,
+        "season": "breeding"
+    },
+    {
+        "latitude": 38.5,
+        "longitude": -79.5,
+        "breeding_count": 38,
+        "wintering_count": 0,
+        "migration_count": 43,
+        "region_code": "WV",
+        "density": 0.5317,
+        "season": "breeding"
+    },
+    {
+        "latitude": 38.5,
+        "longitude": -80.5,
+        "breeding_count": 85,
+        "wintering_count": 0,
+        "migration_count": 195,
+        "region_code": "WV",
+        "density": 0.5317,
+        "season": "breeding"
+    }
+]

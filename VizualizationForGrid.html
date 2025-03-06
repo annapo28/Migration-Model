@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Карта с цветной сеткой 1x1 градус</title>
+    <script src="https://api-maps.yandex.ru/2.1/?lang=ru_RU&apikey=ВАШ_API_КЛЮЧ" type="text/javascript"></script>
+    <style>
+        #map { width: 100%; height: 600px; }
+    </style>
+</head>
+<body>
+    <div id="map"></div>
+
+    <script>
+        ymaps.ready(init);
+
+        async function init() {
+            var myMap = new ymaps.Map("map", {
+                center: [40, -95],  // Центр карты
+                zoom: 4
+            });
+
+
+            const response = await fetch("grid_data.json");
+            const gridData = await response.json();
+
+
+            function getColor(season) {
+                if (season === "breeding") return "#FFA07A";
+                if (season === "wintering") return "#87CEFA";
+                return "#FFD700";
+            }
+
+
+            function createSquare(lat, lon, color, season) {
+                return new ymaps.Polygon([
+                    [
+                        [lat - 0.5, lon - 0.5],
+                        [lat - 0.5, lon + 0.5],
+                        [lat + 0.5, lon + 0.5],
+                        [lat + 0.5, lon - 0.5],
+                        [lat - 0.5, lon - 0.5]
+                    ]
+                ], {
+                    hintContent: `Сезон: ${season}`
+                }, {
+                    fillColor: color,
+                    fillOpacity: 0.5,
+                    strokeColor: "#000000",
+                    strokeOpacity: 0.3,
+                    strokeWidth: 1
+                });
+            }
+
+
+            gridData.forEach(cell => {
+                const lat = cell.latitude;
+                const lon = cell.longitude;
+                const color = getColor(cell.season);
+                const season = cell.season;
+
+                let square = createSquare(lat, lon, color, season);
+                myMap.geoObjects.add(square);
+            });
+
+            console.log("Сетка успешно отрисована!");
+        }
+    </script>
+</body>
+</html>
