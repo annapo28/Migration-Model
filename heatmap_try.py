@@ -87,7 +87,6 @@ def update_heatmap(selected_coord):
         ),
         margin={"r": 0, "t": 0, "l": 0, "b": 0}
     )
-
     return fig
 
 

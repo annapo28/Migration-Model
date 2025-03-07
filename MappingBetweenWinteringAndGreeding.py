@@ -5,37 +5,36 @@ from dash import dcc, html, Output, Input
 import dash_leaflet as dl
 from flask import Flask
 
-# Загрузка данных
 with open("edges_weight.json", "r", encoding="utf-8") as f:
     edges_weight_json = json.load(f)
 
-# Преобразуем ключи обратно в кортежи
 edges_weight = {}
+uk_min_max = {}
 for key, values in edges_weight_json.items():
     lat, lon = map(float, key.split(','))
     edges_weight[(lat, lon)] = [
         (float(to_lat), float(to_lon), float(weight)) for to_lat_lon, weight in values
         for to_lat, to_lon in [to_lat_lon.split(",")]
     ]
+    uk_values = [uk for (_, _, uk) in edges_weight[(lat, lon)]]
+    uk_min_max[(lat, lon)] = (min(uk_values), max(uk_values))
 
 
-# Функция масштабирования значений uk
 def scale_uk_log(uk, min_uk, max_uk):
+    if uk == min_uk:
+        return 0
     epsilon = 1e-10
     log_uk = np.log(uk + epsilon)
     log_min_uk = np.log(min_uk + epsilon)
     log_max_uk = np.log(max_uk + epsilon)
-    return 0 if log_max_uk == log_min_uk else (log_uk - log_min_uk) / (log_max_uk - log_min_uk)
+    return (log_uk - log_min_uk) / (log_max_uk - log_min_uk) if log_max_uk != log_min_uk else 0
 
-
-# Функция генерации элементов карты
 def generate_map_elements(center_coord):
     if center_coord not in edges_weight:
         return []
 
     relevant_edges = edges_weight[center_coord]
-    uk_values = [uk for (_, _, uk) in relevant_edges]
-    min_uk, max_uk = min(uk_values), max(uk_values)
+    min_uk, max_uk = uk_min_max[center_coord]
 
     rectangles = []
     for (to_lat, to_lon, uk) in relevant_edges:
@@ -57,7 +56,6 @@ def generate_map_elements(center_coord):
             )
         )
 
-    # Добавляем синий квадрат вокруг выбранного центра
     rectangles.append(
         dl.Rectangle(
             bounds=[
@@ -73,14 +71,11 @@ def generate_map_elements(center_coord):
     return rectangles
 
 
-# Flask сервер
 server = Flask(__name__)
 app = dash.Dash(__name__, server=server)
 
-# Список доступных координат
 available_coords = list(edges_weight.keys())
 
-# Интерфейс Dash
 app.layout = html.Div([
     html.H1("Миграционная карта"),
     html.Label("Выберите центр квадрата:"),
@@ -102,7 +97,6 @@ app.layout = html.Div([
 ])
 
 
-# Обновление карты
 @app.callback(
     Output("migration-map", "children"),
     Input("coord-dropdown", "value")
