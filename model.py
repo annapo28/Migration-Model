@@ -1,121 +1,196 @@
 import json
 import numpy as np
-from scipy.cluster.hierarchy import optimal_leaf_ordering
 from scipy.optimize import minimize
+import copy
+import folium
 
 INPUT_SORTED_TRIPLE_FILE = "sorted_migration_routes.json"
+INPUT_SORTED_TRIPLE_FILE_FALL = "sorted_migration_routes_fall.json"
+
 OUTPUT_PROBABILITIES_FILE = "/home/anya2812/Migration-Model/migration_probabilities.json"
 OUTPUT_WEIGHTS_FILE = "/home/anya2812/Migration-Model/output_densities.json"
 
 GRID_FILE = "/home/anya2812/Migration-Model/grid_data.json"
+NEW_GRID_DATA = "changed_grid_data.json"
 
-with open(GRID_FILE, "r", encoding="utf-8") as f:
+excluded_coordinates = {(43.5, -88.5), (37.5, -78.5), (41.5, -69.5)}  # Пример: исключаем опред
+
+with open(NEW_GRID_DATA, "r", encoding="utf-8") as f:
     grid_data = json.load(f)
 
 breeding_cells = {}
-breeding_cells_clone = {}
 wintering_cells = {}
-wintering_cells_clone = {}
+
+wi_max = 0
+uj_max = 0
 
 for cell in grid_data:
-    coords = (cell["latitude"], cell["longitude"])  # Ключ — пара координат
-    density = cell["density"]  # Значение — плотность наблюдений
+    coords = (cell["latitude"], cell["longitude"])
+    density = float(cell["density"])
 
     if cell["season"] == "breeding":
         breeding_cells[coords] = density
-        breeding_cells_clone[coords] = density
+        uj_max += breeding_cells[coords]
+        # breeding_cells_clone[coords] = density
     elif cell["season"] == "wintering":
         wintering_cells[coords] = density
-        wintering_cells_clone[coords] = density
+        wi_max += wintering_cells[coords]
+        # wintering_cells_clone[coords] = density
+
+print("uj and wi ", uj_max, wi_max)
 
 print("Клетки гнездования (breeding_cells):")
 print(breeding_cells)
 
 print("\nКлетки зимовки (wintering_cells):")
 print(wintering_cells)
+zero_count_1 = sum(1 for value in wintering_cells.values() if value == 0)
+NON_zero_count_1 = sum(1 for value in wintering_cells.values() if value != 0)
+
+print("zeros^ ", zero_count_1, NON_zero_count_1)
+
 
 probabilities = []
-edges_weight = {}
 
-
-def loss_function(alpha, migration_routes):
+def loss_function(alpha, routes):
     """
         Функция потерь, которую минимизируем.
     """
-    breeding_cells_clone = breeding_cells.copy()
-    wintering_cells_clone = wintering_cells.copy()
+    breeding_cells_clone = copy.deepcopy(breeding_cells)
+    wintering_cells_clone = copy.deepcopy(wintering_cells)
 
-    for route in migration_routes:
+    for route in routes:
         (lat_i, lon_i), (lat_j, lon_j), (Lij, wi, uj) = route
 
         uk = min(
-            alpha * wintering_cells_clone[(lat_i, lon_i)],
-            (breeding_cells_clone[(lat_j, lon_j)] -  alpha * wintering_cells_clone[(lat_i, lon_i)])
-        )
-
-        # wintering_cells_clone[(lat_i, lon_i)] * (1 - alpha)
-        # breeding_cells_clone[(lat_j, lon_j)] * (1 - alpha)
+            float(alpha.item()) * float(wintering_cells_clone[(lat_i, lon_i)]),
+            float(breeding_cells_clone[(lat_j, lon_j)])
+            )
 
         breeding_cells_clone[(lat_j, lon_j)] -= uk
         wintering_cells_clone[(lat_i, lon_i)] -= uk
 
-        pi_lm = uk / (wi + 1e-10) if wi > 0 else 0
-        if isinstance(uk, np.ndarray):
-            uk = uk.item()
-
-
-        if (lat_i, lon_i) not in edges_weight:
-            edges_weight[(lat_i, lon_i)] = []
-        edges_weight[(lat_i, lon_i)].append((lat_j, lon_j, max(0.0, float(uk))))
-
-        if isinstance(pi_lm, np.ndarray):
-            pi_lm = pi_lm.item()
-        probabilities.append({
-            "from": {"latitude": lat_i, "longitude": lon_i},
-            "to": {"latitude": lat_j, "longitude": lon_j},
-            "probability": float(pi_lm)
-        })
-
-    total_loss_u = 0
-    total_loss_w = 0
-    for route in migration_routes:
+    total_loss = 0
+    for route in routes:
         (lat_i, lon_i), (lat_j, lon_j), (Lij, wi, uj) = route
-        total_loss_u += breeding_cells_clone[(lat_j, lon_j)]
-        total_loss_w += wintering_cells_clone[(lat_i, lon_i)]
-    total_loss = total_loss_u ** 2 + total_loss_w ** 2
-    print(f"alpha: {alpha}, total_loss: {total_loss}")
+        total_loss += breeding_cells_clone[(lat_j, lon_j)]**2
+        total_loss += wintering_cells_clone[(lat_i, lon_i)]**2
+    # total_loss = total_loss_u ** 2 + total_loss_w ** 2
+    # print(f"alpha: {alpha}, total_loss: {total_loss}")
 
     return total_loss
 
 
-def optimize_alpha(migration_routes, initial_alpha=0.7):
+def loss_function_fall(alpha, routes):
+    """
+        Функция потерь, которую минимизируем.
+    """
+
+    breeding_cells_clone = copy.deepcopy(breeding_cells)
+    wintering_cells_clone = copy.deepcopy(wintering_cells)
+    zero_count = sum(1 for value in wintering_cells_clone.values() if value == 0)
+    NON_zero_count = sum(1 for value in wintering_cells_clone.values() if value != 0)
+
+    print("zeros^ ", zero_count, NON_zero_count)
+    for route in routes:
+        (lat_i, lon_i), (lat_j, lon_j), (Lij, wi, uj) = route
+
+        uk = min(
+            float(alpha.item()) * float(breeding_cells_clone[(lat_i, lon_i)]),
+            float(wintering_cells_clone[(lat_j, lon_j)])
+            )
+
+        # print('alpha ', alpha, 'breeding_cell ', float(breeding_cells_clone[(lat_i, lon_i)]), 'wintering_cell ', float(wintering_cells_clone[(lat_j, lon_j)]))
+        # if uk != 0 :
+        #
+        #     print('uk ', uk)
+        #
+
+
+        breeding_cells_clone[(lat_i, lon_i)] -= uk
+        wintering_cells_clone[(lat_j, lon_j)] -= uk
+
+        # pi_lm = uk / (wi + 1e-10) if wi > 0 else 0
+        # if isinstance(uk, np.ndarray):
+        #     uk = uk.item()
+
+        #
+
+        # if isinstance(pi_lm, np.ndarray):
+        #     pi_lm = pi_lm.item()
+        # probabilities.append({
+        #     "from": {"latitude": lat_i, "longitude": lon_i},
+        #     "to": {"latitude": lat_j, "longitude": lon_j},
+        #     "probability": float(pi_lm)
+        # })
+
+    total_loss = 0
+    for route in routes:
+        (lat_i, lon_i), (lat_j, lon_j), (Lij, wi, uj) = route
+        total_loss += breeding_cells_clone[(lat_i, lon_i)]**2
+        total_loss += wintering_cells_clone[(lat_j, lon_j)]**2
+    # total_loss = total_loss_u ** 2 + total_loss_w ** 2
+    print(f"autumn alpha: {alpha}, total_loss: {total_loss}")
+
+    return total_loss
+
+
+def optimize_alpha(routes, initial_alpha=0.5):
     """
         Оптимизирует α, минимизируя функцию потерь.
     """
-    result = minimize(loss_function, initial_alpha, args=(migration_routes,), bounds=[(0, 1)])
+    result = minimize(loss_function, initial_alpha, args=(routes,), bounds=[(0, 1)])
     return result.x[0]
 
+def optimize_alpha_fall(routes, initial_alpha=0.05):
+    """
+        Оптимизирует α, минимизируя функцию потерь.
+    """
+    result = minimize(loss_function_fall, initial_alpha, args=(routes,), bounds=[(0, 1)])
+    return result.x[0]
 
 with open(INPUT_SORTED_TRIPLE_FILE, "r", encoding="utf-8") as f:
     migration_routes = json.load(f)
+with open(INPUT_SORTED_TRIPLE_FILE_FALL, "r", encoding="utf-8") as f:
+    migration_routes_fall = json.load(f)
 
-optimal_alpha = optimize_alpha(migration_routes)
+optimal_alpha_spring = optimize_alpha(migration_routes)
+optimal_alpha_autumn = optimize_alpha_fall(migration_routes_fall)
+print("Осень: ", optimal_alpha_autumn, "Весна: ", optimal_alpha_spring)
+# exit()
 
-for i in edges_weight.keys():
-    print(i)
 
+breeding_cells_clone_final = copy.deepcopy(breeding_cells)
+wintering_cells_clone_final = copy.deepcopy(wintering_cells)
+edges_weight = {}
+for route in migration_routes:
+    (lat_i, lon_i), (lat_j, lon_j), (Lij, wi, uj) = route
 
+    uk = min(
+        optimal_alpha_spring * wintering_cells_clone_final[(lat_i, lon_i)],
+        (breeding_cells_clone_final[(lat_j, lon_j)])
+    )
+
+    pi_lm = uk / (wi + 1e-10) if wi > 0 else 0
+    if isinstance(uk, np.ndarray):
+        uk = uk.item()
+
+    if isinstance(pi_lm, np.ndarray):
+        pi_lm = pi_lm.item()
+
+    # Добавляем данные в edges_weight
+    if (lat_i, lon_i) not in edges_weight and (lat_i, lon_i) not in excluded_coordinates:
+        edges_weight[(lat_i, lon_i)] = []
+    if (lat_i, lon_i) not in excluded_coordinates:
+        edges_weight[(lat_i, lon_i)].append((lat_j, lon_j, float(pi_lm)))
+
+    # Обновляем плотности
+    breeding_cells_clone_final[(lat_j, lon_j)] -= uk
+    wintering_cells_clone_final[(lat_i, lon_i)] -= uk
+
+# Сохраняем edges_weight в файл probabilities
 try:
     with open(OUTPUT_PROBABILITIES_FILE, "w", encoding="utf-8") as f:
-        json.dump(probabilities, f, ensure_ascii=False, indent=4)
-except Exception as e:
-    print(f"Ошибка при сохранении файла: {e}")
-import json
-
-# edges_weight = {(lat, lon): [(to_lat, to_lon, weight), ...], ...}
-
-try:
-    with open("edges_weight.json", "w", encoding="utf-8") as f:
         json.dump(
             {
                 f"{lat},{lon}": [
@@ -127,176 +202,123 @@ try:
             ensure_ascii=False,
             indent=4
         )
-
-    print("edges_weight сохранен в edges_weight.json")
-
+    print(f"Вероятности сохранены в {OUTPUT_PROBABILITIES_FILE}")
 except Exception as e:
     print(f"Ошибка при сохранении файла: {e}")
-print(f"Готово! Оптимальное α: {optimal_alpha:.4f}")
-print(f"Вероятности сохранены в {OUTPUT_PROBABILITIES_FILE}")
 
-
-
-# import folium
-# import numpy as np
-# from branca.colormap import linear
+# try:
+#     with open("edges_weight.json", "w", encoding="utf-8") as f:
+#         json.dump(
+#             {
+#                 f"{lat},{lon}": [
+#                     (f"{to_lat},{to_lon}", float(weight)) for to_lat, to_lon, weight in values
+#                 ]
+#                 for (lat, lon), values in edges_weight.items()
+#             },
+#             f,
+#             ensure_ascii=False,
+#             indent=4
+#         )
 #
-# # Фильтруем edges_weight по заданной координате
-# center_coord = (17.5, -90.5)
-# def building_map(center_coord):
-#     if center_coord in edges_weight:
-#         relevant_edges = edges_weight[center_coord]
-#         print(relevant_edges)
+#     print("edges_weight сохранен в edges_weight.json")
 #
-#         # Определяем min и max значения uk для нормализации
-#         uk_values = [uk for (_, _, uk) in relevant_edges]
-#         min_uk, max_uk = min(uk_values), max(uk_values)
-#         print(min_uk, max_uk)
+# except Exception as e:
+#     print(f"Ошибка при сохранении файла: {e}")
 #
+# def scale_uk_log(uk, min_uk, max_uk):
+#     if uk is None or np.isnan(uk) or uk < 0:
+#         return 0
+#     if min_uk is None or np.isnan(min_uk) or max_uk is None or np.isnan(max_uk):
+#         return 0
+#     if min_uk == max_uk:
+#         return 0
 #
-#         # Функция для линейного масштабирования uk
+#     epsilon = 1e-10
+#     log_uk = np.log(max(uk, epsilon))
+#     log_min_uk = np.log(max(min_uk, epsilon))
+#     log_max_uk = np.log(max(max_uk, epsilon))
 #
-#         def scale_uk(uk, min_uk, max_uk):
-#             # Добавляем небольшой сдвиг, чтобы избежать слишком маленьких значений
-#             min_uk = max(min_uk, 1e-10)
-#             max_uk = max(max_uk, 1e-10)
-#             scaled_value = (uk - min_uk) / (max_uk - min_uk)
-#             return scaled_value
+#     denominator = log_max_uk - log_min_uk
+#     if denominator == 0:
+#         return 0
 #
+#     return (log_uk - log_min_uk) / denominator
 #
-#         def scale_uk_log(uk, min_uk, max_uk):
-#             epsilon = 1e-10  # маленькая константа для предотвращения логарифмирования нуля
-#             log_uk = np.log(uk + epsilon)  # сдвигаем все значения, чтобы избежать log(0)
-#             log_min_uk = np.log(min_uk + epsilon)
-#             log_max_uk = np.log(max_uk + epsilon)
-#             if log_max_uk == log_min_uk:
-#                 return 0  # если логарифмы одинаковы, то нет различий
-#             scaled_value = (log_uk - log_min_uk) / (log_max_uk - log_min_uk)
-#             return scaled_value
-#
-#
-#         # Создаем карту с центром в указанной точке
-#         m = folium.Map(location=center_coord, zoom_start=6)
-#
-#         # Проходим по всем клеткам
-#         for (to_lat, to_lon, uk) in relevant_edges:
-#             scaled_uk = scale_uk_log(uk, min_uk, max_uk)  # Масштабируем uk
-#             color_intensity = int(255 * scaled_uk)  # Чем больше uk, тем ярче цвет
-#             color = f'#ff{color_intensity:02x}00'
-#             print(scaled_uk, uk, color)
-#             # Добавляем квадрат (ячейку) размером 1 градус на 1 градус
-#             folium.Rectangle(
-#                 bounds=[(to_lat - 0.5, to_lon - 0.5), (to_lat + 0.5, to_lon + 0.5)],
-#                 color=color,
-#                 fill=True,
-#                 fill_color=color,
-#                 fill_opacity=0.7,
-#                 weight=1,
-#                 tooltip=f"uk, coords: {uk:.4e}, {to_lat}, {to_lon}"  # Показываем uk в экспоненциальном формате
-#             ).add_to(m)
-#
-#         # Сохраняем карту в HTML-файл
-#         m.save("migration_map.html")
-#         print("Карта сохранена в migration_map.html")
-#     else:
-#         print("Ключ (43.5, -88.5) отсутствует в edges_weight.")
+# #
+# # def safe_log(x, epsilon=1e-10):
+# #     return np.log(max(x, epsilon))  # Добавляем малое число, чтобы избежать log(0)
+# #
+# # def scale_uk_log(uk, min_uk, max_uk):
+# #     if uk is None or np.isnan(uk) or uk < 0:
+# #         return 0
+# #     if min_uk == max_uk:  # Если плотности одинаковые, нормализовать бессмысленно
+# #         return 0
+# #     log_uk = safe_log(uk)
+# #     log_min_uk = safe_log(min_uk)
+# #     log_max_uk = safe_log(max_uk)
+# #     return (log_uk - log_min_uk) / (log_max_uk - log_min_uk)
+# #
 #
 #
+# breeding_coords = np.array(list(breeding_cells_clone_final.keys()))
+# breeding_densities = np.array(list(breeding_cells_clone_final.values()))
 #
-# building_map((17.5, -90.5))
-
-
+# min_breeding_density, max_breeding_density = breeding_densities.min(), breeding_densities.max()
+# norm_breeding_densities = [scale_uk_log(d, min_breeding_density, max_breeding_density) for d in breeding_densities]
 #
-# import folium
-# import numpy as np
+# wintering_coords = np.array(list(wintering_cells_clone_final.keys()))
+# wintering_densities = np.array(list(wintering_cells_clone_final.values()))
 #
-# def building_map_with_discrepancies(center_coord):
-#     if center_coord in edges_weight:
-#         relevant_edges = edges_weight[center_coord]
-#         print(relevant_edges)
+# min_wintering_density, max_wintering_density = wintering_densities.min(), wintering_densities.max()
+# norm_wintering_densities = [scale_uk_log(d, min_wintering_density, max_wintering_density) for d in wintering_densities]
 #
-#         # Определяем min и max значения для гнездования и зимовки
-#         breeding_discrepancies = []
-#         wintering_discrepancies = []
+# all_coords = np.vstack([breeding_coords, wintering_coords])
+# map_center = [np.mean(all_coords[:, 0]), np.mean(all_coords[:, 1])]
 #
-#         # Расчет недостачи для клеток гнездования и зимовки
-#         for (lat_i, lon_i), edges in edges_weight.items():
-#             for (lat_j, lon_j, weight) in edges:
-#                 # Недостача в гнездованиях
-#                 discrepancy_breeding = breeding_cells_clone[(lat_j, lon_j)] - breeding_cells[(lat_j, lon_j)]
-#                 breeding_discrepancies.append(discrepancy_breeding)
+# m = folium.Map(location=map_center, zoom_start=6)
 #
-#                 # Недостача в зимовке
-#                 discrepancy_wintering = wintering_cells_clone[(lat_i, lon_i)] - wintering_cells[(lat_i, lon_i)]
-#                 wintering_discrepancies.append(discrepancy_wintering)
+# for (lat, lon), norm_value in zip(breeding_coords, norm_breeding_densities):
+#     color_intensity = int(255 * norm_value)
+#     color = f'#ff{color_intensity:02x}00'  # Оттенок оранжевого
+#     popup_text = f"Breeding Density: {breeding_cells_clone_final[(lat, lon)]}"
+#     folium.Rectangle(
+#         bounds=[
+#             [lat - 0.5, lon - 0.5],
+#             [lat + 0.5, lon + 0.5]
+#         ],
+#         color=color,
+#         fill=True,
+#         fill_color=color,
+#         fill_opacity=0.7,
+#         weight=1,
+#         tooltip=popup_text
+#     ).add_to(m)
 #
-#         # Определяем минимальные и максимальные недостачи для нормализации
-#         min_breeding = min(breeding_discrepancies)
-#         max_breeding = max(breeding_discrepancies)
-#         min_wintering = min(wintering_discrepancies)
-#         max_wintering = max(wintering_discrepancies)
+# for (lat, lon), norm_value in zip(wintering_coords, norm_wintering_densities):
+#     color_intensity = int(255 * norm_value)
+#     color = f'#00{color_intensity:02x}{255 - color_intensity:02x}'
 #
-#         # Создаем карту
-#         m = folium.Map(location=center_coord, zoom_start=6)
+#     # color = f'#00{color_intensity:02x}ff'  # Оттенок синего
+#     popup_text = f"Wintering Density: {wintering_cells_clone_final[(lat, lon)]}"
+#     folium.Rectangle(
+#         bounds=[
+#             [lat - 0.5, lon - 0.5],
+#             [lat + 0.5, lon + 0.5]
+#         ],
+#         color=color,
+#         fill=True,
+#         fill_color=color,
+#         fill_opacity=0.7,
+#         weight=1,
+#         tooltip=popup_text
+#     ).add_to(m)
 #
-#         # Функция для нормализации значения недостачи
-#         def scale_discrepancy(discrepancy, min_d, max_d):
-#             return (discrepancy - min_d) / (max_d - min_d)
-#
-#         # Добавление тепловых карт для клеток
-#         for (lat_i, lon_i), edges in edges_weight.items():
-#             for (lat_j, lon_j, weight) in edges:
-#                 # Масштабирование недостачи
-#                 discrepancy_breeding = breeding_cells_clone[(lat_j, lon_j)] - breeding_cells[(lat_j, lon_j)]
-#                 scaled_breeding = scale_discrepancy(discrepancy_breeding, min_breeding, max_breeding)
-#
-#                 discrepancy_wintering = wintering_cells_clone[(lat_i, lon_i)] - wintering_cells[(lat_i, lon_i)]
-#                 scaled_wintering = scale_discrepancy(discrepancy_wintering, min_wintering, max_wintering)
-#
-#                 # Вычисляем цвет в зависимости от недостачи
-#                 color_intensity = int(255 * max(scaled_breeding, scaled_wintering))  # Используем максимальную недостачу
-#                 color = f'#ff{color_intensity:02x}00'  # Ярче — больше недостача
-#
-#                 # Добавляем прямоугольники для визуализации недостачи
-#                 folium.Rectangle(
-#                     bounds=[(lat_j - 0.5, lon_j - 0.5), (lat_j + 0.5, lon_j + 0.5)],
-#                     color=color,
-#                     fill=True,
-#                     fill_color=color,
-#                     fill_opacity=0.7,
-#                     weight=1,
-#                     tooltip=f"Breeding discrepancy: {discrepancy_breeding:.4f}, Wintering discrepancy: {discrepancy_wintering:.4f}"
-#                 ).add_to(m)
-#
-#         # Сохраняем карту в HTML-файл
-#         m.save("migration_discrepancy_map.html")
-#         print("Карта сохранена в migration_discrepancy_map.html")
-#     else:
-#         print(f"Ключ {center_coord} отсутствует в edges_weight.")
-#
-#
-# # Вызов функции для центра карты
-# building_map_with_discrepancies((17.5, -90.5))
-#
-
-
-import numpy as np
+# m.save("breeding_and_wintering_clone_map.html")
+# print("Карта сохранена в breeding_and_wintering_clone_map.html")
 import folium
+import numpy as np
 
-for route in migration_routes:
-    (lat_i, lon_i), (lat_j, lon_j), (Lij, wi, uj) = route
-
-    uk = min(
-        optimal_alpha * wintering_cells_clone[(lat_i, lon_i)],
-        (breeding_cells_clone[(lat_j, lon_j)] - optimal_alpha * wintering_cells_clone[(lat_i, lon_i)])
-    )
-
-    # wintering_cells_clone[(lat_i, lon_i)] * (1 - alpha)
-    # breeding_cells_clone[(lat_j, lon_j)] * (1 - alpha)
-
-    breeding_cells_clone[(lat_j, lon_j)] -= uk
-    wintering_cells_clone[(lat_i, lon_i)] -= uk
-
+# Функция для нормализации на логарифмической шкале
 def scale_uk_log(uk, min_uk, max_uk):
     if uk is None or np.isnan(uk) or uk < 0:
         return 0
@@ -304,39 +326,47 @@ def scale_uk_log(uk, min_uk, max_uk):
         return 0
     if min_uk == max_uk:
         return 0
+
     epsilon = 1e-10
     log_uk = np.log(max(uk, epsilon))
     log_min_uk = np.log(max(min_uk, epsilon))
     log_max_uk = np.log(max(max_uk, epsilon))
-    return (log_uk - log_min_uk) / (log_max_uk - log_min_uk)
 
-breeding_diff = {key: breeding_cells[key] - breeding_cells_clone[key] for key in breeding_cells}
+    denominator = log_max_uk - log_min_uk
+    if denominator == 0:
+        return 0
 
-breeding_coords = np.array(list(breeding_diff.keys()))
-breeding_densities = np.array(list(breeding_diff.values()))
+    return (log_uk - log_min_uk) / denominator
+
+# Загрузка данных
+with open(NEW_GRID_DATA, "r", encoding="utf-8") as f:
+    grid_data = json.load(f)
+
+# Разделение клеток на гнездование и зимовку
+breeding_cells = { (cell["latitude"], cell["longitude"]): cell["density"] for cell in grid_data if cell["season"] == "breeding" }
+wintering_cells = { (cell["latitude"], cell["longitude"]): cell["density"] for cell in grid_data if cell["season"] == "wintering" }
+
+# Нормализация плотностей на логарифмической шкале
+breeding_densities = np.array(list(breeding_cells.values()))
+wintering_densities = np.array(list(wintering_cells.values()))
 
 min_breeding_density, max_breeding_density = breeding_densities.min(), breeding_densities.max()
-norm_breeding_densities = [scale_uk_log(d, min_breeding_density, max_breeding_density) for d in breeding_densities]
-
-wintering_diff = {key: wintering_cells[key] - wintering_cells_clone[key] for key in wintering_cells}
-
-wintering_coords = np.array(list(wintering_diff.keys()))
-wintering_densities = np.array(list(wintering_diff.values()))
-
 min_wintering_density, max_wintering_density = wintering_densities.min(), wintering_densities.max()
+
+norm_breeding_densities = [scale_uk_log(d, min_breeding_density, max_breeding_density) for d in breeding_densities]
 norm_wintering_densities = [scale_uk_log(d, min_wintering_density, max_wintering_density) for d in wintering_densities]
 
-all_coords = np.vstack([breeding_coords, wintering_coords])
-
+# Создание карты
+all_coords = np.vstack([list(breeding_cells.keys()), list(wintering_cells.keys())])
 map_center = [np.mean(all_coords[:, 0]), np.mean(all_coords[:, 1])]
 
 m = folium.Map(location=map_center, zoom_start=6)
 
-
-for (lat, lon), norm_value in zip(breeding_coords, norm_breeding_densities):
+# Добавление клеток гнездования
+for (lat, lon), norm_value in zip(breeding_cells.keys(), norm_breeding_densities):
     color_intensity = int(255 * norm_value)
-    color = f'#ff{color_intensity:02x}00'
-    popup_text = f"Breeding Difference: {breeding_diff[(lat, lon)]}"
+    color = f'#ff{color_intensity:02x}00'  # Оттенок оранжевого
+    popup_text = f"Breeding Density: {breeding_cells[(lat, lon)]}"
     folium.Rectangle(
         bounds=[
             [lat - 0.5, lon - 0.5],
@@ -350,10 +380,11 @@ for (lat, lon), norm_value in zip(breeding_coords, norm_breeding_densities):
         tooltip=popup_text
     ).add_to(m)
 
-for (lat, lon), norm_value in zip(wintering_coords, norm_wintering_densities):
+# Добавление клеток зимовки
+for (lat, lon), norm_value in zip(wintering_cells.keys(), norm_wintering_densities):
     color_intensity = int(255 * norm_value)
-    color = f'#00{color_intensity:02x}ff'
-    popup_text = f"Wintering Difference: {wintering_diff[(lat, lon)]}"
+    color = f'#00{color_intensity:02x}{255 - color_intensity:02x}'  # Оттенок синего
+    popup_text = f"Wintering Density: {wintering_cells[(lat, lon)]}"
     folium.Rectangle(
         bounds=[
             [lat - 0.5, lon - 0.5],
@@ -367,5 +398,6 @@ for (lat, lon), norm_value in zip(wintering_coords, norm_wintering_densities):
         tooltip=popup_text
     ).add_to(m)
 
-m.save("breeding_and_wintering_diff_map.html")
-print("Карта сохранена в breeding_and_wintering_diff_map.html")
+# Сохранение карты
+m.save("log_scale_breeding_and_wintering_map.html")
+print("Карта с логарифмической шкалой сохранена в log_scale_breeding_and_wintering_map.html")

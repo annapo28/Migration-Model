@@ -3,9 +3,10 @@ import numpy as np
 import dash
 from dash import dcc, html, Output, Input
 import dash_leaflet as dl
+from dash_leaflet import Tooltip
 from flask import Flask
 
-with open("edges_weight.json", "r", encoding="utf-8") as f:
+with open("/home/anya2812/Migration-Model/migration_probabilities.json", "r", encoding="utf-8") as f:
     edges_weight_json = json.load(f)
 
 edges_weight = {}
@@ -18,7 +19,6 @@ for key, values in edges_weight_json.items():
     ]
     uk_values = [uk for (_, _, uk) in edges_weight[(lat, lon)]]
     uk_min_max[(lat, lon)] = (min(uk_values), max(uk_values))
-
 
 def scale_uk_log(uk, min_uk, max_uk):
     if uk == min_uk:
@@ -52,7 +52,8 @@ def generate_map_elements(center_coord):
                 fill=True,
                 fillColor=color,
                 fillOpacity=0.7,
-                weight=1
+                weight=1,
+                children=Tooltip(f"UK: {uk:.6f}")  # Добавление всплывающей подсказки
             )
         )
 
@@ -69,7 +70,6 @@ def generate_map_elements(center_coord):
     )
 
     return rectangles
-
 
 server = Flask(__name__)
 app = dash.Dash(__name__, server=server)
@@ -96,7 +96,6 @@ app.layout = html.Div([
     )
 ])
 
-
 @app.callback(
     Output("migration-map", "children"),
     Input("coord-dropdown", "value")
@@ -104,7 +103,6 @@ app.layout = html.Div([
 def update_map(selected_coord):
     center_coord = tuple(map(float, selected_coord.strip("()").split(",")))
     return generate_map_elements(center_coord)
-
 
 if __name__ == "__main__":
     app.run_server(debug=True)
