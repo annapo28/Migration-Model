@@ -6,6 +6,7 @@ import dash_leaflet as dl
 from dash_leaflet import Tooltip
 from flask import Flask
 
+# Загрузка данных
 with open("/home/anya2812/Migration-Model/migration_probabilities.json", "r", encoding="utf-8") as f:
     edges_weight_json = json.load(f)
 
@@ -20,21 +21,28 @@ for key, values in edges_weight_json.items():
     uk_values = [uk for (_, _, uk) in edges_weight[(lat, lon)]]
     uk_min_max[(lat, lon)] = (min(uk_values), max(uk_values))
 
-def scale_uk_log(uk, min_uk, max_uk):
-    if uk == min_uk:
-        return 0
-    epsilon = 1e-10
-    log_uk = np.log(uk + epsilon)
-    log_min_uk = np.log(min_uk + epsilon)
-    log_max_uk = np.log(max_uk + epsilon)
-    return (log_uk - log_min_uk) / (log_max_uk - log_min_uk) if log_max_uk != log_min_uk else 0
 
+# Функция логарифмического масштабирования
+def scale_uk_log(uk, min_uk, max_uk):
+    if max_uk == min_uk:
+        return 0
+    epsilon = 1e-10  # Избегаем log(0)
+    return (np.log(uk + epsilon) - np.log(min_uk + epsilon)) / (np.log(max_uk + epsilon) - np.log(min_uk + epsilon))
+
+
+# Генерация элементов карты
 def generate_map_elements(center_coord):
     if center_coord not in edges_weight:
+        print(f"⚠ Координата {center_coord} отсутствует в данных!")
         return []
 
     relevant_edges = edges_weight[center_coord]
     min_uk, max_uk = uk_min_max[center_coord]
+
+    # Отладочный вывод значений UK
+    uk_values_str = ", ".join(f"{uk:.6f}" for (_, _, uk) in relevant_edges)
+    print(f"🔍 Координата {center_coord}: UK -> {uk_values_str}")
+    print(f"Минимальный UK: {min_uk}, Максимальный UK: {max_uk}")
 
     rectangles = []
     for (to_lat, to_lon, uk) in relevant_edges:
@@ -53,10 +61,11 @@ def generate_map_elements(center_coord):
                 fillColor=color,
                 fillOpacity=0.7,
                 weight=1,
-                children=Tooltip(f"UK: {uk:.6f}")  # Добавление всплывающей подсказки
+                children=Tooltip(f"UK: {uk:.6f}, Scaled: {scaled_uk:.2f}")
             )
         )
 
+    # Добавляем синий квадрат для выбранной точки
     rectangles.append(
         dl.Rectangle(
             bounds=[
@@ -71,6 +80,8 @@ def generate_map_elements(center_coord):
 
     return rectangles
 
+
+# Создание Flask-сервера
 server = Flask(__name__)
 app = dash.Dash(__name__, server=server)
 
@@ -96,6 +107,7 @@ app.layout = html.Div([
     )
 ])
 
+
 @app.callback(
     Output("migration-map", "children"),
     Input("coord-dropdown", "value")
@@ -103,6 +115,7 @@ app.layout = html.Div([
 def update_map(selected_coord):
     center_coord = tuple(map(float, selected_coord.strip("()").split(",")))
     return generate_map_elements(center_coord)
+
 
 if __name__ == "__main__":
     app.run_server(debug=True)
