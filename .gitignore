@@ -1,2 +1,3 @@
 *.html
-*.json
+*.jsonoutput_densities.json
+migration_probabilities.json
