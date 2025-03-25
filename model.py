@@ -4,213 +4,216 @@ from scipy.optimize import minimize
 import copy
 import folium
 
-INPUT_SORTED_TRIPLE_FILE = "sorted_migration_routes.json"
-INPUT_SORTED_TRIPLE_FILE_FALL = "sorted_migration_routes_fall.json"
+GRID_DATA = "/home/anya2812/Migration-Model/amewoo/grid_data.json"
 
-OUTPUT_PROBABILITIES_FILE = "/home/anya2812/Migration-Model/migration_probabilities.json"
-OUTPUT_PROBABILITIES_FILE_FALL = "/home/anya2812/Migration-Model/migration_probabilities_fall.json"  # Для осени
+INPUT_SORTED_TRIPLE_FILE = "amewoo/sorted_migration_routes.json"
+INPUT_SORTED_TRIPLE_FILE_FALL = "amewoo/sorted_migration_routes_fall.json"
+INPUT_CHAIN_TRIPLE_FILE_SPRING = "/home/anya2812/Migration-Model/amewoo/chain_migration_routes.json"
+INPUT_CHAIN_TRIPLE_FILE_FALL = "/home/anya2812/Migration-Model/amewoo/chain_migration_routes_fall.json"
 
-OUTPUT_WEIGHTS_FILE = "/home/anya2812/Migration-Model/output_densities.json"
+OUTPUT_PROBABILITIES_FILE = "/home/anya2812/Migration-Model/amewoo/migration_probabilities.json"
+OUTPUT_PROBABILITIES_FILE_FALL = "/home/anya2812/Migration-Model/amewoo/migration_probabilities_fall.json"
+CHAIN_OUTPUT_PROBABILITIES_FILE = "/home/anya2812/Migration-Model/amewoo/chain_migration_probabilities.json"
+CHAIN_OUTPUT_PROBABILITIES_FILE_FALL = "/home/anya2812/Migration-Model/amewoo/chain_migration_probabilities_fall.json"
 
-GRID_DATA = "/home/anya2812/Migration-Model/grid_data.json"
+BREEDING_DISCREPANCY_FILE = "/home/anya2812/Migration-Model/amewoo/breeding_discrepancy.json"
+WINTERING_DISCREPANCY_FILE = "/home/anya2812/Migration-Model/amewoo/wintering_discrepancy.json"
 
-excluded_coordinates = {(43.5, -88.5), (37.5, -78.5), (41.5, -69.5)}  # Пример: исключаем опред
+BREEDING_DISCREPANCY_FILE_FALL = "/home/anya2812/Migration-Model/amewoo/breeding_discrepancy_fall.json"
+WINTERING_DISCREPANCY_FILE_FALL = "/home/anya2812/Migration-Model/amewoo/wintering_discrepancy_fall.json"
 
+CHAIN_BREEDING_DISCREPANCY_FILE = "/home/anya2812/Migration-Model/amewoo/chain_breeding_discrepancy.json"
+CHAIN_WINTERING_DISCREPANCY_FILE = "/home/anya2812/Migration-Model/amewoo/chain_wintering_discrepancy.json"
+
+CHAIN_BREEDING_DISCREPANCY_FILE_FALL = "/home/anya2812/Migration-Model/amewoo/chain_breeding_discrepancy_fall.json"
+CHAIN_WINTERING_DISCREPANCY_FILE_FALL = "/home/anya2812/Migration-Model/amewoo/chain_wintering_discrepancy_fall.json"
+
+excluded_coordinates = {(43.5, -88.5), (37.5, -78.5), (41.5, -69.5)}
+excluded_coordinates = {}
 with open(GRID_DATA, "r", encoding="utf-8") as f:
     grid_data = json.load(f)
 
 breeding_cells = {}
 wintering_cells = {}
 
-wi_max = 0
-uj_max = 0
-
 for cell in grid_data:
     coords = (cell["latitude"], cell["longitude"])
     density = float(cell["abundance"])
-
     if cell["season"] == "breeding":
         breeding_cells[coords] = density
-        uj_max += breeding_cells[coords]
-        # breeding_cells_clone[coords] = density
     elif cell["season"] == "wintering":
         wintering_cells[coords] = density
-        wi_max += wintering_cells[coords]
-        # wintering_cells_clone[coords] = density
-
-print("uj and wi ", uj_max, wi_max)
-
-print("Клетки гнездования (breeding_cells):")
-print(breeding_cells)
-
-print("\nКлетки зимовки (wintering_cells):")
-print(wintering_cells)
-zero_count_1 = sum(1 for value in wintering_cells.values() if value == 0)
-NON_zero_count_1 = sum(1 for value in wintering_cells.values() if value != 0)
-
-print("zeros^ ", zero_count_1, NON_zero_count_1)
+# print(wintering_cells[(30.5, -83.5)])
+# print(breeding_cells[(30.5, -83.5)])
+#
 
 
-probabilities = []
+def loss_function(alpha, routes, cells_from, cells_to):
+    cells_from_clone = copy.deepcopy(cells_from)
+    cells_to_clone = copy.deepcopy(cells_to)
 
-def loss_function(alpha, routes):
-    """
-        Функция потерь, которую минимизируем.
-    """
-    breeding_cells_clone = copy.deepcopy(breeding_cells)
-    wintering_cells_clone = copy.deepcopy(wintering_cells)
-
+    # Инициализируем все возможные клетки назначения с нулевыми значениями, если их нет
     for route in routes:
-        (lat_i, lon_i), (lat_j, lon_j), (Lij, wi, uj) = route
+        (lat_j, lon_j) = route[1]  # координаты назначения
+        if (lat_j, lon_j) not in cells_to_clone:
+            cells_to_clone[(lat_j, lon_j)] = 0.0
 
-        uk = min(
-            float(alpha.item()) * float(wintering_cells_clone[(lat_i, lon_i)]),
-            float(breeding_cells_clone[(lat_j, lon_j)])
-            )
-
-        breeding_cells_clone[(lat_j, lon_j)] -= uk
-        wintering_cells_clone[(lat_i, lon_i)] -= uk
-
-    total_loss = 0
+    grouped_routes = {}
     for route in routes:
-        (lat_i, lon_i), (lat_j, lon_j), (Lij, wi, uj) = route
-        total_loss += breeding_cells_clone[(lat_j, lon_j)]**2
-        total_loss += wintering_cells_clone[(lat_i, lon_i)]**2
-    # total_loss = total_loss_u ** 2 + total_loss_w ** 2
-    # print(f"alpha: {alpha}, total_loss: {total_loss}")
+        (lat_i, lon_i), (lat_j, lon_j), (Lij, wi, uj, n_k, _) = route
+        key = (lat_j, lon_j, Lij)
+        if key not in grouped_routes:
+            grouped_routes[key] = []
+        grouped_routes[key].append(route)
 
+    for (lat_j, lon_j, Lij), group in grouped_routes.items():
+        for idx, ((lat_i, lon_i), _, _) in enumerate(group):
+            Uk = sum(cells_from_clone.get((lat_i, lon_i), 0) for (lat_i, lon_i), _, _ in group[idx:])
+
+            if Uk > 0:
+                uk = min(float(alpha.item()) * float(Uk), float(cells_to_clone.get((lat_j, lon_j), 0)))
+                if (lat_j, lon_j) in cells_to_clone:  # Добавленная проверка
+                    cells_to_clone[(lat_j, lon_j)] -= uk
+                else:
+                    cells_to_clone[(lat_j, lon_j)] = -uk  # Или просто пропустить
+
+                for (lat_i, lon_i), _, _ in group[idx:]:
+                    if Uk > 0 and (lat_i, lon_i) in cells_from_clone:  # Добавленная проверка
+                        cells_from_clone[(lat_i, lon_i)] *= (1 - (uk / Uk))
+
+    total_loss = sum(v ** 2 for v in cells_to_clone.values()) + sum(v ** 2 for v in cells_from_clone.values())
     return total_loss
 
 
-def loss_function_fall(alpha, routes):
-    """
-        Функция потерь, которую минимизируем.
-    """
+def update_densities(routes, alpha, cells_from, cells_to):
+    cells_from_clone = copy.deepcopy(cells_from)
+    cells_to_clone = copy.deepcopy(cells_to)
+    edges_weight = {}
 
-    breeding_cells_clone = copy.deepcopy(breeding_cells)
-    wintering_cells_clone = copy.deepcopy(wintering_cells)
-    zero_count = sum(1 for value in wintering_cells_clone.values() if value == 0)
-    NON_zero_count = sum(1 for value in wintering_cells_clone.values() if value != 0)
-
-    print("zeros^ ", zero_count, NON_zero_count)
+    grouped_routes = {}
     for route in routes:
-        (lat_i, lon_i), (lat_j, lon_j), (Lij, wi, uj) = route
+        (lat_i, lon_i), (lat_j, lon_j), (Lij, wi, uj, n_k, _) = route  # Добавлен `_`
+        key = (lat_j, lon_j, Lij)
+        if key not in grouped_routes:
+            grouped_routes[key] = []
+        grouped_routes[key].append(route)
 
-        uk = min(
-            float(alpha.item()) * float(breeding_cells_clone[(lat_i, lon_i)]),
-            float(wintering_cells_clone[(lat_j, lon_j)])
+    for (lat_j, lon_j, Lij), group in grouped_routes.items():
+        for idx, ((lat_i, lon_i), _, _) in enumerate(group):
+            Uk = sum(cells_from_clone.get((lat_i, lon_i), 0) for (lat_i, lon_i), _, _ in group[idx:])
+
+            if Uk > 0:
+                uk = min(float(alpha) * float(Uk), float(cells_to_clone.get((lat_j, lon_j), 0)))
+                cells_to_clone[(lat_j, lon_j)] -= uk
+
+                for (lat_i, lon_i), _, _ in group[idx:]:
+                    if Uk > 0:
+                        cells_from_clone[(lat_i, lon_i)] *= (1 - (uk / Uk))
+
+                        if (lat_i, lon_i) not in edges_weight:
+                            edges_weight[(lat_i, lon_i)] = []
+                        edges_weight[(lat_i, lon_i)].append((lat_j, lon_j, uk))
+
+    return edges_weight, cells_from_clone, cells_to_clone
+
+
+def optimize_alpha(routes, cells_from, cells_to, initial_alpha=0.5):
+    result = minimize(loss_function, initial_alpha, args=(routes, cells_from, cells_to), bounds=[(0, 1)])
+    return result.x[0]
+
+
+def save_results(edges_weight, output_file):
+    try:
+        with open(output_file, "w", encoding="utf-8") as f:
+            json.dump(
+                {
+                    f"{lat},{lon}": [
+                        (f"{to_lat},{to_lon}", float(weight)) for to_lat, to_lon, weight in values
+                    ]
+                    for (lat, lon), values in edges_weight.items()
+                },
+                f,
+                ensure_ascii=False,
+                indent=4
             )
+        print(f"Вероятности сохранены в {output_file}")
+    except Exception as e:
+        print(f"Ошибка при сохранении файла: {e}")
 
-        # print('alpha ', alpha, 'breeding_cell ', float(breeding_cells_clone[(lat_i, lon_i)]), 'wintering_cell ', float(wintering_cells_clone[(lat_j, lon_j)]))
-        # if uk != 0 :
-        #
-        #     print('uk ', uk)
-        #
+def calculate_discrepancies(cells_final, cells_initial):
+    discrepancies = {}
+    for coords, initial_density in cells_initial.items():
+        final_density = cells_final.get(coords, 0)
+        if initial_density != 0:
+            discrepancies[coords] = final_density / initial_density
+        else:
+            discrepancies[coords] = 0
+    return discrepancies
 
-
-        breeding_cells_clone[(lat_i, lon_i)] -= uk
-        wintering_cells_clone[(lat_j, lon_j)] -= uk
-
-    total_loss = 0
-    for route in routes:
-        (lat_i, lon_i), (lat_j, lon_j), (Lij, wi, uj) = route
-        total_loss += breeding_cells_clone[(lat_i, lon_i)]**2
-        total_loss += wintering_cells_clone[(lat_j, lon_j)]**2
-
-    print(f"autumn alpha: {alpha}, total_loss: {total_loss}")
-
-    return total_loss
-
-
-def optimize_alpha(routes, initial_alpha=0.5):
-    """
-        Оптимизирует α, минимизируя функцию потерь.
-    """
-    result = minimize(loss_function, initial_alpha, args=(routes,), bounds=[(0, 1)])
-    return result.x[0]
-
-def optimize_alpha_fall(routes, initial_alpha=0.05):
-    """
-        Оптимизирует α, минимизируя функцию потерь.
-    """
-    result = minimize(loss_function_fall, initial_alpha, args=(routes,), bounds=[(0, 1)])
-    return result.x[0]
-
+def save_discrepancies(discrepancies, output_file):
+    try:
+        with open(output_file, "w", encoding="utf-8") as f:
+            json.dump(
+                {f"{lat},{lon}": value for (lat, lon), value in discrepancies.items()},
+                f,
+                ensure_ascii=False,
+                indent=4
+            )
+        print(f"Невязки сохранены в {output_file}")
+    except Exception as e:
+        print(f"Ошибка при сохранении файла: {e}")
 
 with open(INPUT_SORTED_TRIPLE_FILE, "r", encoding="utf-8") as f:
     migration_routes = json.load(f)
 with open(INPUT_SORTED_TRIPLE_FILE_FALL, "r", encoding="utf-8") as f:
     migration_routes_fall = json.load(f)
+with open(INPUT_CHAIN_TRIPLE_FILE_SPRING, "r", encoding="utf-8") as f:
+    chain_migration_routes = json.load(f)
+with open(INPUT_CHAIN_TRIPLE_FILE_FALL, "r", encoding="utf-8") as f:
+    chain_migration_routes_fall = json.load(f)
 
+optimal_alpha_spring = optimize_alpha(migration_routes, wintering_cells, breeding_cells)
+optimal_alpha_autumn = optimize_alpha(migration_routes_fall, breeding_cells, wintering_cells)
+chain_optimal_alpha_spring = optimize_alpha(chain_migration_routes, wintering_cells, breeding_cells)
+chain_optimal_alpha_fall = optimize_alpha(chain_migration_routes_fall, breeding_cells, wintering_cells)
 
-optimal_alpha_spring = optimize_alpha(migration_routes)
-optimal_alpha_autumn = optimize_alpha_fall(migration_routes_fall)
-print("Осень: ", optimal_alpha_autumn, "Весна: ", optimal_alpha_spring)
-# exit()
+print(optimal_alpha_spring, optimal_alpha_autumn) #, chain_optimal_alpha_spring, chain_optimal_alpha_fall)
 
+edges_weight_spring, wintering_cells_clone_spring, breeding_cells_clone_spring= update_densities(
+    migration_routes, optimal_alpha_spring, wintering_cells, breeding_cells
+)
+edges_weight_fall, breeding_cells_clone_fall, wintering_cells_clone_fall = update_densities(
+    migration_routes_fall, optimal_alpha_autumn, breeding_cells, wintering_cells
+)
+edges_weight_chain_spring, wintering_cells_clone_chain_spring, breeding_cells_clone_chain_spring = update_densities(
+    chain_migration_routes, chain_optimal_alpha_spring, wintering_cells, breeding_cells
+)
+edges_weight_chain_fall, breeding_cells_clone_chain_fall, wintering_cells_clone_chain_fall = update_densities(
+    chain_migration_routes_fall, chain_optimal_alpha_fall, breeding_cells, wintering_cells
+)
 
+save_results(edges_weight_spring, OUTPUT_PROBABILITIES_FILE)
+save_results(edges_weight_fall, OUTPUT_PROBABILITIES_FILE_FALL)
+save_results(edges_weight_chain_spring, CHAIN_OUTPUT_PROBABILITIES_FILE)
+save_results(edges_weight_chain_fall, CHAIN_OUTPUT_PROBABILITIES_FILE_FALL)
 
-breeding_cells_clone_final = copy.deepcopy(breeding_cells)
-wintering_cells_clone_final = copy.deepcopy(wintering_cells)
-edges_weight = {}
-count = 0
-all_count = 0
-maxi=0
-mini = 1111111111111111111
-for route in migration_routes:
-    (lat_i, lon_i), (lat_j, lon_j), (Lij, wi, uj) = route
+breeding_discrepancies_spring = calculate_discrepancies(breeding_cells_clone_spring, breeding_cells)
+wintering_discrepancies_spring = calculate_discrepancies(wintering_cells_clone_spring, wintering_cells)
+breeding_discrepancies_fall = calculate_discrepancies(breeding_cells_clone_fall, breeding_cells)
+wintering_discrepancies_fall = calculate_discrepancies(wintering_cells_clone_fall, wintering_cells)
+chain_breeding_discrepancies_spring = calculate_discrepancies(breeding_cells_clone_chain_spring, breeding_cells)
+chain_wintering_discrepancies_spring = calculate_discrepancies(wintering_cells_clone_chain_spring, wintering_cells)
+chain_breeding_discrepancies_fall = calculate_discrepancies(breeding_cells_clone_chain_fall, breeding_cells)
+chain_wintering_discrepancies_fall = calculate_discrepancies(wintering_cells_clone_chain_fall, wintering_cells)
 
-    uk = min(
-        float(optimal_alpha_spring) * float(wintering_cells_clone_final[(lat_i, lon_i)]),
-        float(breeding_cells_clone_final[(lat_j, lon_j)])
-    )
-    # print("uk ", uk)
-
-    all_count += 1
-    pi_lm = uk / wi if wi != 0 else 0
-
-    if uk == 0.0:
-        count += 1
-
-    maxi = max(maxi, pi_lm)
-    if pi_lm > 0:
-        mini = min(mini, pi_lm)
-    # print(pi_lm)
-    if isinstance(uk, np.ndarray):
-        uk = uk.item()
-
-    if isinstance(pi_lm, np.ndarray):
-        pi_lm = pi_lm.item()
-
-    # Добавляем данные в edges_weight
-    if (lat_i, lon_i) not in edges_weight and (lat_i, lon_i) not in excluded_coordinates:
-        edges_weight[(lat_i, lon_i)] = []
-    if (lat_i, lon_i) not in excluded_coordinates:
-        edges_weight[(lat_i, lon_i)].append((lat_j, lon_j, float(uk)))
-
-    # Обновляем плотности
-    breeding_cells_clone_final[(lat_j, lon_j)] -= uk
-    wintering_cells_clone_final[(lat_i, lon_i)] -= uk
-
-print(all_count, count, "LALALALLAL", maxi, mini)
-
-# Сохраняем edges_weight в файл probabilities
-try:
-    with open(OUTPUT_PROBABILITIES_FILE, "w", encoding="utf-8") as f:
-        json.dump(
-            {
-                f"{lat},{lon}": [
-                    (f"{to_lat},{to_lon}", float(weight)) for to_lat, to_lon, weight in values
-                ]
-                for (lat, lon), values in edges_weight.items()
-            },
-            f,
-            ensure_ascii=False,
-            indent=4
-        )
-    print(f"Вероятности сохранены в {OUTPUT_PROBABILITIES_FILE}")
-except Exception as e:
-    print(f"Ошибка при сохранении файла: {e}")
+save_discrepancies(breeding_discrepancies_spring, BREEDING_DISCREPANCY_FILE)
+save_discrepancies(wintering_discrepancies_spring, WINTERING_DISCREPANCY_FILE)
+save_discrepancies(breeding_discrepancies_fall, BREEDING_DISCREPANCY_FILE_FALL)
+save_discrepancies(wintering_discrepancies_fall, WINTERING_DISCREPANCY_FILE_FALL)
+save_discrepancies(chain_breeding_discrepancies_spring, CHAIN_BREEDING_DISCREPANCY_FILE)
+save_discrepancies(chain_wintering_discrepancies_spring, CHAIN_WINTERING_DISCREPANCY_FILE)
+save_discrepancies(breeding_discrepancies_fall, CHAIN_BREEDING_DISCREPANCY_FILE_FALL)
+save_discrepancies(wintering_discrepancies_fall, CHAIN_WINTERING_DISCREPANCY_FILE_FALL)
 
 def scale_uk_log(uk, min_uk, max_uk):
     if uk is None or np.isnan(uk) or uk < 0:
@@ -231,15 +234,12 @@ def scale_uk_log(uk, min_uk, max_uk):
 
     return (log_uk - log_min_uk) / denominator
 
-# Загрузка данных
 with open(GRID_DATA, "r", encoding="utf-8") as f:
     grid_data = json.load(f)
 
-# Разделение клеток на гнездование и зимовку
 breeding_cells = { (cell["latitude"], cell["longitude"]): cell["abundance"] for cell in grid_data if cell["season"] == "breeding" }
 wintering_cells = { (cell["latitude"], cell["longitude"]): cell["abundance"] for cell in grid_data if cell["season"] == "wintering" }
 
-# Нормализация плотностей на логарифмической шкале
 breeding_densities = np.array(list(breeding_cells.values()))
 wintering_densities = np.array(list(wintering_cells.values()))
 
@@ -249,16 +249,14 @@ min_wintering_density, max_wintering_density = wintering_densities.min(), winter
 norm_breeding_densities = [scale_uk_log(d, min_breeding_density, max_breeding_density) for d in breeding_densities]
 norm_wintering_densities = [scale_uk_log(d, min_wintering_density, max_wintering_density) for d in wintering_densities]
 
-# Создание карты
 all_coords = np.vstack([list(breeding_cells.keys()), list(wintering_cells.keys())])
 map_center = [np.mean(all_coords[:, 0]), np.mean(all_coords[:, 1])]
 
 m = folium.Map(location=map_center, zoom_start=6)
 
-# Добавление клеток гнездования
 for (lat, lon), norm_value in zip(breeding_cells.keys(), norm_breeding_densities):
     color_intensity = int(255 * norm_value)
-    color = f'#ff{color_intensity:02x}00'  # Оттенок оранжевого
+    color = f'#ff{color_intensity:02x}00'
     popup_text = f"Breeding Density: {breeding_cells[(lat, lon)]}"
     folium.Rectangle(
         bounds=[
@@ -273,10 +271,9 @@ for (lat, lon), norm_value in zip(breeding_cells.keys(), norm_breeding_densities
         tooltip=popup_text
     ).add_to(m)
 
-# Добавление клеток зимовки
 for (lat, lon), norm_value in zip(wintering_cells.keys(), norm_wintering_densities):
     color_intensity = int(255 * norm_value)
-    color = f'#00{color_intensity:02x}{255 - color_intensity:02x}'  # Оттенок синего
+    color = f'#00{color_intensity:02x}{255 - color_intensity:02x}'
     popup_text = f"Wintering Density: {wintering_cells[(lat, lon)]}"
     folium.Rectangle(
         bounds=[
@@ -291,64 +288,5 @@ for (lat, lon), norm_value in zip(wintering_cells.keys(), norm_wintering_densiti
         tooltip=popup_text
     ).add_to(m)
 
-# Сохранение карты
-m.save("log_scale_breeding_and_wintering_map.html")
+m.save("vizualization/log_scale_breeding_and_wintering_map.html")
 print("Карта с логарифмической шкалой сохранена в log_scale_breeding_and_wintering_map.html")
-
-
-
-breeding_cells_clone_fall = copy.deepcopy(breeding_cells)
-wintering_cells_clone_fall = copy.deepcopy(wintering_cells)
-edges_weight_fall = {}
-
-maxi=0
-mini = 1111111111111111111
-
-for route in migration_routes_fall:
-    (lat_i, lon_i), (lat_j, lon_j), (Lij, wi, uj) = route
-
-    uk = min(
-        float(optimal_alpha_autumn) * float(breeding_cells_clone_fall[(lat_i, lon_i)]),
-        float(wintering_cells_clone_fall[(lat_j, lon_j)])
-    )
-
-    pi_lm = uk / wi if wi != 0 else 0
-
-    if (lat_i, lon_i) not in edges_weight_fall and (lat_i, lon_i) not in excluded_coordinates:
-        edges_weight_fall[(lat_i, lon_i)] = []
-    if (lat_i, lon_i) not in excluded_coordinates:
-        edges_weight_fall[(lat_i, lon_i)].append((lat_j, lon_j, float(pi_lm)))
-
-
-    if uk == 0.0:
-        count += 1
-
-    maxi = max(maxi, pi_lm)
-    if pi_lm > 0:
-        mini = min(mini, pi_lm)
-    # print(pi_lm
-
-    # Обновляем плотности
-    breeding_cells_clone_final[(lat_i, lon_i)] -= uk
-    wintering_cells_clone_final[(lat_j, lon_j)] -= uk
-
-print("SISISIIISIISISISL", maxi, mini)
-
-
-# Сохранение данных о вероятностях для осени в файл
-try:
-    with open(OUTPUT_PROBABILITIES_FILE_FALL, "w", encoding="utf-8") as f:
-        json.dump(
-            {
-                f"{lat},{lon}": [
-                    (f"{to_lat},{to_lon}", float(weight)) for to_lat, to_lon, weight in values
-                ]
-                for (lat, lon), values in edges_weight_fall.items()
-            },
-            f,
-            ensure_ascii=False,
-            indent=4
-        )
-    print(f"Вероятности для осени сохранены в {OUTPUT_PROBABILITIES_FILE_FALL}")
-except Exception as e:
-    print(f"Ошибка при сохранении файла для осени: {e}")

@@ -5,7 +5,7 @@ from folium.plugins import HeatMap
 
 # Загружаем JSON с результатами
 # output_json = "/home/anya2812/Migration-Model/grid_abundance_normalized.json"
-output_json = "/home/anya2812/Migration-Model/grid_data.json"
+output_json = "/home/anya2812/Migration-Model/wood_thrush/grid_data.json"
 with open(output_json, "r", encoding="utf-8") as f:
     data_points = json.load(f)
 
@@ -82,5 +82,5 @@ if breeding_points:
 folium.LayerControl().add_to(m)
 
 # Сохраняем карту
-m.save("/home/anya2812/Migration-Model/vizualization/heatmap.html")
+# m.save("/home/anya2812/Migration-Model/vizualization/heatmap.html")
 print("✅ Карта сохранена в heatmap.html. Откройте этот файл в браузере.")
