@@ -1,7 +1,7 @@
 import json
 from datetime import datetime
 
-TXT_FILE = "/home/anya2812/Загрузки/ebd_amewoo_201612_202412_smp_relFeb-2025.txt"         # Исходные данные
+TXT_FILE = "/home/anya2812/Загрузки/ebd_amewoo_201612_202412_smp_relFeb-2025.txt"
 JSON_FILE = "/home/anya2812/Migration-Model/amewoo/data_final_2017.json"
 
 def get_season(event_date):
@@ -49,7 +49,7 @@ def convert_txt_to_json_2017():
                 "season": season
             })
 
-    # Сохраняем в JSON
+
     with open(JSON_FILE, "w", encoding="utf-8") as f:
         json.dump(results, f, ensure_ascii=False, indent=4)
 

@@ -16,6 +16,11 @@ OUTPUT_PROBABILITIES_FILE_FALL = "/home/anya2812/Migration-Model/amewoo/migratio
 CHAIN_OUTPUT_PROBABILITIES_FILE = "/home/anya2812/Migration-Model/amewoo/chain_migration_probabilities.json"
 CHAIN_OUTPUT_PROBABILITIES_FILE_FALL = "/home/anya2812/Migration-Model/amewoo/chain_migration_probabilities_fall.json"
 
+OUTPUT_WEIGHT = "/home/anya2812/Migration-Model/amewoo/migration_weights.json"
+OUTPUT_WEIGHT_FALL = "/home/anya2812/Migration-Model/amewoo/migration_weights_fall.json"
+CHAIN_OUTPUT_WEIGHT = "/home/anya2812/Migration-Model/amewoo/chain_migration_weights.json"
+CHAIN_OUTPUT_WEIGHT_FALL = "/home/anya2812/Migration-Model/amewoo/chain_migration_weights_fall.json"
+
 BREEDING_DISCREPANCY_FILE = "/home/anya2812/Migration-Model/amewoo/breeding_discrepancy.json"
 WINTERING_DISCREPANCY_FILE = "/home/anya2812/Migration-Model/amewoo/wintering_discrepancy.json"
 
@@ -27,36 +32,62 @@ CHAIN_WINTERING_DISCREPANCY_FILE = "/home/anya2812/Migration-Model/amewoo/chain_
 
 CHAIN_BREEDING_DISCREPANCY_FILE_FALL = "/home/anya2812/Migration-Model/amewoo/chain_breeding_discrepancy_fall.json"
 CHAIN_WINTERING_DISCREPANCY_FILE_FALL = "/home/anya2812/Migration-Model/amewoo/chain_wintering_discrepancy_fall.json"
+# excluded_coordinates = {(43.5, -88.5), (37.5, -78.5), (41.5, -69.5)}
+# excluded_coordinates = {}
 
-excluded_coordinates = {(43.5, -88.5), (37.5, -78.5), (41.5, -69.5)}
-excluded_coordinates = {}
 with open(GRID_DATA, "r", encoding="utf-8") as f:
     grid_data = json.load(f)
 
 breeding_cells = {}
 wintering_cells = {}
 
+sum_u = 0
+sum_w = 0
+
 for cell in grid_data:
     coords = (cell["latitude"], cell["longitude"])
     density = float(cell["abundance"])
     if cell["season"] == "breeding":
         breeding_cells[coords] = density
+        sum_u += breeding_cells[coords]
     elif cell["season"] == "wintering":
         wintering_cells[coords] = density
+        sum_w += wintering_cells[coords]
+
+print(sum_u,  sum_w)
 # print(wintering_cells[(30.5, -83.5)])
 # print(breeding_cells[(30.5, -83.5)])
 #
 
-
 def loss_function(alpha, routes, cells_from, cells_to):
     cells_from_clone = copy.deepcopy(cells_from)
     cells_to_clone = copy.deepcopy(cells_to)
-
-    # Инициализируем все возможные клетки назначения с нулевыми значениями, если их нет
+    grouped_routes = {}
     for route in routes:
-        (lat_j, lon_j) = route[1]  # координаты назначения
-        if (lat_j, lon_j) not in cells_to_clone:
-            cells_to_clone[(lat_j, lon_j)] = 0.0
+        (lat_i, lon_i), (lat_j, lon_j), (Lij, wi, uj, n_k, _) = route
+        key = (lat_j, lon_j, Lij)
+        if key not in grouped_routes:
+            grouped_routes[key] = []
+        grouped_routes[key].append(route)
+
+    for (lat_j, lon_j, Lij), group in grouped_routes.items():
+        Uk = sum(cells_from_clone[(lat_i, lon_i)] for (lat_i, lon_i), _, _ in group) # это все , кто вылетает в данную на фикс расстоянии, сумма шара
+
+        uk = min(float(alpha.item()) * float(Uk), float(cells_to_clone.get((lat_j, lon_j), 0))) # столько в целом сядет
+        cells_to_clone[(lat_j, lon_j)] -= uk
+        for idx, ((lat_i, lon_i), _, _) in enumerate(group):
+            cells_from_clone[(lat_i, lon_i)] *= (1 - (uk / (Uk + 1e-70)))
+    total_loss = sum(v ** 2 for v in cells_to_clone.values()) + sum(v ** 2 for v in cells_from_clone.values())
+
+    print("Разница между невязками: ", sum(v for v in cells_to_clone.values()) - sum(v for v in cells_from_clone.values()))
+    return total_loss
+
+
+def update_densities(routes, alpha, cells_from, cells_to):
+    cells_from_clone = copy.deepcopy(cells_from)
+    cells_to_clone = copy.deepcopy(cells_to)
+    edges_weight = {}
+    real_edges_weight = {}
 
     grouped_routes = {}
     for route in routes:
@@ -67,55 +98,33 @@ def loss_function(alpha, routes, cells_from, cells_to):
         grouped_routes[key].append(route)
 
     for (lat_j, lon_j, Lij), group in grouped_routes.items():
-        for idx, ((lat_i, lon_i), _, _) in enumerate(group):
-            Uk = sum(cells_from_clone.get((lat_i, lon_i), 0) for (lat_i, lon_i), _, _ in group[idx:])
+        Uk = sum(cells_from_clone.get((lat_i, lon_i), 0) for (lat_i, lon_i), _, _ in group)  # это все , кто вылетает в данную на фикс расстоянии, сумма шара
+        uk = min(float(alpha.item()) * float(Uk), float(cells_to_clone.get((lat_j, lon_j), 0)))  # столько в целом сядет
+        cells_to_clone[(lat_j, lon_j)] -= uk
+        if Uk != 0:
+            for idx, ((lat_i, lon_i), _, _) in enumerate(group):
+                uk_next = cells_from_clone[(lat_i, lon_i)] * (uk / Uk)
+                cells_from_clone[(lat_i, lon_i)] *= (1 - (uk / Uk ))
+        # uk_next = cells_from_clone[(lat_i, lon_i)] * (uk / Uk)
+                if (lat_i, lon_i) not in edges_weight:
+                    edges_weight[(lat_i, lon_i)] = []
+                if (lat_i, lon_i) not in real_edges_weight:
+                    real_edges_weight[(lat_i, lon_i)] = []
+                edges_weight[(lat_i, lon_i)].append((lat_j, lon_j, uk_next / (float(cells_from.get((lat_j, lon_j), 0)) + 1e-80)))
+                real_edges_weight[(lat_i, lon_i)].append((lat_j, lon_j, uk_next))
+        else:
+            for idx, ((lat_i, lon_i), _, _) in enumerate(group):
+                if (lat_i, lon_i) not in edges_weight:
+                    edges_weight[(lat_i, lon_i)] = []
+                if (lat_i, lon_i) not in real_edges_weight:
+                    real_edges_weight[(lat_i, lon_i)] = []
+                edges_weight[(lat_i, lon_i)].append((lat_j, lon_j, 1e-80))
+                real_edges_weight[(lat_i, lon_i)].append((lat_j, lon_j, 1e-80))
 
-            if Uk > 0:
-                uk = min(float(alpha.item()) * float(Uk), float(cells_to_clone.get((lat_j, lon_j), 0)))
-                if (lat_j, lon_j) in cells_to_clone:  # Добавленная проверка
-                    cells_to_clone[(lat_j, lon_j)] -= uk
-                else:
-                    cells_to_clone[(lat_j, lon_j)] = -uk  # Или просто пропустить
+    print("Финальная Разница между невязками: ",
+          sum(v for v in cells_to_clone.values()) - sum(v for v in cells_from_clone.values()))
 
-                for (lat_i, lon_i), _, _ in group[idx:]:
-                    if Uk > 0 and (lat_i, lon_i) in cells_from_clone:  # Добавленная проверка
-                        cells_from_clone[(lat_i, lon_i)] *= (1 - (uk / Uk))
-
-    total_loss = sum(v ** 2 for v in cells_to_clone.values()) + sum(v ** 2 for v in cells_from_clone.values())
-    return total_loss
-
-
-def update_densities(routes, alpha, cells_from, cells_to):
-    cells_from_clone = copy.deepcopy(cells_from)
-    cells_to_clone = copy.deepcopy(cells_to)
-    edges_weight = {}
-
-    grouped_routes = {}
-    for route in routes:
-        (lat_i, lon_i), (lat_j, lon_j), (Lij, wi, uj, n_k, _) = route  # Добавлен `_`
-        key = (lat_j, lon_j, Lij)
-        if key not in grouped_routes:
-            grouped_routes[key] = []
-        grouped_routes[key].append(route)
-
-    for (lat_j, lon_j, Lij), group in grouped_routes.items():
-        for idx, ((lat_i, lon_i), _, _) in enumerate(group):
-            Uk = sum(cells_from_clone.get((lat_i, lon_i), 0) for (lat_i, lon_i), _, _ in group[idx:])
-
-            if Uk > 0:
-                uk = min(float(alpha) * float(Uk), float(cells_to_clone.get((lat_j, lon_j), 0)))
-                cells_to_clone[(lat_j, lon_j)] -= uk
-
-                for (lat_i, lon_i), _, _ in group[idx:]:
-                    if Uk > 0:
-                        cells_from_clone[(lat_i, lon_i)] *= (1 - (uk / Uk))
-
-                        if (lat_i, lon_i) not in edges_weight:
-                            edges_weight[(lat_i, lon_i)] = []
-                        edges_weight[(lat_i, lon_i)].append((lat_j, lon_j, uk))
-
-    return edges_weight, cells_from_clone, cells_to_clone
-
+    return real_edges_weight, edges_weight, cells_from_clone, cells_to_clone
 
 def optimize_alpha(routes, cells_from, cells_to, initial_alpha=0.5):
     result = minimize(loss_function, initial_alpha, args=(routes, cells_from, cells_to), bounds=[(0, 1)])
@@ -141,14 +150,19 @@ def save_results(edges_weight, output_file):
         print(f"Ошибка при сохранении файла: {e}")
 
 def calculate_discrepancies(cells_final, cells_initial):
+    sum_a = 0
     discrepancies = {}
     for coords, initial_density in cells_initial.items():
-        final_density = cells_final.get(coords, 0)
+        final_density = cells_final[coords]
         if initial_density != 0:
             discrepancies[coords] = final_density / initial_density
+            # if final_density == initial_density :
+            #     print(coords)
+            sum_a += cells_final[coords] # = final_density / initial_density
         else:
             discrepancies[coords] = 0
-    return discrepancies
+    print("summa", sum_a)
+    return discrepancies #, sum_a
 
 def save_discrepancies(discrepancies, output_file):
     try:
@@ -177,18 +191,18 @@ optimal_alpha_autumn = optimize_alpha(migration_routes_fall, breeding_cells, win
 chain_optimal_alpha_spring = optimize_alpha(chain_migration_routes, wintering_cells, breeding_cells)
 chain_optimal_alpha_fall = optimize_alpha(chain_migration_routes_fall, breeding_cells, wintering_cells)
 
-print(optimal_alpha_spring, optimal_alpha_autumn) #, chain_optimal_alpha_spring, chain_optimal_alpha_fall)
+print(optimal_alpha_spring, optimal_alpha_autumn, chain_optimal_alpha_spring, chain_optimal_alpha_fall)
 
-edges_weight_spring, wintering_cells_clone_spring, breeding_cells_clone_spring= update_densities(
+real_edges_weight_spring, edges_weight_spring, wintering_cells_clone_spring, breeding_cells_clone_spring= update_densities(
     migration_routes, optimal_alpha_spring, wintering_cells, breeding_cells
 )
-edges_weight_fall, breeding_cells_clone_fall, wintering_cells_clone_fall = update_densities(
+real_edges_weight_fall, edges_weight_fall, breeding_cells_clone_fall, wintering_cells_clone_fall = update_densities(
     migration_routes_fall, optimal_alpha_autumn, breeding_cells, wintering_cells
 )
-edges_weight_chain_spring, wintering_cells_clone_chain_spring, breeding_cells_clone_chain_spring = update_densities(
+real_edges_weight_chain_spring, edges_weight_chain_spring, wintering_cells_clone_chain_spring, breeding_cells_clone_chain_spring = update_densities(
     chain_migration_routes, chain_optimal_alpha_spring, wintering_cells, breeding_cells
 )
-edges_weight_chain_fall, breeding_cells_clone_chain_fall, wintering_cells_clone_chain_fall = update_densities(
+real_edges_weight_chain_fall, edges_weight_chain_fall, breeding_cells_clone_chain_fall, wintering_cells_clone_chain_fall = update_densities(
     chain_migration_routes_fall, chain_optimal_alpha_fall, breeding_cells, wintering_cells
 )
 
@@ -196,6 +210,11 @@ save_results(edges_weight_spring, OUTPUT_PROBABILITIES_FILE)
 save_results(edges_weight_fall, OUTPUT_PROBABILITIES_FILE_FALL)
 save_results(edges_weight_chain_spring, CHAIN_OUTPUT_PROBABILITIES_FILE)
 save_results(edges_weight_chain_fall, CHAIN_OUTPUT_PROBABILITIES_FILE_FALL)
+
+save_results(real_edges_weight_spring, OUTPUT_WEIGHT)
+save_results(real_edges_weight_fall, OUTPUT_WEIGHT_FALL)
+save_results(real_edges_weight_chain_spring, CHAIN_OUTPUT_WEIGHT)
+save_results(real_edges_weight_chain_fall, CHAIN_OUTPUT_WEIGHT_FALL)
 
 breeding_discrepancies_spring = calculate_discrepancies(breeding_cells_clone_spring, breeding_cells)
 wintering_discrepancies_spring = calculate_discrepancies(wintering_cells_clone_spring, wintering_cells)

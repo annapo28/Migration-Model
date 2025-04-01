@@ -1,0 +1,2657 @@
+[
+    {
+        "latitude": 48.5,
+        "longitude": -71.5,
+        "season": "breeding",
+        "breeding_count": 7,
+        "wintering_count": 0,
+        "migration_count": 38,
+        "abundance": 0.007658863306242669
+    },
+    {
+        "latitude": 40.5,
+        "longitude": -73.5,
+        "season": "breeding",
+        "breeding_count": 22,
+        "wintering_count": 69,
+        "migration_count": 458,
+        "abundance": 0.00025926286565486275
+    },
+    {
+        "latitude": 40.5,
+        "longitude": -72.5,
+        "season": "breeding",
+        "breeding_count": 10,
+        "wintering_count": 98,
+        "migration_count": 441,
+        "abundance": 0.010353980494391983
+    },
+    {
+        "latitude": 41.5,
+        "longitude": -82.5,
+        "season": "breeding",
+        "breeding_count": 24,
+        "wintering_count": 7,
+        "migration_count": 1794,
+        "abundance": 0.013111014134751587
+    },
+    {
+        "latitude": 39.5,
+        "longitude": -85.5,
+        "season": "breeding",
+        "breeding_count": 3,
+        "wintering_count": 10,
+        "migration_count": 89,
+        "abundance": 7.677869477864333e-05
+    },
+    {
+        "latitude": 39.5,
+        "longitude": -73.5,
+        "season": "breeding",
+        "breeding_count": 8,
+        "wintering_count": 77,
+        "migration_count": 188,
+        "abundance": 1.174715140043387e-05
+    },
+    {
+        "latitude": 40.5,
+        "longitude": -82.5,
+        "season": "breeding",
+        "breeding_count": 10,
+        "wintering_count": 7,
+        "migration_count": 96,
+        "abundance": 0.0011694232503987327
+    },
+    {
+        "latitude": 39.5,
+        "longitude": -74.5,
+        "season": "wintering",
+        "breeding_count": 0,
+        "wintering_count": 54,
+        "migration_count": 177,
+        "abundance": 0.012173919706765271
+    },
+    {
+        "latitude": 41.5,
+        "longitude": -87.5,
+        "season": "breeding",
+        "breeding_count": 5,
+        "wintering_count": 17,
+        "migration_count": 194,
+        "abundance": 0.001061785712155815
+    },
+    {
+        "latitude": 41.5,
+        "longitude": -72.5,
+        "season": "breeding",
+        "breeding_count": 25,
+        "wintering_count": 29,
+        "migration_count": 201,
+        "abundance": 0.008208142133895407
+    },
+    {
+        "latitude": 42.5,
+        "longitude": -85.5,
+        "season": "breeding",
+        "breeding_count": 5,
+        "wintering_count": 0,
+        "migration_count": 44,
+        "abundance": 0.0005672373209684056
+    },
+    {
+        "latitude": 43.5,
+        "longitude": -71.5,
+        "season": "breeding",
+        "breeding_count": 22,
+        "wintering_count": 2,
+        "migration_count": 140,
+        "abundance": 0.013109524709649403
+    },
+    {
+        "latitude": 43.5,
+        "longitude": -69.5,
+        "season": "breeding",
+        "breeding_count": 14,
+        "wintering_count": 10,
+        "migration_count": 137,
+        "abundance": 0.004116552091690203
+    },
+    {
+        "latitude": 47.5,
+        "longitude": -67.5,
+        "season": "breeding",
+        "breeding_count": 6,
+        "wintering_count": 0,
+        "migration_count": 7,
+        "abundance": 0.0071186267823994285
+    },
+    {
+        "latitude": 42.5,
+        "longitude": -69.5,
+        "season": "breeding",
+        "breeding_count": 23,
+        "wintering_count": 10,
+        "migration_count": 203,
+        "abundance": 0.021242569443853353
+    },
+    {
+        "latitude": 44.5,
+        "longitude": -83.5,
+        "season": "breeding",
+        "breeding_count": 28,
+        "wintering_count": 0,
+        "migration_count": 21,
+        "abundance": 0.020459228887610512
+    },
+    {
+        "latitude": 42.5,
+        "longitude": -72.5,
+        "season": "breeding",
+        "breeding_count": 16,
+        "wintering_count": 12,
+        "migration_count": 135,
+        "abundance": 0.008419913038805618
+    },
+    {
+        "latitude": 46.5,
+        "longitude": -79.5,
+        "season": "breeding",
+        "breeding_count": 2,
+        "wintering_count": 0,
+        "migration_count": 9,
+        "abundance": 0.000654661944071559
+    },
+    {
+        "latitude": 45.5,
+        "longitude": -72.5,
+        "season": "breeding",
+        "breeding_count": 39,
+        "wintering_count": 0,
+        "migration_count": 198,
+        "abundance": 0.018942820940138733
+    },
+    {
+        "latitude": 42.5,
+        "longitude": -70.5,
+        "season": "breeding",
+        "breeding_count": 40,
+        "wintering_count": 63,
+        "migration_count": 395,
+        "abundance": 0.040049547886570586
+    },
+    {
+        "latitude": 44.5,
+        "longitude": -71.5,
+        "season": "breeding",
+        "breeding_count": 15,
+        "wintering_count": 0,
+        "migration_count": 108,
+        "abundance": 0.005071889279029415
+    },
+    {
+        "latitude": 44.5,
+        "longitude": -78.5,
+        "season": "breeding",
+        "breeding_count": 26,
+        "wintering_count": 0,
+        "migration_count": 104,
+        "abundance": 0.018217784558731794
+    },
+    {
+        "latitude": 42.5,
+        "longitude": -86.5,
+        "season": "breeding",
+        "breeding_count": 23,
+        "wintering_count": 4,
+        "migration_count": 138,
+        "abundance": 0.006705307122411501
+    },
+    {
+        "latitude": 42.5,
+        "longitude": -75.5,
+        "season": "breeding",
+        "breeding_count": 47,
+        "wintering_count": 14,
+        "migration_count": 276,
+        "abundance": 0.02419935353223291
+    },
+    {
+        "latitude": 38.5,
+        "longitude": -84.5,
+        "season": "breeding",
+        "breeding_count": 2,
+        "wintering_count": 7,
+        "migration_count": 46,
+        "abundance": 5.411044321095443e-05
+    },
+    {
+        "latitude": 44.5,
+        "longitude": -72.5,
+        "season": "breeding",
+        "breeding_count": 31,
+        "wintering_count": 2,
+        "migration_count": 213,
+        "abundance": 0.019774888656890376
+    },
+    {
+        "latitude": 41.5,
+        "longitude": -75.5,
+        "season": "breeding",
+        "breeding_count": 12,
+        "wintering_count": 9,
+        "migration_count": 48,
+        "abundance": 0.0002591362503888566
+    },
+    {
+        "latitude": 38.5,
+        "longitude": -76.5,
+        "season": "breeding",
+        "breeding_count": 1,
+        "wintering_count": 35,
+        "migration_count": 106,
+        "abundance": 3.819832792550116e-05
+    },
+    {
+        "latitude": 44.5,
+        "longitude": -70.5,
+        "season": "breeding",
+        "breeding_count": 6,
+        "wintering_count": 0,
+        "migration_count": 55,
+        "abundance": 0.001683017485986725
+    },
+    {
+        "latitude": 45.5,
+        "longitude": -76.5,
+        "season": "breeding",
+        "breeding_count": 5,
+        "wintering_count": 0,
+        "migration_count": 49,
+        "abundance": 0.004520641349033803
+    },
+    {
+        "latitude": 38.5,
+        "longitude": -75.5,
+        "season": "wintering",
+        "breeding_count": 0,
+        "wintering_count": 40,
+        "migration_count": 99,
+        "abundance": 0.0042575880468221335
+    },
+    {
+        "latitude": 40.5,
+        "longitude": -76.5,
+        "season": "breeding",
+        "breeding_count": 10,
+        "wintering_count": 3,
+        "migration_count": 178,
+        "abundance": 0.0030695681910538845
+    },
+    {
+        "latitude": 43.5,
+        "longitude": -86.5,
+        "season": "breeding",
+        "breeding_count": 7,
+        "wintering_count": 6,
+        "migration_count": 79,
+        "abundance": 0.00024921723845638206
+    },
+    {
+        "latitude": 33.5,
+        "longitude": -83.5,
+        "season": "wintering",
+        "breeding_count": 0,
+        "wintering_count": 31,
+        "migration_count": 12,
+        "abundance": 0.02698454663160334
+    },
+    {
+        "latitude": 45.5,
+        "longitude": -84.5,
+        "season": "breeding",
+        "breeding_count": 2,
+        "wintering_count": 0,
+        "migration_count": 17,
+        "abundance": 0.0008418292455743039
+    },
+    {
+        "latitude": 35.5,
+        "longitude": -79.5,
+        "season": "wintering",
+        "breeding_count": 1,
+        "wintering_count": 26,
+        "migration_count": 14,
+        "abundance": 0.04406027082173878
+    },
+    {
+        "latitude": 42.5,
+        "longitude": -84.5,
+        "season": "breeding",
+        "breeding_count": 9,
+        "wintering_count": 11,
+        "migration_count": 132,
+        "abundance": 0.001205627686326445
+    },
+    {
+        "latitude": 44.5,
+        "longitude": -75.5,
+        "season": "breeding",
+        "breeding_count": 32,
+        "wintering_count": 2,
+        "migration_count": 116,
+        "abundance": 0.012772172614537954
+    },
+    {
+        "latitude": 42.5,
+        "longitude": -74.5,
+        "season": "breeding",
+        "breeding_count": 9,
+        "wintering_count": 6,
+        "migration_count": 55,
+        "abundance": 0.0002973245922843936
+    },
+    {
+        "latitude": 42.5,
+        "longitude": -82.5,
+        "season": "breeding",
+        "breeding_count": 13,
+        "wintering_count": 21,
+        "migration_count": 191,
+        "abundance": 0.002382823342164137
+    },
+    {
+        "latitude": 45.5,
+        "longitude": -74.5,
+        "season": "breeding",
+        "breeding_count": 19,
+        "wintering_count": 0,
+        "migration_count": 162,
+        "abundance": 0.018929338569469007
+    },
+    {
+        "latitude": 43.5,
+        "longitude": -79.5,
+        "season": "breeding",
+        "breeding_count": 15,
+        "wintering_count": 0,
+        "migration_count": 76,
+        "abundance": 0.00419823600943935
+    },
+    {
+        "latitude": 32.5,
+        "longitude": -91.5,
+        "season": "wintering",
+        "breeding_count": 0,
+        "wintering_count": 2,
+        "migration_count": 1,
+        "abundance": 0.0004320949494959026
+    },
+    {
+        "latitude": 45.5,
+        "longitude": -91.5,
+        "season": "breeding",
+        "breeding_count": 12,
+        "wintering_count": 1,
+        "migration_count": 86,
+        "abundance": 0.0035319572521620244
+    },
+    {
+        "latitude": 41.5,
+        "longitude": -81.5,
+        "season": "breeding",
+        "breeding_count": 11,
+        "wintering_count": 3,
+        "migration_count": 197,
+        "abundance": 0.0007610297969539289
+    },
+    {
+        "latitude": 39.5,
+        "longitude": -77.5,
+        "season": "breeding",
+        "breeding_count": 20,
+        "wintering_count": 1,
+        "migration_count": 32,
+        "abundance": 0.002471498741861775
+    },
+    {
+        "latitude": 34.5,
+        "longitude": -83.5,
+        "season": "wintering",
+        "breeding_count": 1,
+        "wintering_count": 56,
+        "migration_count": 27,
+        "abundance": 0.29019200746414686
+    },
+    {
+        "latitude": 30.5,
+        "longitude": -90.5,
+        "season": "wintering",
+        "breeding_count": 0,
+        "wintering_count": 11,
+        "migration_count": 6,
+        "abundance": 0.004624000844334757
+    },
+    {
+        "latitude": 43.5,
+        "longitude": -89.5,
+        "season": "breeding",
+        "breeding_count": 12,
+        "wintering_count": 7,
+        "migration_count": 61,
+        "abundance": 0.0014632674765879044
+    },
+    {
+        "latitude": 42.5,
+        "longitude": -71.5,
+        "season": "breeding",
+        "breeding_count": 26,
+        "wintering_count": 16,
+        "migration_count": 187,
+        "abundance": 0.021644639664147893
+    },
+    {
+        "latitude": 44.5,
+        "longitude": -88.5,
+        "season": "breeding",
+        "breeding_count": 14,
+        "wintering_count": 1,
+        "migration_count": 99,
+        "abundance": 0.0025816361627219774
+    },
+    {
+        "latitude": 48.5,
+        "longitude": -78.5,
+        "season": "breeding",
+        "breeding_count": 14,
+        "wintering_count": 0,
+        "migration_count": 24,
+        "abundance": 0.011615346299731119
+    },
+    {
+        "latitude": 35.5,
+        "longitude": -74.5,
+        "season": "wintering",
+        "breeding_count": 0,
+        "wintering_count": 22,
+        "migration_count": 19,
+        "abundance": 0.03099011762421872
+    },
+    {
+        "latitude": 44.5,
+        "longitude": -67.5,
+        "season": "breeding",
+        "breeding_count": 21,
+        "wintering_count": 1,
+        "migration_count": 73,
+        "abundance": 0.012598569443091248
+    },
+    {
+        "latitude": 37.5,
+        "longitude": -88.5,
+        "season": "wintering",
+        "breeding_count": 0,
+        "wintering_count": 7,
+        "migration_count": 23,
+        "abundance": 1.957602708745059e-05
+    },
+    {
+        "latitude": 46.5,
+        "longitude": -86.5,
+        "season": "breeding",
+        "breeding_count": 1,
+        "wintering_count": 0,
+        "migration_count": 17,
+        "abundance": 0.0003160577298995658
+    },
+    {
+        "latitude": 41.5,
+        "longitude": -71.5,
+        "season": "breeding",
+        "breeding_count": 28,
+        "wintering_count": 27,
+        "migration_count": 210,
+        "abundance": 0.03322726392314706
+    },
+    {
+        "latitude": 43.5,
+        "longitude": -78.5,
+        "season": "breeding",
+        "breeding_count": 11,
+        "wintering_count": 10,
+        "migration_count": 230,
+        "abundance": 0.0026531506200462396
+    },
+    {
+        "latitude": 47.5,
+        "longitude": -90.5,
+        "season": "breeding",
+        "breeding_count": 5,
+        "wintering_count": 0,
+        "migration_count": 25,
+        "abundance": 0.0019560765137485456
+    },
+    {
+        "latitude": 45.5,
+        "longitude": -77.5,
+        "season": "breeding",
+        "breeding_count": 26,
+        "wintering_count": 0,
+        "migration_count": 42,
+        "abundance": 0.01981913180896952
+    },
+    {
+        "latitude": 29.5,
+        "longitude": -94.5,
+        "season": "wintering",
+        "breeding_count": 0,
+        "wintering_count": 37,
+        "migration_count": 4,
+        "abundance": 0.018140264809258372
+    },
+    {
+        "latitude": 44.5,
+        "longitude": -86.5,
+        "season": "breeding",
+        "breeding_count": 11,
+        "wintering_count": 0,
+        "migration_count": 65,
+        "abundance": 0.0013452086556841028
+    },
+    {
+        "latitude": 45.5,
+        "longitude": -60.5,
+        "season": "breeding",
+        "breeding_count": 1,
+        "wintering_count": 0,
+        "migration_count": 3,
+        "abundance": 7.190933038874092e-05
+    },
+    {
+        "latitude": 34.5,
+        "longitude": -75.5,
+        "season": "wintering",
+        "breeding_count": 0,
+        "wintering_count": 6,
+        "migration_count": 5,
+        "abundance": 0.0023554088957768843
+    },
+    {
+        "latitude": 43.5,
+        "longitude": -72.5,
+        "season": "breeding",
+        "breeding_count": 36,
+        "wintering_count": 2,
+        "migration_count": 88,
+        "abundance": 0.015115833587695669
+    },
+    {
+        "latitude": 41.5,
+        "longitude": -80.5,
+        "season": "breeding",
+        "breeding_count": 10,
+        "wintering_count": 12,
+        "migration_count": 203,
+        "abundance": 0.0034712725040358453
+    },
+    {
+        "latitude": 47.5,
+        "longitude": -66.5,
+        "season": "breeding",
+        "breeding_count": 1,
+        "wintering_count": 0,
+        "migration_count": 3,
+        "abundance": 0.0009068631085212225
+    },
+    {
+        "latitude": 42.5,
+        "longitude": -81.5,
+        "season": "breeding",
+        "breeding_count": 18,
+        "wintering_count": 7,
+        "migration_count": 194,
+        "abundance": 0.0013623247809068783
+    },
+    {
+        "latitude": 42.5,
+        "longitude": -77.5,
+        "season": "breeding",
+        "breeding_count": 4,
+        "wintering_count": 2,
+        "migration_count": 42,
+        "abundance": 0.000271729359774521
+    },
+    {
+        "latitude": 43.5,
+        "longitude": -87.5,
+        "season": "breeding",
+        "breeding_count": 16,
+        "wintering_count": 4,
+        "migration_count": 175,
+        "abundance": 0.0026010419513418973
+    },
+    {
+        "latitude": 43.5,
+        "longitude": -74.5,
+        "season": "breeding",
+        "breeding_count": 2,
+        "wintering_count": 1,
+        "migration_count": 32,
+        "abundance": 0.0003432046164255686
+    },
+    {
+        "latitude": 38.5,
+        "longitude": -77.5,
+        "season": "breeding",
+        "breeding_count": 1,
+        "wintering_count": 21,
+        "migration_count": 74,
+        "abundance": 1.3069495792830874e-05
+    },
+    {
+        "latitude": 30.5,
+        "longitude": -96.5,
+        "season": "wintering",
+        "breeding_count": 0,
+        "wintering_count": 71,
+        "migration_count": 16,
+        "abundance": 0.008417216727216457
+    },
+    {
+        "latitude": 41.5,
+        "longitude": -73.5,
+        "season": "breeding",
+        "breeding_count": 20,
+        "wintering_count": 19,
+        "migration_count": 141,
+        "abundance": 0.004934838472741653
+    },
+    {
+        "latitude": 43.5,
+        "longitude": -88.5,
+        "season": "breeding",
+        "breeding_count": 6,
+        "wintering_count": 11,
+        "migration_count": 138,
+        "abundance": 0.0020891609608212187
+    },
+    {
+        "latitude": 41.5,
+        "longitude": -74.5,
+        "season": "breeding",
+        "breeding_count": 9,
+        "wintering_count": 3,
+        "migration_count": 60,
+        "abundance": 0.0014737504038091205
+    },
+    {
+        "latitude": 32.5,
+        "longitude": -80.5,
+        "season": "wintering",
+        "breeding_count": 0,
+        "wintering_count": 11,
+        "migration_count": 4,
+        "abundance": 0.002880856734013907
+    },
+    {
+        "latitude": 44.5,
+        "longitude": -76.5,
+        "season": "breeding",
+        "breeding_count": 17,
+        "wintering_count": 0,
+        "migration_count": 37,
+        "abundance": 0.009814266855784333
+    },
+    {
+        "latitude": 42.5,
+        "longitude": -79.5,
+        "season": "breeding",
+        "breeding_count": 20,
+        "wintering_count": 2,
+        "migration_count": 241,
+        "abundance": 0.021528803938550473
+    },
+    {
+        "latitude": 38.5,
+        "longitude": -79.5,
+        "season": "breeding",
+        "breeding_count": 2,
+        "wintering_count": 0,
+        "migration_count": 5,
+        "abundance": 0.00011339585218568265
+    },
+    {
+        "latitude": 46.5,
+        "longitude": -88.5,
+        "season": "breeding",
+        "breeding_count": 11,
+        "wintering_count": 0,
+        "migration_count": 11,
+        "abundance": 0.0036561047188046537
+    },
+    {
+        "latitude": 40.5,
+        "longitude": -104.5,
+        "season": "wintering",
+        "breeding_count": 0,
+        "wintering_count": 51,
+        "migration_count": 35,
+        "abundance": 0.05190583207464895
+    },
+    {
+        "latitude": 41.5,
+        "longitude": -70.5,
+        "season": "breeding",
+        "breeding_count": 14,
+        "wintering_count": 27,
+        "migration_count": 268,
+        "abundance": 0.006380040164807492
+    },
+    {
+        "latitude": 37.5,
+        "longitude": -75.5,
+        "season": "wintering",
+        "breeding_count": 1,
+        "wintering_count": 32,
+        "migration_count": 26,
+        "abundance": 0.011642689150155124
+    },
+    {
+        "latitude": 46.5,
+        "longitude": -70.5,
+        "season": "breeding",
+        "breeding_count": 14,
+        "wintering_count": 0,
+        "migration_count": 94,
+        "abundance": 0.010783359880654295
+    },
+    {
+        "latitude": 41.5,
+        "longitude": -84.5,
+        "season": "breeding",
+        "breeding_count": 10,
+        "wintering_count": 7,
+        "migration_count": 57,
+        "abundance": 0.0007254083021700701
+    },
+    {
+        "latitude": 46.5,
+        "longitude": -84.5,
+        "season": "breeding",
+        "breeding_count": 11,
+        "wintering_count": 0,
+        "migration_count": 18,
+        "abundance": 0.008509653011188039
+    },
+    {
+        "latitude": 44.5,
+        "longitude": -80.5,
+        "season": "breeding",
+        "breeding_count": 9,
+        "wintering_count": 0,
+        "migration_count": 38,
+        "abundance": 0.001078957420456704
+    },
+    {
+        "latitude": 44.5,
+        "longitude": -92.5,
+        "season": "breeding",
+        "breeding_count": 2,
+        "wintering_count": 3,
+        "migration_count": 68,
+        "abundance": 0.00038530342234718607
+    },
+    {
+        "latitude": 43.5,
+        "longitude": -80.5,
+        "season": "breeding",
+        "breeding_count": 10,
+        "wintering_count": 3,
+        "migration_count": 35,
+        "abundance": 0.00038336485371479246
+    },
+    {
+        "latitude": 41.5,
+        "longitude": -86.5,
+        "season": "breeding",
+        "breeding_count": 21,
+        "wintering_count": 32,
+        "migration_count": 216,
+        "abundance": 0.003997541317358101
+    },
+    {
+        "latitude": 34.5,
+        "longitude": -81.5,
+        "season": "wintering",
+        "breeding_count": 0,
+        "wintering_count": 18,
+        "migration_count": 3,
+        "abundance": 0.00147830947309128
+    },
+    {
+        "latitude": 30.5,
+        "longitude": -91.5,
+        "season": "wintering",
+        "breeding_count": 0,
+        "wintering_count": 12,
+        "migration_count": 0,
+        "abundance": 0.006209459560948277
+    },
+    {
+        "latitude": 42.5,
+        "longitude": -76.5,
+        "season": "breeding",
+        "breeding_count": 7,
+        "wintering_count": 1,
+        "migration_count": 35,
+        "abundance": 0.0007556457244821001
+    },
+    {
+        "latitude": 45.5,
+        "longitude": -89.5,
+        "season": "breeding",
+        "breeding_count": 10,
+        "wintering_count": 0,
+        "migration_count": 29,
+        "abundance": 0.006719920920148286
+    },
+    {
+        "latitude": 42.5,
+        "longitude": -80.5,
+        "season": "breeding",
+        "breeding_count": 7,
+        "wintering_count": 2,
+        "migration_count": 197,
+        "abundance": 0.0015486353554593035
+    },
+    {
+        "latitude": 39.5,
+        "longitude": -83.5,
+        "season": "breeding",
+        "breeding_count": 4,
+        "wintering_count": 7,
+        "migration_count": 104,
+        "abundance": 0.0006367740316264906
+    },
+    {
+        "latitude": 43.5,
+        "longitude": -76.5,
+        "season": "breeding",
+        "breeding_count": 25,
+        "wintering_count": 6,
+        "migration_count": 154,
+        "abundance": 0.014571055329335043
+    },
+    {
+        "latitude": 45.5,
+        "longitude": -87.5,
+        "season": "breeding",
+        "breeding_count": 28,
+        "wintering_count": 0,
+        "migration_count": 61,
+        "abundance": 0.012974529361702191
+    },
+    {
+        "latitude": 44.5,
+        "longitude": -82.5,
+        "season": "breeding",
+        "breeding_count": 11,
+        "wintering_count": 1,
+        "migration_count": 89,
+        "abundance": 0.009270439543895677
+    },
+    {
+        "latitude": 39.5,
+        "longitude": -82.5,
+        "season": "breeding",
+        "breeding_count": 10,
+        "wintering_count": 1,
+        "migration_count": 46,
+        "abundance": 0.011872915972114952
+    },
+    {
+        "latitude": 39.5,
+        "longitude": -76.5,
+        "season": "breeding",
+        "breeding_count": 2,
+        "wintering_count": 18,
+        "migration_count": 103,
+        "abundance": 7.322350802168023e-08
+    },
+    {
+        "latitude": 39.5,
+        "longitude": -78.5,
+        "season": "breeding",
+        "breeding_count": 18,
+        "wintering_count": 3,
+        "migration_count": 65,
+        "abundance": 0.005336641505603443
+    },
+    {
+        "latitude": 38.5,
+        "longitude": -86.5,
+        "season": "breeding",
+        "breeding_count": 2,
+        "wintering_count": 11,
+        "migration_count": 69,
+        "abundance": 4.776537292931412e-05
+    },
+    {
+        "latitude": 45.5,
+        "longitude": -83.5,
+        "season": "breeding",
+        "breeding_count": 5,
+        "wintering_count": 0,
+        "migration_count": 49,
+        "abundance": 0.00275410982343216
+    },
+    {
+        "latitude": 41.5,
+        "longitude": -79.5,
+        "season": "breeding",
+        "breeding_count": 4,
+        "wintering_count": 0,
+        "migration_count": 32,
+        "abundance": 0.0005647227735528693
+    },
+    {
+        "latitude": 30.5,
+        "longitude": -92.5,
+        "season": "wintering",
+        "breeding_count": 0,
+        "wintering_count": 8,
+        "migration_count": 3,
+        "abundance": 0.0025363071141448167
+    },
+    {
+        "latitude": 40.5,
+        "longitude": -77.5,
+        "season": "breeding",
+        "breeding_count": 12,
+        "wintering_count": 3,
+        "migration_count": 38,
+        "abundance": 0.002175038192528665
+    },
+    {
+        "latitude": 43.5,
+        "longitude": -85.5,
+        "season": "breeding",
+        "breeding_count": 5,
+        "wintering_count": 1,
+        "migration_count": 48,
+        "abundance": 0.001375584798001122
+    },
+    {
+        "latitude": 42.5,
+        "longitude": -87.5,
+        "season": "breeding",
+        "breeding_count": 12,
+        "wintering_count": 15,
+        "migration_count": 218,
+        "abundance": 0.0033157399683093765
+    },
+    {
+        "latitude": 42.5,
+        "longitude": -88.5,
+        "season": "breeding",
+        "breeding_count": 3,
+        "wintering_count": 3,
+        "migration_count": 61,
+        "abundance": 0.0001428819331971499
+    },
+    {
+        "latitude": 45.5,
+        "longitude": -71.5,
+        "season": "breeding",
+        "breeding_count": 13,
+        "wintering_count": 0,
+        "migration_count": 80,
+        "abundance": 0.007023124917810122
+    },
+    {
+        "latitude": 40.5,
+        "longitude": -78.5,
+        "season": "breeding",
+        "breeding_count": 9,
+        "wintering_count": 6,
+        "migration_count": 74,
+        "abundance": 0.0018454947384758482
+    },
+    {
+        "latitude": 41.5,
+        "longitude": -85.5,
+        "season": "breeding",
+        "breeding_count": 3,
+        "wintering_count": 5,
+        "migration_count": 55,
+        "abundance": 0.000634624510068917
+    },
+    {
+        "latitude": 42.5,
+        "longitude": -83.5,
+        "season": "breeding",
+        "breeding_count": 9,
+        "wintering_count": 8,
+        "migration_count": 76,
+        "abundance": 0.0015986353482570245
+    },
+    {
+        "latitude": 40.5,
+        "longitude": -74.5,
+        "season": "breeding",
+        "breeding_count": 5,
+        "wintering_count": 24,
+        "migration_count": 145,
+        "abundance": 0.00027950829564813784
+    },
+    {
+        "latitude": 41.5,
+        "longitude": -69.5,
+        "season": "breeding",
+        "breeding_count": 18,
+        "wintering_count": 22,
+        "migration_count": 178,
+        "abundance": 0.004256022921592204
+    },
+    {
+        "latitude": 34.5,
+        "longitude": -80.5,
+        "season": "wintering",
+        "breeding_count": 0,
+        "wintering_count": 2,
+        "migration_count": 4,
+        "abundance": 0.0036024232015769886
+    },
+    {
+        "latitude": 44.5,
+        "longitude": -68.5,
+        "season": "breeding",
+        "breeding_count": 14,
+        "wintering_count": 2,
+        "migration_count": 46,
+        "abundance": 0.005566752055262785
+    },
+    {
+        "latitude": 44.5,
+        "longitude": -89.5,
+        "season": "breeding",
+        "breeding_count": 11,
+        "wintering_count": 0,
+        "migration_count": 43,
+        "abundance": 0.0021017213285586
+    },
+    {
+        "latitude": 45.5,
+        "longitude": -86.5,
+        "season": "breeding",
+        "breeding_count": 10,
+        "wintering_count": 0,
+        "migration_count": 37,
+        "abundance": 0.0023501704856349875
+    },
+    {
+        "latitude": 44.5,
+        "longitude": -74.5,
+        "season": "breeding",
+        "breeding_count": 13,
+        "wintering_count": 2,
+        "migration_count": 56,
+        "abundance": 0.006436637951143732
+    },
+    {
+        "latitude": 48.5,
+        "longitude": -92.5,
+        "season": "breeding",
+        "breeding_count": 2,
+        "wintering_count": 0,
+        "migration_count": 51,
+        "abundance": 0.0012975513262832433
+    },
+    {
+        "latitude": 33.5,
+        "longitude": -78.5,
+        "season": "wintering",
+        "breeding_count": 0,
+        "wintering_count": 7,
+        "migration_count": 5,
+        "abundance": 0.0023798041895989144
+    },
+    {
+        "latitude": 47.5,
+        "longitude": -70.5,
+        "season": "breeding",
+        "breeding_count": 3,
+        "wintering_count": 0,
+        "migration_count": 6,
+        "abundance": 0.003189515917746916
+    },
+    {
+        "latitude": 44.5,
+        "longitude": -87.5,
+        "season": "breeding",
+        "breeding_count": 19,
+        "wintering_count": 2,
+        "migration_count": 102,
+        "abundance": 0.0054755330485651045
+    },
+    {
+        "latitude": 46.5,
+        "longitude": -71.5,
+        "season": "breeding",
+        "breeding_count": 4,
+        "wintering_count": 0,
+        "migration_count": 37,
+        "abundance": 0.0016262642175436405
+    },
+    {
+        "latitude": 42.5,
+        "longitude": -78.5,
+        "season": "breeding",
+        "breeding_count": 4,
+        "wintering_count": 1,
+        "migration_count": 56,
+        "abundance": 0.0011654330181171775
+    },
+    {
+        "latitude": 50.5,
+        "longitude": -65.5,
+        "season": "breeding",
+        "breeding_count": 8,
+        "wintering_count": 0,
+        "migration_count": 14,
+        "abundance": 0.018657224553515723
+    },
+    {
+        "latitude": 44.5,
+        "longitude": -91.5,
+        "season": "breeding",
+        "breeding_count": 6,
+        "wintering_count": 1,
+        "migration_count": 71,
+        "abundance": 0.0026062838227470368
+    },
+    {
+        "latitude": 43.5,
+        "longitude": -82.5,
+        "season": "breeding",
+        "breeding_count": 2,
+        "wintering_count": 0,
+        "migration_count": 24,
+        "abundance": 0.00030214893828430856
+    },
+    {
+        "latitude": 31.5,
+        "longitude": -85.5,
+        "season": "wintering",
+        "breeding_count": 0,
+        "wintering_count": 1,
+        "migration_count": 2,
+        "abundance": 0.00032029879141778623
+    },
+    {
+        "latitude": 29.5,
+        "longitude": -81.5,
+        "season": "wintering",
+        "breeding_count": 0,
+        "wintering_count": 22,
+        "migration_count": 8,
+        "abundance": 0.009052351781184362
+    },
+    {
+        "latitude": 44.5,
+        "longitude": -66.5,
+        "season": "breeding",
+        "breeding_count": 4,
+        "wintering_count": 0,
+        "migration_count": 16,
+        "abundance": 0.0002872380869115426
+    },
+    {
+        "latitude": 43.5,
+        "longitude": -73.5,
+        "season": "breeding",
+        "breeding_count": 9,
+        "wintering_count": 0,
+        "migration_count": 29,
+        "abundance": 0.002635736289946312
+    },
+    {
+        "latitude": 47.5,
+        "longitude": -87.5,
+        "season": "breeding",
+        "breeding_count": 3,
+        "wintering_count": 0,
+        "migration_count": 10,
+        "abundance": 0.0008023088310706393
+    },
+    {
+        "latitude": 34.5,
+        "longitude": -76.5,
+        "season": "wintering",
+        "breeding_count": 0,
+        "wintering_count": 4,
+        "migration_count": 4,
+        "abundance": 0.0075826532861796745
+    },
+    {
+        "latitude": 35.5,
+        "longitude": -83.5,
+        "season": "wintering",
+        "breeding_count": 0,
+        "wintering_count": 5,
+        "migration_count": 20,
+        "abundance": 0.005125272183470806
+    },
+    {
+        "latitude": 35.5,
+        "longitude": -75.5,
+        "season": "wintering",
+        "breeding_count": 1,
+        "wintering_count": 14,
+        "migration_count": 10,
+        "abundance": 0.01294596075804995
+    },
+    {
+        "latitude": 46.5,
+        "longitude": -69.5,
+        "season": "breeding",
+        "breeding_count": 2,
+        "wintering_count": 0,
+        "migration_count": 24,
+        "abundance": 0.0009932127333629407
+    },
+    {
+        "latitude": 38.5,
+        "longitude": -73.5,
+        "season": "breeding",
+        "breeding_count": 1,
+        "wintering_count": 83,
+        "migration_count": 84,
+        "abundance": 0.0004925128082264521
+    },
+    {
+        "latitude": 37.5,
+        "longitude": -76.5,
+        "season": "wintering",
+        "breeding_count": 1,
+        "wintering_count": 20,
+        "migration_count": 15,
+        "abundance": 0.01586717038158674
+    },
+    {
+        "latitude": 43.5,
+        "longitude": -75.5,
+        "season": "breeding",
+        "breeding_count": 28,
+        "wintering_count": 3,
+        "migration_count": 121,
+        "abundance": 0.019201399124090777
+    },
+    {
+        "latitude": 38.5,
+        "longitude": -78.5,
+        "season": "breeding",
+        "breeding_count": 6,
+        "wintering_count": 0,
+        "migration_count": 27,
+        "abundance": 0.00045352578593256483
+    },
+    {
+        "latitude": 29.5,
+        "longitude": -95.5,
+        "season": "wintering",
+        "breeding_count": 0,
+        "wintering_count": 13,
+        "migration_count": 1,
+        "abundance": 0.004806750299818476
+    },
+    {
+        "latitude": 45.5,
+        "longitude": -75.5,
+        "season": "breeding",
+        "breeding_count": 11,
+        "wintering_count": 0,
+        "migration_count": 54,
+        "abundance": 0.025057419591704683
+    },
+    {
+        "latitude": 44.5,
+        "longitude": -84.5,
+        "season": "breeding",
+        "breeding_count": 12,
+        "wintering_count": 2,
+        "migration_count": 99,
+        "abundance": 0.0039969434404547545
+    },
+    {
+        "latitude": 41.5,
+        "longitude": -68.5,
+        "season": "breeding",
+        "breeding_count": 3,
+        "wintering_count": 0,
+        "migration_count": 30,
+        "abundance": 0.0009700405024305371
+    },
+    {
+        "latitude": 45.5,
+        "longitude": -63.5,
+        "season": "breeding",
+        "breeding_count": 5,
+        "wintering_count": 0,
+        "migration_count": 24,
+        "abundance": 6.66092165080021e-05
+    },
+    {
+        "latitude": 46.5,
+        "longitude": -78.5,
+        "season": "breeding",
+        "breeding_count": 2,
+        "wintering_count": 0,
+        "migration_count": 14,
+        "abundance": 0.000887019039880721
+    },
+    {
+        "latitude": 45.5,
+        "longitude": -65.5,
+        "season": "breeding",
+        "breeding_count": 9,
+        "wintering_count": 1,
+        "migration_count": 8,
+        "abundance": 0.00348001453836599
+    },
+    {
+        "latitude": 44.5,
+        "longitude": -90.5,
+        "season": "breeding",
+        "breeding_count": 8,
+        "wintering_count": 0,
+        "migration_count": 35,
+        "abundance": 0.0010519632358964282
+    },
+    {
+        "latitude": 35.5,
+        "longitude": -77.5,
+        "season": "wintering",
+        "breeding_count": 0,
+        "wintering_count": 28,
+        "migration_count": 26,
+        "abundance": 0.04625715505924871
+    },
+    {
+        "latitude": 30.5,
+        "longitude": -83.5,
+        "season": "wintering",
+        "breeding_count": 0,
+        "wintering_count": 7,
+        "migration_count": 4,
+        "abundance": 0.0012820765830065697
+    },
+    {
+        "latitude": 46.5,
+        "longitude": -91.5,
+        "season": "breeding",
+        "breeding_count": 28,
+        "wintering_count": 0,
+        "migration_count": 63,
+        "abundance": 0.018477077651302
+    },
+    {
+        "latitude": 46.5,
+        "longitude": -83.5,
+        "season": "breeding",
+        "breeding_count": 11,
+        "wintering_count": 0,
+        "migration_count": 78,
+        "abundance": 0.010061502953985522
+    },
+    {
+        "latitude": 43.5,
+        "longitude": -77.5,
+        "season": "breeding",
+        "breeding_count": 14,
+        "wintering_count": 2,
+        "migration_count": 55,
+        "abundance": 0.0035189599428358353
+    },
+    {
+        "latitude": 44.5,
+        "longitude": -73.5,
+        "season": "breeding",
+        "breeding_count": 5,
+        "wintering_count": 0,
+        "migration_count": 15,
+        "abundance": 0.0013207927774896617
+    },
+    {
+        "latitude": 41.5,
+        "longitude": -78.5,
+        "season": "breeding",
+        "breeding_count": 5,
+        "wintering_count": 1,
+        "migration_count": 36,
+        "abundance": 0.00016977768891531151
+    },
+    {
+        "latitude": 31.5,
+        "longitude": -93.5,
+        "season": "wintering",
+        "breeding_count": 0,
+        "wintering_count": 5,
+        "migration_count": 0,
+        "abundance": 0.002739725795502967
+    },
+    {
+        "latitude": 43.5,
+        "longitude": -83.5,
+        "season": "breeding",
+        "breeding_count": 5,
+        "wintering_count": 5,
+        "migration_count": 69,
+        "abundance": 0.0011027550259460664
+    },
+    {
+        "latitude": 43.5,
+        "longitude": -70.5,
+        "season": "breeding",
+        "breeding_count": 8,
+        "wintering_count": 6,
+        "migration_count": 75,
+        "abundance": 0.0032601518273164486
+    },
+    {
+        "latitude": 42.5,
+        "longitude": -89.5,
+        "season": "breeding",
+        "breeding_count": 1,
+        "wintering_count": 3,
+        "migration_count": 20,
+        "abundance": 0.00020619794990903284
+    },
+    {
+        "latitude": 45.5,
+        "longitude": -73.5,
+        "season": "breeding",
+        "breeding_count": 15,
+        "wintering_count": 0,
+        "migration_count": 49,
+        "abundance": 0.00920848029680078
+    },
+    {
+        "latitude": 48.5,
+        "longitude": -80.5,
+        "season": "breeding",
+        "breeding_count": 1,
+        "wintering_count": 0,
+        "migration_count": 9,
+        "abundance": 0.0010686911422438932
+    },
+    {
+        "latitude": 41.5,
+        "longitude": -76.5,
+        "season": "breeding",
+        "breeding_count": 10,
+        "wintering_count": 6,
+        "migration_count": 101,
+        "abundance": 0.0021140078725198196
+    },
+    {
+        "latitude": 32.5,
+        "longitude": -82.5,
+        "season": "wintering",
+        "breeding_count": 0,
+        "wintering_count": 5,
+        "migration_count": 5,
+        "abundance": 0.0004943729156658591
+    },
+    {
+        "latitude": 44.5,
+        "longitude": -63.5,
+        "season": "breeding",
+        "breeding_count": 1,
+        "wintering_count": 2,
+        "migration_count": 10,
+        "abundance": 4.927536393746427e-05
+    },
+    {
+        "latitude": 45.5,
+        "longitude": -92.5,
+        "season": "breeding",
+        "breeding_count": 6,
+        "wintering_count": 0,
+        "migration_count": 45,
+        "abundance": 0.0020189658239827884
+    },
+    {
+        "latitude": 46.5,
+        "longitude": -74.5,
+        "season": "breeding",
+        "breeding_count": 5,
+        "wintering_count": 0,
+        "migration_count": 27,
+        "abundance": 0.005927750350183286
+    },
+    {
+        "latitude": 44.5,
+        "longitude": -77.5,
+        "season": "breeding",
+        "breeding_count": 13,
+        "wintering_count": 0,
+        "migration_count": 150,
+        "abundance": 0.005081380597272163
+    },
+    {
+        "latitude": 46.5,
+        "longitude": -89.5,
+        "season": "breeding",
+        "breeding_count": 7,
+        "wintering_count": 0,
+        "migration_count": 51,
+        "abundance": 0.007478748046454541
+    },
+    {
+        "latitude": 37.5,
+        "longitude": -77.5,
+        "season": "wintering",
+        "breeding_count": 0,
+        "wintering_count": 18,
+        "migration_count": 31,
+        "abundance": 0.011346934420998243
+    },
+    {
+        "latitude": 46.5,
+        "longitude": -73.5,
+        "season": "breeding",
+        "breeding_count": 14,
+        "wintering_count": 0,
+        "migration_count": 22,
+        "abundance": 0.006943619801439156
+    },
+    {
+        "latitude": 48.5,
+        "longitude": -66.5,
+        "season": "breeding",
+        "breeding_count": 1,
+        "wintering_count": 0,
+        "migration_count": 3,
+        "abundance": 0.0012010786039135522
+    },
+    {
+        "latitude": 48.5,
+        "longitude": -94.5,
+        "season": "breeding",
+        "breeding_count": 1,
+        "wintering_count": 0,
+        "migration_count": 4,
+        "abundance": 0.0016123053044112964
+    },
+    {
+        "latitude": 48.5,
+        "longitude": -68.5,
+        "season": "breeding",
+        "breeding_count": 11,
+        "wintering_count": 0,
+        "migration_count": 28,
+        "abundance": 0.022165071449880214
+    },
+    {
+        "latitude": 35.5,
+        "longitude": -81.5,
+        "season": "wintering",
+        "breeding_count": 0,
+        "wintering_count": 8,
+        "migration_count": 25,
+        "abundance": 0.0010199329795164726
+    },
+    {
+        "latitude": 44.5,
+        "longitude": -69.5,
+        "season": "breeding",
+        "breeding_count": 8,
+        "wintering_count": 0,
+        "migration_count": 20,
+        "abundance": 0.0027125008205096785
+    },
+    {
+        "latitude": 33.5,
+        "longitude": -82.5,
+        "season": "wintering",
+        "breeding_count": 0,
+        "wintering_count": 6,
+        "migration_count": 10,
+        "abundance": 0.008823115808250038
+    },
+    {
+        "latitude": 44.5,
+        "longitude": -62.5,
+        "season": "breeding",
+        "breeding_count": 3,
+        "wintering_count": 0,
+        "migration_count": 21,
+        "abundance": 4.754159776842341e-06
+    },
+    {
+        "latitude": 48.5,
+        "longitude": -77.5,
+        "season": "breeding",
+        "breeding_count": 17,
+        "wintering_count": 0,
+        "migration_count": 19,
+        "abundance": 0.014412843808886
+    },
+    {
+        "latitude": 32.5,
+        "longitude": -79.5,
+        "season": "wintering",
+        "breeding_count": 0,
+        "wintering_count": 7,
+        "migration_count": 5,
+        "abundance": 0.0006767076006051907
+    },
+    {
+        "latitude": 39.5,
+        "longitude": -81.5,
+        "season": "breeding",
+        "breeding_count": 1,
+        "wintering_count": 3,
+        "migration_count": 32,
+        "abundance": 6.2936957645959e-05
+    },
+    {
+        "latitude": 44.5,
+        "longitude": -85.5,
+        "season": "breeding",
+        "breeding_count": 5,
+        "wintering_count": 0,
+        "migration_count": 21,
+        "abundance": 0.0009091129739818398
+    },
+    {
+        "latitude": 46.5,
+        "longitude": -59.5,
+        "season": "breeding",
+        "breeding_count": 3,
+        "wintering_count": 0,
+        "migration_count": 2,
+        "abundance": 0.00029198264643052894
+    },
+    {
+        "latitude": 34.5,
+        "longitude": -82.5,
+        "season": "wintering",
+        "breeding_count": 1,
+        "wintering_count": 4,
+        "migration_count": 4,
+        "abundance": 0.0024642197487809926
+    },
+    {
+        "latitude": 28.5,
+        "longitude": -81.5,
+        "season": "wintering",
+        "breeding_count": 0,
+        "wintering_count": 7,
+        "migration_count": 5,
+        "abundance": 0.0019227699307236223
+    },
+    {
+        "latitude": 46.5,
+        "longitude": -90.5,
+        "season": "breeding",
+        "breeding_count": 30,
+        "wintering_count": 0,
+        "migration_count": 53,
+        "abundance": 0.029909950101838972
+    },
+    {
+        "latitude": 37.5,
+        "longitude": -74.5,
+        "season": "wintering",
+        "breeding_count": 0,
+        "wintering_count": 42,
+        "migration_count": 30,
+        "abundance": 0.1510106020324514
+    },
+    {
+        "latitude": 48.5,
+        "longitude": -91.5,
+        "season": "breeding",
+        "breeding_count": 4,
+        "wintering_count": 0,
+        "migration_count": 3,
+        "abundance": 0.0029395746427575303
+    },
+    {
+        "latitude": 45.5,
+        "longitude": -61.5,
+        "season": "breeding",
+        "breeding_count": 18,
+        "wintering_count": 0,
+        "migration_count": 45,
+        "abundance": 0.02372148124937144
+    },
+    {
+        "latitude": 36.5,
+        "longitude": -85.5,
+        "season": "wintering",
+        "breeding_count": 0,
+        "wintering_count": 4,
+        "migration_count": 19,
+        "abundance": 0.02667575888668243
+    },
+    {
+        "latitude": 30.5,
+        "longitude": -97.5,
+        "season": "wintering",
+        "breeding_count": 0,
+        "wintering_count": 14,
+        "migration_count": 16,
+        "abundance": 0.0036699700818255817
+    },
+    {
+        "latitude": 47.5,
+        "longitude": -69.5,
+        "season": "breeding",
+        "breeding_count": 6,
+        "wintering_count": 0,
+        "migration_count": 24,
+        "abundance": 0.009087312418493398
+    },
+    {
+        "latitude": 28.5,
+        "longitude": -96.5,
+        "season": "wintering",
+        "breeding_count": 0,
+        "wintering_count": 3,
+        "migration_count": 0,
+        "abundance": 0.0006459271488925872
+    },
+    {
+        "latitude": 40.5,
+        "longitude": -79.5,
+        "season": "breeding",
+        "breeding_count": 1,
+        "wintering_count": 6,
+        "migration_count": 55,
+        "abundance": 8.17546294728079e-05
+    },
+    {
+        "latitude": 35.5,
+        "longitude": -84.5,
+        "season": "wintering",
+        "breeding_count": 0,
+        "wintering_count": 9,
+        "migration_count": 3,
+        "abundance": 0.007411233602964783
+    },
+    {
+        "latitude": 36.5,
+        "longitude": -75.5,
+        "season": "wintering",
+        "breeding_count": 0,
+        "wintering_count": 11,
+        "migration_count": 8,
+        "abundance": 0.006048271177130153
+    },
+    {
+        "latitude": 28.5,
+        "longitude": -80.5,
+        "season": "wintering",
+        "breeding_count": 0,
+        "wintering_count": 17,
+        "migration_count": 3,
+        "abundance": 0.016698796675998488
+    },
+    {
+        "latitude": 49.5,
+        "longitude": -67.5,
+        "season": "breeding",
+        "breeding_count": 2,
+        "wintering_count": 0,
+        "migration_count": 9,
+        "abundance": 0.0016123220718289092
+    },
+    {
+        "latitude": 42.5,
+        "longitude": -73.5,
+        "season": "breeding",
+        "breeding_count": 2,
+        "wintering_count": 6,
+        "migration_count": 30,
+        "abundance": 0.00025085296079602296
+    },
+    {
+        "latitude": 46.5,
+        "longitude": -64.5,
+        "season": "breeding",
+        "breeding_count": 2,
+        "wintering_count": 0,
+        "migration_count": 3,
+        "abundance": 0.00016172403624498783
+    },
+    {
+        "latitude": 46.5,
+        "longitude": -76.5,
+        "season": "breeding",
+        "breeding_count": 7,
+        "wintering_count": 0,
+        "migration_count": 3,
+        "abundance": 0.006245053850610272
+    },
+    {
+        "latitude": 49.5,
+        "longitude": -95.5,
+        "season": "breeding",
+        "breeding_count": 1,
+        "wintering_count": 0,
+        "migration_count": 17,
+        "abundance": 1.2407627042565103e-05
+    },
+    {
+        "latitude": 47.5,
+        "longitude": -91.5,
+        "season": "breeding",
+        "breeding_count": 7,
+        "wintering_count": 0,
+        "migration_count": 38,
+        "abundance": 0.004462110668256492
+    },
+    {
+        "latitude": 36.5,
+        "longitude": -76.5,
+        "season": "wintering",
+        "breeding_count": 0,
+        "wintering_count": 1,
+        "migration_count": 2,
+        "abundance": 0.00201379098882853
+    },
+    {
+        "latitude": 45.5,
+        "longitude": -88.5,
+        "season": "breeding",
+        "breeding_count": 10,
+        "wintering_count": 0,
+        "migration_count": 33,
+        "abundance": 0.0030448653591625147
+    },
+    {
+        "latitude": 46.5,
+        "longitude": -82.5,
+        "season": "breeding",
+        "breeding_count": 1,
+        "wintering_count": 0,
+        "migration_count": 15,
+        "abundance": 0.0008242922763949016
+    },
+    {
+        "latitude": 38.5,
+        "longitude": -85.5,
+        "season": "breeding",
+        "breeding_count": 2,
+        "wintering_count": 3,
+        "migration_count": 19,
+        "abundance": 6.524513544641543e-05
+    },
+    {
+        "latitude": 45.5,
+        "longitude": -80.5,
+        "season": "breeding",
+        "breeding_count": 3,
+        "wintering_count": 0,
+        "migration_count": 17,
+        "abundance": 0.0008159534508063768
+    },
+    {
+        "latitude": 41.5,
+        "longitude": -77.5,
+        "season": "breeding",
+        "breeding_count": 7,
+        "wintering_count": 1,
+        "migration_count": 31,
+        "abundance": 0.001193841467526428
+    },
+    {
+        "latitude": 32.5,
+        "longitude": -92.5,
+        "season": "wintering",
+        "breeding_count": 0,
+        "wintering_count": 6,
+        "migration_count": 2,
+        "abundance": 0.0028977829822795743
+    },
+    {
+        "latitude": 48.5,
+        "longitude": -64.5,
+        "season": "breeding",
+        "breeding_count": 4,
+        "wintering_count": 0,
+        "migration_count": 2,
+        "abundance": 0.0026384322355420937
+    },
+    {
+        "latitude": 47.5,
+        "longitude": -92.5,
+        "season": "breeding",
+        "breeding_count": 1,
+        "wintering_count": 0,
+        "migration_count": 2,
+        "abundance": 0.00010388382375212384
+    },
+    {
+        "latitude": 29.5,
+        "longitude": -97.5,
+        "season": "wintering",
+        "breeding_count": 0,
+        "wintering_count": 38,
+        "migration_count": 1,
+        "abundance": 0.008069784809876962
+    },
+    {
+        "latitude": 48.5,
+        "longitude": -63.5,
+        "season": "breeding",
+        "breeding_count": 15,
+        "wintering_count": 0,
+        "migration_count": 8,
+        "abundance": 0.00850866115768473
+    },
+    {
+        "latitude": 48.5,
+        "longitude": -95.5,
+        "season": "breeding",
+        "breeding_count": 4,
+        "wintering_count": 0,
+        "migration_count": 11,
+        "abundance": 0.000532184099112875
+    },
+    {
+        "latitude": 34.5,
+        "longitude": -78.5,
+        "season": "wintering",
+        "breeding_count": 0,
+        "wintering_count": 1,
+        "migration_count": 0,
+        "abundance": 0.0004107159501544553
+    },
+    {
+        "latitude": 37.5,
+        "longitude": -86.5,
+        "season": "breeding",
+        "breeding_count": 2,
+        "wintering_count": 3,
+        "migration_count": 8,
+        "abundance": 8.627430207821396e-06
+    },
+    {
+        "latitude": 28.5,
+        "longitude": -95.5,
+        "season": "wintering",
+        "breeding_count": 0,
+        "wintering_count": 13,
+        "migration_count": 1,
+        "abundance": 0.0024471585690676234
+    },
+    {
+        "latitude": 48.5,
+        "longitude": -76.5,
+        "season": "breeding",
+        "breeding_count": 1,
+        "wintering_count": 0,
+        "migration_count": 11,
+        "abundance": 0.0006146227177212587
+    },
+    {
+        "latitude": 46.5,
+        "longitude": -65.5,
+        "season": "breeding",
+        "breeding_count": 4,
+        "wintering_count": 0,
+        "migration_count": 13,
+        "abundance": 0.0031534557150240065
+    },
+    {
+        "latitude": 46.5,
+        "longitude": -85.5,
+        "season": "breeding",
+        "breeding_count": 1,
+        "wintering_count": 0,
+        "migration_count": 10,
+        "abundance": 0.0004012520553671577
+    },
+    {
+        "latitude": 43.5,
+        "longitude": -90.5,
+        "season": "breeding",
+        "breeding_count": 2,
+        "wintering_count": 2,
+        "migration_count": 30,
+        "abundance": 0.00011070315831463897
+    },
+    {
+        "latitude": 48.5,
+        "longitude": -67.5,
+        "season": "breeding",
+        "breeding_count": 8,
+        "wintering_count": 0,
+        "migration_count": 35,
+        "abundance": 0.008443088598920939
+    },
+    {
+        "latitude": 36.5,
+        "longitude": -78.5,
+        "season": "wintering",
+        "breeding_count": 0,
+        "wintering_count": 11,
+        "migration_count": 9,
+        "abundance": 0.012604768914705829
+    },
+    {
+        "latitude": 46.5,
+        "longitude": -72.5,
+        "season": "breeding",
+        "breeding_count": 4,
+        "wintering_count": 0,
+        "migration_count": 40,
+        "abundance": 0.0022676275506034772
+    },
+    {
+        "latitude": 44.5,
+        "longitude": -65.5,
+        "season": "breeding",
+        "breeding_count": 3,
+        "wintering_count": 0,
+        "migration_count": 23,
+        "abundance": 4.936445451262267e-06
+    },
+    {
+        "latitude": 31.5,
+        "longitude": -84.5,
+        "season": "wintering",
+        "breeding_count": 0,
+        "wintering_count": 7,
+        "migration_count": 0,
+        "abundance": 0.017856415332866513
+    },
+    {
+        "latitude": 40.5,
+        "longitude": -84.5,
+        "season": "breeding",
+        "breeding_count": 9,
+        "wintering_count": 3,
+        "migration_count": 37,
+        "abundance": 0.0023760192581298925
+    },
+    {
+        "latitude": 31.5,
+        "longitude": -94.5,
+        "season": "wintering",
+        "breeding_count": 0,
+        "wintering_count": 4,
+        "migration_count": 2,
+        "abundance": 0.000446179270652347
+    },
+    {
+        "latitude": 45.5,
+        "longitude": -70.5,
+        "season": "breeding",
+        "breeding_count": 1,
+        "wintering_count": 0,
+        "migration_count": 17,
+        "abundance": 0.00024625839676285533
+    },
+    {
+        "latitude": 33.5,
+        "longitude": -79.5,
+        "season": "wintering",
+        "breeding_count": 1,
+        "wintering_count": 18,
+        "migration_count": 7,
+        "abundance": 0.010674938487146032
+    },
+    {
+        "latitude": 44.5,
+        "longitude": -79.5,
+        "season": "breeding",
+        "breeding_count": 2,
+        "wintering_count": 0,
+        "migration_count": 10,
+        "abundance": 0.0002453022560365156
+    },
+    {
+        "latitude": 45.5,
+        "longitude": -78.5,
+        "season": "breeding",
+        "breeding_count": 2,
+        "wintering_count": 0,
+        "migration_count": 18,
+        "abundance": 0.0006107062377765946
+    },
+    {
+        "latitude": 29.5,
+        "longitude": -91.5,
+        "season": "wintering",
+        "breeding_count": 0,
+        "wintering_count": 8,
+        "migration_count": 0,
+        "abundance": 0.0031856065782130383
+    },
+    {
+        "latitude": 45.5,
+        "longitude": -90.5,
+        "season": "breeding",
+        "breeding_count": 24,
+        "wintering_count": 0,
+        "migration_count": 24,
+        "abundance": 0.008771247349811051
+    },
+    {
+        "latitude": 34.5,
+        "longitude": -84.5,
+        "season": "wintering",
+        "breeding_count": 0,
+        "wintering_count": 7,
+        "migration_count": 1,
+        "abundance": 0.0065611455034340635
+    },
+    {
+        "latitude": 30.5,
+        "longitude": -95.5,
+        "season": "wintering",
+        "breeding_count": 0,
+        "wintering_count": 6,
+        "migration_count": 0,
+        "abundance": 0.001900295112179657
+    },
+    {
+        "latitude": 33.5,
+        "longitude": -93.5,
+        "season": "wintering",
+        "breeding_count": 0,
+        "wintering_count": 7,
+        "migration_count": 9,
+        "abundance": 0.00043622632057287186
+    },
+    {
+        "latitude": 47.5,
+        "longitude": -78.5,
+        "season": "breeding",
+        "breeding_count": 6,
+        "wintering_count": 0,
+        "migration_count": 20,
+        "abundance": 0.002397536107533019
+    },
+    {
+        "latitude": 47.5,
+        "longitude": -68.5,
+        "season": "breeding",
+        "breeding_count": 4,
+        "wintering_count": 0,
+        "migration_count": 16,
+        "abundance": 0.0030731556286533518
+    },
+    {
+        "latitude": 35.5,
+        "longitude": -86.5,
+        "season": "wintering",
+        "breeding_count": 0,
+        "wintering_count": 7,
+        "migration_count": 8,
+        "abundance": 0.0022229271508542375
+    },
+    {
+        "latitude": 35.5,
+        "longitude": -80.5,
+        "season": "wintering",
+        "breeding_count": 0,
+        "wintering_count": 5,
+        "migration_count": 3,
+        "abundance": 0.006205193152010791
+    },
+    {
+        "latitude": 30.5,
+        "longitude": -93.5,
+        "season": "wintering",
+        "breeding_count": 0,
+        "wintering_count": 8,
+        "migration_count": 0,
+        "abundance": 0.004426710796152888
+    },
+    {
+        "latitude": 32.5,
+        "longitude": -94.5,
+        "season": "wintering",
+        "breeding_count": 0,
+        "wintering_count": 6,
+        "migration_count": 2,
+        "abundance": 0.0008862545825995781
+    },
+    {
+        "latitude": 45.5,
+        "longitude": -85.5,
+        "season": "breeding",
+        "breeding_count": 2,
+        "wintering_count": 0,
+        "migration_count": 11,
+        "abundance": 0.0002602926524029457
+    },
+    {
+        "latitude": 45.5,
+        "longitude": -69.5,
+        "season": "breeding",
+        "breeding_count": 10,
+        "wintering_count": 0,
+        "migration_count": 7,
+        "abundance": 0.0036077693083528665
+    },
+    {
+        "latitude": 45.5,
+        "longitude": -66.5,
+        "season": "breeding",
+        "breeding_count": 3,
+        "wintering_count": 0,
+        "migration_count": 6,
+        "abundance": 0.00027151282505489974
+    },
+    {
+        "latitude": 43.5,
+        "longitude": -81.5,
+        "season": "breeding",
+        "breeding_count": 4,
+        "wintering_count": 1,
+        "migration_count": 6,
+        "abundance": 0.0007584907330279748
+    },
+    {
+        "latitude": 30.5,
+        "longitude": -87.5,
+        "season": "wintering",
+        "breeding_count": 0,
+        "wintering_count": 4,
+        "migration_count": 2,
+        "abundance": 4.7978774264959e-05
+    },
+    {
+        "latitude": 48.5,
+        "longitude": -70.5,
+        "season": "breeding",
+        "breeding_count": 3,
+        "wintering_count": 0,
+        "migration_count": 13,
+        "abundance": 0.00395277289858405
+    },
+    {
+        "latitude": 29.5,
+        "longitude": -92.5,
+        "season": "wintering",
+        "breeding_count": 0,
+        "wintering_count": 17,
+        "migration_count": 1,
+        "abundance": 0.002342682348916148
+    },
+    {
+        "latitude": 28.5,
+        "longitude": -94.5,
+        "season": "wintering",
+        "breeding_count": 0,
+        "wintering_count": 10,
+        "migration_count": 0,
+        "abundance": 0.01020617357565511
+    },
+    {
+        "latitude": 47.5,
+        "longitude": -94.5,
+        "season": "breeding",
+        "breeding_count": 1,
+        "wintering_count": 0,
+        "migration_count": 3,
+        "abundance": 0.00040320883730317564
+    },
+    {
+        "latitude": 48.5,
+        "longitude": -87.5,
+        "season": "breeding",
+        "breeding_count": 5,
+        "wintering_count": 0,
+        "migration_count": 14,
+        "abundance": 0.003110111832661006
+    },
+    {
+        "latitude": 46.5,
+        "longitude": -92.5,
+        "season": "breeding",
+        "breeding_count": 10,
+        "wintering_count": 0,
+        "migration_count": 10,
+        "abundance": 0.003454352248715665
+    },
+    {
+        "latitude": 42.5,
+        "longitude": -95.5,
+        "season": "breeding",
+        "breeding_count": 1,
+        "wintering_count": 0,
+        "migration_count": 0,
+        "abundance": 6.232232319712056e-06
+    },
+    {
+        "latitude": 48.5,
+        "longitude": -79.5,
+        "season": "breeding",
+        "breeding_count": 4,
+        "wintering_count": 0,
+        "migration_count": 2,
+        "abundance": 0.0020291804740409877
+    },
+    {
+        "latitude": 31.5,
+        "longitude": -83.5,
+        "season": "wintering",
+        "breeding_count": 1,
+        "wintering_count": 1,
+        "migration_count": 1,
+        "abundance": 3.493947349411838e-05
+    },
+    {
+        "latitude": 45.5,
+        "longitude": -79.5,
+        "season": "breeding",
+        "breeding_count": 3,
+        "wintering_count": 0,
+        "migration_count": 4,
+        "abundance": 0.0009035815183392549
+    },
+    {
+        "latitude": 32.5,
+        "longitude": -84.5,
+        "season": "wintering",
+        "breeding_count": 0,
+        "wintering_count": 11,
+        "migration_count": 10,
+        "abundance": 0.011699317447223018
+    },
+    {
+        "latitude": 46.5,
+        "longitude": -80.5,
+        "season": "breeding",
+        "breeding_count": 2,
+        "wintering_count": 0,
+        "migration_count": 7,
+        "abundance": 0.0010081682492481306
+    },
+    {
+        "latitude": 30.5,
+        "longitude": -94.5,
+        "season": "wintering",
+        "breeding_count": 0,
+        "wintering_count": 4,
+        "migration_count": 13,
+        "abundance": 0.0010103268154950662
+    },
+    {
+        "latitude": 31.5,
+        "longitude": -91.5,
+        "season": "wintering",
+        "breeding_count": 0,
+        "wintering_count": 3,
+        "migration_count": 0,
+        "abundance": 0.0001600450546197134
+    },
+    {
+        "latitude": 32.5,
+        "longitude": -83.5,
+        "season": "wintering",
+        "breeding_count": 0,
+        "wintering_count": 5,
+        "migration_count": 3,
+        "abundance": 0.003227060620880726
+    },
+    {
+        "latitude": 44.5,
+        "longitude": -93.5,
+        "season": "breeding",
+        "breeding_count": 1,
+        "wintering_count": 0,
+        "migration_count": 8,
+        "abundance": 1.138629158934685e-05
+    },
+    {
+        "latitude": 45.5,
+        "longitude": -81.5,
+        "season": "breeding",
+        "breeding_count": 2,
+        "wintering_count": 0,
+        "migration_count": 3,
+        "abundance": 0.0009873248425179067
+    },
+    {
+        "latitude": 36.5,
+        "longitude": -74.5,
+        "season": "wintering",
+        "breeding_count": 0,
+        "wintering_count": 7,
+        "migration_count": 3,
+        "abundance": 0.005416669307908908
+    },
+    {
+        "latitude": 46.5,
+        "longitude": -94.5,
+        "season": "breeding",
+        "breeding_count": 1,
+        "wintering_count": 0,
+        "migration_count": 17,
+        "abundance": 0.0002208492708178791
+    },
+    {
+        "latitude": 50.5,
+        "longitude": -94.5,
+        "season": "breeding",
+        "breeding_count": 1,
+        "wintering_count": 0,
+        "migration_count": 5,
+        "abundance": 0.0010443377560933919
+    },
+    {
+        "latitude": 31.5,
+        "longitude": -86.5,
+        "season": "wintering",
+        "breeding_count": 0,
+        "wintering_count": 1,
+        "migration_count": 1,
+        "abundance": 0.0016129002933771754
+    },
+    {
+        "latitude": 35.5,
+        "longitude": -76.5,
+        "season": "wintering",
+        "breeding_count": 0,
+        "wintering_count": 4,
+        "migration_count": 2,
+        "abundance": 0.0023580337806510757
+    },
+    {
+        "latitude": 46.5,
+        "longitude": -87.5,
+        "season": "breeding",
+        "breeding_count": 1,
+        "wintering_count": 0,
+        "migration_count": 4,
+        "abundance": 0.0005850996208128658
+    },
+    {
+        "latitude": 33.5,
+        "longitude": -77.5,
+        "season": "wintering",
+        "breeding_count": 0,
+        "wintering_count": 2,
+        "migration_count": 0,
+        "abundance": 0.0008524897037186791
+    },
+    {
+        "latitude": 37.5,
+        "longitude": -84.5,
+        "season": "wintering",
+        "breeding_count": 0,
+        "wintering_count": 1,
+        "migration_count": 5,
+        "abundance": 9.247915973148125e-05
+    },
+    {
+        "latitude": 47.5,
+        "longitude": -71.5,
+        "season": "breeding",
+        "breeding_count": 1,
+        "wintering_count": 0,
+        "migration_count": 0,
+        "abundance": 0.0012114571008025544
+    },
+    {
+        "latitude": 51.5,
+        "longitude": -94.5,
+        "season": "breeding",
+        "breeding_count": 1,
+        "wintering_count": 0,
+        "migration_count": 0,
+        "abundance": 0.0002661934711699653
+    },
+    {
+        "latitude": 48.5,
+        "longitude": -65.5,
+        "season": "breeding",
+        "breeding_count": 1,
+        "wintering_count": 0,
+        "migration_count": 0,
+        "abundance": 0.001145416803989185
+    },
+    {
+        "latitude": 47.5,
+        "longitude": -65.5,
+        "season": "breeding",
+        "breeding_count": 6,
+        "wintering_count": 0,
+        "migration_count": 0,
+        "abundance": 0.0025721563443609615
+    },
+    {
+        "latitude": 35.5,
+        "longitude": -87.5,
+        "season": "wintering",
+        "breeding_count": 0,
+        "wintering_count": 4,
+        "migration_count": 3,
+        "abundance": 0.001935208743987062
+    },
+    {
+        "latitude": 47.5,
+        "longitude": -75.5,
+        "season": "breeding",
+        "breeding_count": 1,
+        "wintering_count": 0,
+        "migration_count": 0,
+        "abundance": 0.0010636266045054629
+    },
+    {
+        "latitude": 37.5,
+        "longitude": -87.5,
+        "season": "wintering",
+        "breeding_count": 0,
+        "wintering_count": 2,
+        "migration_count": 6,
+        "abundance": 4.9079624798321996e-05
+    },
+    {
+        "latitude": 33.5,
+        "longitude": -92.5,
+        "season": "wintering",
+        "breeding_count": 0,
+        "wintering_count": 1,
+        "migration_count": 1,
+        "abundance": 0.0011853430788903504
+    },
+    {
+        "latitude": 29.5,
+        "longitude": -90.5,
+        "season": "wintering",
+        "breeding_count": 0,
+        "wintering_count": 1,
+        "migration_count": 1,
+        "abundance": 9.863331203063343e-05
+    },
+    {
+        "latitude": 47.5,
+        "longitude": -80.5,
+        "season": "breeding",
+        "breeding_count": 1,
+        "wintering_count": 0,
+        "migration_count": 1,
+        "abundance": 0.0005701440563264657
+    },
+    {
+        "latitude": 49.5,
+        "longitude": -79.5,
+        "season": "breeding",
+        "breeding_count": 3,
+        "wintering_count": 0,
+        "migration_count": 0,
+        "abundance": 0.0013193993686351308
+    },
+    {
+        "latitude": 32.5,
+        "longitude": -93.5,
+        "season": "wintering",
+        "breeding_count": 0,
+        "wintering_count": 4,
+        "migration_count": 1,
+        "abundance": 0.0020533120693395517
+    },
+    {
+        "latitude": 34.5,
+        "longitude": -87.5,
+        "season": "wintering",
+        "breeding_count": 0,
+        "wintering_count": 1,
+        "migration_count": 0,
+        "abundance": 5.800511925724574e-05
+    },
+    {
+        "latitude": 29.5,
+        "longitude": -96.5,
+        "season": "wintering",
+        "breeding_count": 0,
+        "wintering_count": 3,
+        "migration_count": 1,
+        "abundance": 0.00042553978715932856
+    },
+    {
+        "latitude": 31.5,
+        "longitude": -80.5,
+        "season": "wintering",
+        "breeding_count": 0,
+        "wintering_count": 1,
+        "migration_count": 0,
+        "abundance": 0.00019221532751193478
+    },
+    {
+        "latitude": 34.5,
+        "longitude": -79.5,
+        "season": "wintering",
+        "breeding_count": 0,
+        "wintering_count": 1,
+        "migration_count": 1,
+        "abundance": 0.0015038556780246916
+    },
+    {
+        "latitude": 29.5,
+        "longitude": -82.5,
+        "season": "wintering",
+        "breeding_count": 0,
+        "wintering_count": 1,
+        "migration_count": 0,
+        "abundance": 2.1094424874556027e-05
+    },
+    {
+        "latitude": 47.5,
+        "longitude": -72.5,
+        "season": "breeding",
+        "breeding_count": 1,
+        "wintering_count": 0,
+        "migration_count": 0,
+        "abundance": 0.0010105285184334857
+    }
+]

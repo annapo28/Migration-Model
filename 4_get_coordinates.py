@@ -12,7 +12,6 @@ OUTPUT_SORTED_TRIPLE_JSON_FALL = "amewoo/sorted_migration_routes_fall.json"
 excluded_coordinates = {}
 
 def haversine(lat1, lon1, lat2, lon2):
-    """ Рассчитывает расстояние между двумя точками (км) """
     R = 6371
     phi1, phi2 = math.radians(lat1), math.radians(lat2)
     delta_phi = math.radians(lat2 - lat1)
@@ -25,21 +24,18 @@ def haversine(lat1, lon1, lat2, lon2):
 
 
 def sort_migration_routes(routes):
-    """ Сортируем маршруты по расстоянию, затем по широте точки прилёта и добавляем n_k и номер маршрута в группе. """
-    # Сначала сортируем маршруты по L_k, затем по широте точки прилёта (route[1][0])
     sorted_routes = sorted(routes, key=lambda r: (r[2][0], r[1][0]))
 
-    # Группируем маршруты по (lat_j, lon_j, L_k)
     groups = defaultdict(list)
     for route in sorted_routes:
-        lat_j, lon_j = route[1]  # Точка прибытия
-        L_k = route[2][0]  # Расстояние
+        lat_j, lon_j = route[1]
+        L_k = route[2][0]
         groups[(lat_j, lon_j, L_k)].append(route)
 
     result = []
     for group_key, group_routes in groups.items():
         n_k = len(group_routes)
-        for idx, route in enumerate(group_routes, start=1):  # Нумерация маршрутов в группе от 1 до n_k
+        for idx, route in enumerate(group_routes, start=1):
             new_route = (route[0], route[1], (route[2][0], route[2][1], route[2][2], n_k, idx))
             result.append(new_route)
 
@@ -47,7 +43,6 @@ def sort_migration_routes(routes):
 
 
 def building_triples():
-    """ Создает маршруты миграции, используя нормализованные данные из grid_data.json. """
     with open(GRID_FILE, "r", encoding="utf-8") as f:
         grid_data = json.load(f)
 
@@ -59,11 +54,11 @@ def building_triples():
 
     for b_cell in breeding_cells:
         b_lat, b_lon = round(b_cell["latitude"], 1), round(b_cell["longitude"], 1)
-        u = b_cell["abundance"]  # Берем плотность для гнездования
+        u = b_cell["abundance"]
 
         for w_cell in wintering_cells:
             w_lat, w_lon = round(w_cell["latitude"], 1), round(w_cell["longitude"], 1)
-            w = w_cell["abundance"]  # Берем плотность для зимовки
+            w = w_cell["abundance"]
 
             L = haversine(b_lat, b_lon, w_lat, w_lon)
 

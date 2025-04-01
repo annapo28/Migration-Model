@@ -1,65 +1,124 @@
-import pandas as pd
-import numpy as np
+import rasterio
 import json
-from math import radians, sin, cos, sqrt, atan2
+import numpy as np
+from rasterio.transform import rowcol
+from pyproj import Transformer
+
+wintering_tif_path = "/home/anya2812/Загрузки/amewoo_abundance_seasonal_nonbreeding_mean_2022.tif"
+breeding_tif_path = "/home/anya2812/Загрузки/amewoo_abundance_seasonal_breeding_mean_2022.tif"
+json_path = "/home/anya2812/Migration-Model/amewoo/data_final_2017.json"
+output_json = "/home/anya2812/Migration-Model/amewoo/grid_abundance.json"
+finish_output_json = "amewoo/grid_abundance_normalized.json"
 
 
-# Функция для расчёта расстояния Haversine
-def haversine(lon1, lat1, lon2, lat2):
-    lon1, lat1, lon2, lat2 = map(radians, [lon1, lat1, lon2, lat2])
-    dlon = lon2 - lon1
-    dlat = lat2 - lat1
-    a = sin(dlat / 2) ** 2 + cos(lat1) * cos(lat2) * sin(dlon / 2) ** 2
-    c = 2 * atan2(sqrt(a), sqrt(1 - a))
-    return 6371 * c  # Радиус Земли в км
+with open(json_path, "r", encoding="utf-8") as f:
+    data_points = json.load(f)
+
+rasters = {
+    "wintering": rasterio.open(wintering_tif_path),
+    "breeding": rasterio.open(breeding_tif_path),
+}
+
+raster_data = {season: rasters[season].read(1) for season in rasters}
+nodata_values = {season: rasters[season].nodata for season in rasters}
+
+transformers = {season: Transformer.from_crs("EPSG:4326", rasters[season].crs, always_xy=True) for season in rasters}
+
+results = []
+
+for point in data_points:
+    lat, lon = point["latitude"], point["longitude"]
+    season = point["season"]
+
+    if season not in rasters:
+        abundance = None
+    else:
+        raster = rasters[season]
+        transformer = transformers[season]
+
+        x, y = transformer.transform(lon, lat)
+        row, col = rowcol(raster.transform, x, y)
+
+        if 0 <= row < raster.height and 0 <= col < raster.width:
+            abundance = raster_data[season][row, col]
+
+            if abundance == nodata_values[season]:
+                abundance = None
+            else:
+                abundance = float(abundance)
+        else:
+            abundance = None
 
 
-# Загрузка данных из CSV
-gps_data = pd.read_csv('/home/anya2812/Загрузки/USGS Woodcock Migration.csv')
+    results.append({"latitude": lat, "longitude": lon, "season": season, "abundance": abundance})
 
-# Предполагаем, что для каждой особи (individual-local-identifier) у нас есть несколько точек
-gps_data = gps_data[['individual-local-identifier', 'location-long', 'location-lat']]
-gps_data = gps_data.dropna()
+for raster in rasters.values():
+    raster.close()
 
-# Создаём столбец 'coordinates' для хранения пары координат (широта, долгота)
-gps_data['coordinates'] = list(zip(gps_data['location-lat'], gps_data['location-long']))
+with open(output_json, "w", encoding="utf-8") as f:
+    json.dump(results, f, ensure_ascii=False, indent=4)
 
-# Группируем данные по individual-local-identifier
-individuals = gps_data.groupby('individual-local-identifier')['coordinates'].apply(list).to_dict()
+print(f"Results saved to {output_json}")
 
-# Создаём структуру для миграционных вероятностей
-migration_probabilities = {}
 
-# Проходим по каждой особи и генерируем вероятности прилета
-for individual_id, coordinates in individuals.items():
-    for i, (lat1, lon1) in enumerate(coordinates):
-        for j, (lat2, lon2) in enumerate(coordinates):
-            if i != j:
-                # Вычисляем расстояние между двумя точками
-                dist = haversine(lon1, lat1, lon2, lat2)
-                # Считаем вероятность (чем ближе, тем выше вероятность)
-                prob = 1 / (dist + 1.0)  # Просто примерный способ расчета вероятности
+breeding_abundances = [p["abundance"] for p in results if p["season"] == "breeding" and p["abundance"] is not None and not np.isnan(p["abundance"])]
+wintering_abundances = [p["abundance"] for p in results if p["season"] == "wintering" and p["abundance"] is not None and not np.isnan(p["abundance"])]
 
-                # Формируем ключи для точек вылета (lat1, lon1) и прилета (lat2, lon2)
-                departure_point = f"{lat1},{lon1}"
-                arrival_point = f"{lat2},{lon2}"
+breeding_sum = sum(breeding_abundances) if breeding_abundances else 0
+wintering_sum = sum(wintering_abundances) if wintering_abundances else 0
 
-                if departure_point not in migration_probabilities:
-                    migration_probabilities[departure_point] = []
 
-                migration_probabilities[departure_point].append((arrival_point, prob))
+print(f"1Сумма breeding: {breeding_sum}")
+print(f"1Сумма wintering: {wintering_sum}")
 
-# Нормируем вероятности для каждой точки вылета
-for departure_point, arrivals in migration_probabilities.items():
-    total_prob = sum(prob for _, prob in arrivals)  # Сумма всех вероятностей для данной точки вылета
-    if total_prob > 0:
-        # Нормируем вероятности
-        migration_probabilities[departure_point] = [
-            (arrival_point, prob / total_prob) for arrival_point, prob in arrivals
-        ]
+breeding_max = max(breeding_abundances) if breeding_abundances else 0
+wintering_max = max(wintering_abundances) if wintering_abundances else 0
 
-# Преобразуем в формат JSON и сохраняем
-with open('migration_probabilities_from_gps_normalized.json', 'w') as f:
-    json.dump(migration_probabilities, f, indent=4)
 
-print("Миграционные вероятности успешно сохранены и нормализованы!")
+
+print(f" max breeding: {breeding_max}")
+print(f" max wintering: {wintering_max}")
+
+breeding_min = min(breeding_abundances) if breeding_abundances else 0
+wintering_min = min(wintering_abundances) if wintering_abundances else 0
+
+
+print(f" 2/Сумма breeding: {breeding_min}")
+print(f" 2/Сумма wintering: {wintering_min}")
+
+normalized_data = []
+
+for point in results:
+    abundance = point["abundance"]
+    season = point["season"]
+
+    if abundance is not None and not np.isnan(abundance):
+        if season == "breeding" and breeding_sum > 0:
+            norm_abundance = abundance / breeding_sum
+        elif season == "wintering" and wintering_sum > 0:
+            norm_abundance = abundance / wintering_sum
+        else:
+            norm_abundance = None
+    else:
+        norm_abundance = None
+
+    normalized_data.append({
+        "latitude": point["latitude"],
+        "longitude": point["longitude"],
+        "season": season,
+        "abundance": norm_abundance
+    })
+
+breeding_abundances = [p["abundance"] for p in normalized_data if p["season"] == "breeding" and p["abundance"] is not None and not np.isnan(p["abundance"])]
+wintering_abundances = [p["abundance"] for p in normalized_data if p["season"] == "wintering" and p["abundance"] is not None and not np.isnan(p["abundance"])]
+
+breeding_sum = sum(breeding_abundances) if breeding_abundances else 0
+wintering_sum = sum(wintering_abundances) if wintering_abundances else 0
+
+print(f"3 Сумма breeding: {breeding_sum}")
+print(f" 3 Сумма wintering: {wintering_sum}")
+
+with open(finish_output_json, "w", encoding="utf-8") as f:
+    json.dump(normalized_data, f, ensure_ascii=False, indent=4)
+
+print(f"✅ Нормализованные данные сохранены в {output_json}")
